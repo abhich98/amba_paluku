@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amba Paluku — Daily Telugu</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <header class="app-header">
+    <span class="app-logo">అంబ పలుకు</span>
+    <nav>
+      <button id="btn-home"    class="nav-btn active">Today</button>
+      <button id="btn-archive" class="nav-btn">Archive</button>
+    </nav>
+  </header>
+
+  <!-- Progress bar (visible only during quiz) -->
+  <div id="progress-bar-wrap" class="hidden" aria-hidden="true">
+    <div id="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div id="progress-bar-fill"></div>
+    </div>
+    <span id="progress-label"></span>
+  </div>
+
+  <main id="app-main">
+
+    <!-- Loading -->
+    <div id="view-loading" class="view" aria-live="polite">
+      <div class="spinner" aria-hidden="true"></div>
+      <p>Loading lesson…</p>
+    </div>
+
+    <!-- Error -->
+    <div id="view-error" class="view hidden" aria-live="assertive">
+      <p id="error-msg">Could not load lesson.</p>
+      <button id="btn-retry" class="btn-primary">Retry</button>
+    </div>
+
+    <!-- Quiz -->
+    <div id="view-quiz" class="view hidden">
+      <div class="question-card">
+        <p class="question-label">Translate to Telugu</p>
+        <p id="english-sentence" class="english-text"></p>
+        <button id="btn-audio" class="audio-btn" aria-label="Play Telugu pronunciation">
+          <span aria-hidden="true">🔊</span>
+        </button>
+      </div>
+
+      <div id="mcq-options" class="options-grid" role="group" aria-label="Answer choices"></div>
+
+      <button id="btn-next" class="btn-next hidden" aria-label="Go to next question">
+        Next →
+      </button>
+    </div>
+
+    <!-- Summary -->
+    <div id="view-summary" class="view hidden" aria-live="polite">
+      <div class="summary-card">
+        <h2>Session complete!</h2>
+        <p id="summary-score"  class="score-text"></p>
+        <p id="summary-date"   class="meta-text"></p>
+        <button id="btn-restart"    class="btn-primary">Restart lesson</button>
+        <button id="btn-go-archive" class="btn-secondary">Browse archive</button>
+      </div>
+    </div>
+
+    <!-- Archive -->
+    <div id="view-archive" class="view hidden">
+      <h2>Past Lessons</h2>
+      <ul id="archive-list" class="archive-list" aria-label="Lesson archive"></ul>
+    </div>
+
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
