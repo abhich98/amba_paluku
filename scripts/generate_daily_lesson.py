@@ -23,9 +23,11 @@ import json
 import logging
 import os
 import random
+import re
 import shutil
 import sys
 import tempfile
+import unicodedata
 from datetime import date, datetime, timezone
 from pathlib import Path
 
@@ -159,20 +161,32 @@ def build_lesson(
 ) -> dict:
     """Assemble a weighted multi-type lesson dict from raw LLM pairs."""
 
-    def pick_type(match_eligible: bool) -> str:
-        weights = dict(QUESTION_TYPE_WEIGHTS)
-        if not match_eligible:
-            weights["match_audio_text"] = 0.0
-        total = sum(weights.values())
-        if total <= 0:
-            return "mcq_bimodal"
-        threshold = random.random() * total
-        running = 0.0
-        for k, v in weights.items():
-            running += v
-            if threshold <= running:
-                return k
-        return "mcq_bimodal"
+    def split_english_words(sentence: str) -> list[str]:
+        return sentence.split()
+
+    def sanitize_english_answer(word: str) -> str:
+        return word.strip(".,!?;:'\"()[]{}")
+
+    def sanitize_translit_answer(word: str) -> str:
+        return word.strip(".,!?;:'\"()[]{}")
+
+    def normalize_translit_answer(word: str) -> str:
+        stripped = sanitize_translit_answer(word)
+        normalized = unicodedata.normalize("NFKD", stripped)
+        without_diacritics = "".join(c for c in normalized if not unicodedata.combining(c))
+        simplified = re.sub(r"[^a-zA-Z0-9\s]", " ", without_diacritics)
+        return re.sub(r"\s+", " ", simplified).strip().lower()
+
+    def pick_omit_loc(words: list[str]) -> int:
+        candidate_indexes = [
+            idx for idx, word in enumerate(words)
+            if sanitize_english_answer(word) and len(sanitize_english_answer(word)) > 2
+        ]
+        if not candidate_indexes:
+            candidate_indexes = [idx for idx, word in enumerate(words) if sanitize_english_answer(word)]
+        if not candidate_indexes:
+            raise ValueError("Cannot build fill-in-the-blank from an empty English sentence")
+        return random.choice(candidate_indexes) + 1
 
     def audio_rel_path(stem: str) -> str:
         return f"data/audio/{lesson_date}/{item_audio_filename(stem)}"
@@ -192,7 +206,7 @@ def build_lesson(
                     "id": f"{item_id}_opt{d_idx}",
                     "transliteration": distractor["transliteration"],
                     "telugu": distractor["telugu"],
-                    "audio_path": None,
+                    "audio_path": audio_rel_path(f"{item_id}_opt{d_idx}"),
                 }
             )
 
@@ -201,22 +215,57 @@ def build_lesson(
         return {
             "id": item_id,
             "type": "mcq_bimodal",
-            "prompt_english": pair["english"],
+            "sentence_english": pair["english"],
             "options": options,
             "correct_option_id": correct_option_id,
         }
 
     def build_fill_blank(item_id: str, pair: dict) -> dict:
-        normalized = pair["transliteration"].strip()
+        reference_transliteration = pair["transliteration"].strip()
+        telugu_mode = random.random() < 0.5
+
+        if telugu_mode:
+            question_language = "telugu_transliteration"
+            question_sentence = reference_transliteration
+            reference_sentence = pair["english"]
+            words = question_sentence.split()
+            omit_loc = pick_omit_loc(words)
+            omitted_word = words[omit_loc - 1]
+            sanitized_answer = sanitize_translit_answer(omitted_word)
+            normalized_answer = normalize_translit_answer(omitted_word)
+            answer_mode = "transliteration"
+            accepted_answers = [omitted_word]
+            for extra in [sanitized_answer, normalized_answer]:
+                if extra and extra not in accepted_answers:
+                    accepted_answers.append(extra)
+            display_correct_answer = sanitized_answer or omitted_word
+        else:
+            question_language = "english"
+            question_sentence = pair["english"]
+            reference_sentence = pair["telugu"]
+            words = split_english_words(question_sentence)
+            omit_loc = pick_omit_loc(words)
+            omitted_word = words[omit_loc - 1]
+            sanitized_answer = sanitize_english_answer(omitted_word)
+            answer_mode = "english"
+            accepted_answers = [omitted_word]
+            if sanitized_answer and sanitized_answer != omitted_word:
+                accepted_answers.append(sanitized_answer)
+            display_correct_answer = sanitized_answer or omitted_word
+
         return {
             "id": item_id,
             "type": "fill_blank_audio",
-            "prompt_english": pair["english"],
-            "reference_transliteration": normalized,
+            "question_language": question_language,
+            "question_sentence": question_sentence,
+            "reference_sentence": reference_sentence,
+            "answer_mode": answer_mode,
+            "reference_transliteration": reference_transliteration,
             "reference_telugu": pair["telugu"],
+            "omit_loc": omit_loc,
             "audio_path": audio_rel_path(item_id),
-            "accepted_answers": [normalized],
-            "display_correct_answer": normalized,
+            "accepted_answers": accepted_answers,
+            "display_correct_answer": display_correct_answer,
         }
 
     def build_match(item_id: str, chunk: list[dict]) -> dict:
@@ -249,7 +298,7 @@ def build_lesson(
     for i in range(num_questions):
         qtype = lesson_q_types[i]
         if qtype == "match_audio_text":
-            chunk = [pairs[i] for i in random.choices(range(num_questions), k=3)]
+            chunk = [pairs[i] for i in random.sample(range(len(pairs)), k=3)]
             items.append(build_match(f"{lesson_date}_{i+1:03d}", chunk))
 
         elif qtype == "fill_blank_audio":
@@ -257,23 +306,12 @@ def build_lesson(
 
         else:
             items.append(build_mcq(f"{lesson_date}_{i+1:03d}", pairs[i]))
-    i = 0
-    question_idx = 1
-    while i < len(pairs):
-        remaining = len(pairs) - i
-        item_id = f"{lesson_date}_{question_idx:03d}"
-        qtype = pick_type(match_eligible=remaining >= 3)
-        if qtype == "match_audio_text" and remaining >= 3:
-            chunk = pairs[i : i + 3]
-            items.append(build_match(item_id, chunk))
-            i += 3
-        elif qtype == "fill_blank_audio":
-            items.append(build_fill_blank(item_id, pairs[i]))
-            i += 1
-        else:
-            items.append(build_mcq(item_id, pairs[i]))
-            i += 1
-        question_idx += 1
+
+    question_type_counts = {
+        "mcq_bimodal": sum(1 for item in items if item["type"] == "mcq_bimodal"),
+        "fill_blank_audio": sum(1 for item in items if item["type"] == "fill_blank_audio"),
+        "match_audio_text": sum(1 for item in items if item["type"] == "match_audio_text"),
+    }
 
     return {
         "lesson_id": lesson_date,
@@ -284,6 +322,7 @@ def build_lesson(
         "model": model,
         "prompt_version": PROMPT_VERSION,
         "question_type_weights": QUESTION_TYPE_WEIGHTS,
+        "question_type_counts": question_type_counts,
         "items": items,
     }
 
@@ -393,6 +432,7 @@ def main() -> None:
     )
     validate_lesson(lesson)
     logger.info("Lesson schema validation passed (%d items)", len(lesson["items"]))
+    logger.info("Question type counts: %s", lesson.get("question_type_counts", {}))
 
     if dry_run:
         print(json.dumps(lesson, ensure_ascii=False, indent=2))

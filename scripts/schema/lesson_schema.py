@@ -6,6 +6,8 @@ can be added without changing top-level lesson shape.
 """
 from __future__ import annotations
 
+import re
+import unicodedata
 from typing import Any
 
 import jsonschema
@@ -28,12 +30,12 @@ _OPTION_SCHEMA: dict[str, Any] = {
 
 _MCQ_BIMODAL_SCHEMA: dict[str, Any] = {
     "type": "object",
-    "required": ["id", "type", "prompt_english", "options", "correct_option_id"],
+    "required": ["id", "type", "sentence_english", "options", "correct_option_id"],
     "additionalProperties": False,
     "properties": {
         "id": {"type": "string", "minLength": 1},
         "type": {"const": "mcq_bimodal"},
-        "prompt_english": {"type": "string", "minLength": 1},
+        "sentence_english": {"type": "string", "minLength": 1},
         "options": {
             "type": "array",
             "minItems": 4,
@@ -49,9 +51,13 @@ _FILL_BLANK_AUDIO_SCHEMA: dict[str, Any] = {
     "required": [
         "id",
         "type",
-        "prompt_english",
+        "question_language",
+        "question_sentence",
+        "reference_sentence",
+        "answer_mode",
         "reference_transliteration",
         "reference_telugu",
+        "omit_loc",
         "audio_path",
         "accepted_answers",
         "display_correct_answer",
@@ -60,9 +66,21 @@ _FILL_BLANK_AUDIO_SCHEMA: dict[str, Any] = {
     "properties": {
         "id": {"type": "string", "minLength": 1},
         "type": {"const": "fill_blank_audio"},
-        "prompt_english": {"type": "string", "minLength": 1},
+        "question_language": {
+            "type": "string",
+            "enum": ["english", "telugu_transliteration"],
+        },
+        "question_sentence": {"type": "string", "minLength": 1},
+        "reference_sentence": {"type": "string", "minLength": 1},
+        "answer_mode": {
+            "type": "string",
+            "enum": ["english", "transliteration"],
+        },
         "reference_transliteration": {"type": "string", "minLength": 1},
         "reference_telugu": {"type": "string", "minLength": 1},
+        "omit_loc": {
+            "type": "integer", "minimum": 1, "description": "1-based index of the word to omit in the question sentence"
+        },
         "audio_path": {"type": ["string", "null"], "minLength": 1},
         "accepted_answers": {
             "type": "array",
@@ -126,6 +144,8 @@ LESSON_SCHEMA: dict[str, Any] = {
         "provider",
         "model",
         "prompt_version",
+        "question_type_weights",
+        "question_type_counts",
         "items",
     ],
     "additionalProperties": False,
@@ -148,6 +168,16 @@ LESSON_SCHEMA: dict[str, Any] = {
                 "mcq_bimodal": {"type": "number", "minimum": 0},
                 "fill_blank_audio": {"type": "number", "minimum": 0},
                 "match_audio_text": {"type": "number", "minimum": 0},
+            },
+        },
+        "question_type_counts": {
+            "type": "object",
+            "required": ["mcq_bimodal", "fill_blank_audio", "match_audio_text"],
+            "additionalProperties": False,
+            "properties": {
+                "mcq_bimodal": {"type": "integer", "minimum": 0},
+                "fill_blank_audio": {"type": "integer", "minimum": 0},
+                "match_audio_text": {"type": "integer", "minimum": 0},
             },
         },
         "items": {
@@ -203,6 +233,18 @@ def _contains_telugu_script(text: str) -> bool:
     return any("\u0C00" <= c <= "\u0C7F" for c in text)
 
 
+def _normalize_english_answer(text: str) -> str:
+    return text.strip(".,!?;:'\"()[]{}").strip().lower()
+
+
+def _normalize_transliteration_answer(text: str) -> str:
+    stripped = text.strip(".,!?;:'\"()[]{}").strip()
+    normalized = unicodedata.normalize("NFKD", stripped)
+    without_diacritics = "".join(c for c in normalized if not unicodedata.combining(c))
+    simplified = re.sub(r"[^a-zA-Z0-9\s]", " ", without_diacritics)
+    return re.sub(r"\s+", " ", simplified).strip().lower()
+
+
 def validate_lesson(lesson: dict[str, Any]) -> None:
     """Validate a lesson dict against LESSON_SCHEMA.
 
@@ -211,9 +253,18 @@ def validate_lesson(lesson: dict[str, Any]) -> None:
     jsonschema.validate(instance=lesson, schema=LESSON_SCHEMA)
 
     # Cross-validate type-specific invariants.
+    actual_counts = {
+        "mcq_bimodal": 0,
+        "fill_blank_audio": 0,
+        "match_audio_text": 0,
+    }
+
     for item in lesson.get("items", []):
         item_type = item.get("type")
         item_id = item.get("id")
+
+        if item_type in actual_counts:
+            actual_counts[item_type] += 1
 
         if item_type == "mcq_bimodal":
             options = item.get("options", [])
@@ -239,18 +290,54 @@ def validate_lesson(lesson: dict[str, Any]) -> None:
                     f"Item '{item_id}': reference_telugu must contain Telugu script "
                     "characters"
                 )
+            words = item["question_sentence"].split()
+            omit_loc = item["omit_loc"]
+            if omit_loc > len(words):
+                raise jsonschema.ValidationError(
+                    f"Item '{item_id}': omit_loc must point to a word in question_sentence"
+                )
+            omitted_word = words[omit_loc - 1]
+            if item["question_language"] == "english" and item["answer_mode"] != "english":
+                raise jsonschema.ValidationError(
+                    f"Item '{item_id}': answer_mode must be 'english' when question_language is 'english'"
+                )
+            if item["question_language"] == "telugu_transliteration" and item["answer_mode"] != "transliteration":
+                raise jsonschema.ValidationError(
+                    f"Item '{item_id}': answer_mode must be 'transliteration' when question_language is 'telugu_transliteration'"
+                )
+
+            if item["answer_mode"] == "transliteration":
+                normalize = _normalize_transliteration_answer
+            else:
+                normalize = _normalize_english_answer
+
+            normalized_accepted_answers = {
+                normalize(answer)
+                for answer in item["accepted_answers"]
+                if normalize(answer)
+            }
+            normalized_omitted_word = normalize(omitted_word)
+            if normalized_omitted_word not in normalized_accepted_answers:
+                raise jsonschema.ValidationError(
+                    f"Item '{item_id}': accepted_answers must include the omitted word "
+                    "from question_sentence"
+                )
+            if normalize(item["display_correct_answer"]) != normalized_omitted_word:
+                raise jsonschema.ValidationError(
+                    f"Item '{item_id}': display_correct_answer must match the omitted word"
+                )
 
         if item_type == "match_audio_text":
             prompts = item.get("prompts", [])
             english_options = item.get("english_options", [])
             if len(english_options) != len(set(english_options)):
                 raise jsonschema.ValidationError(
-                    f"Item '{item_id}': english_options must be unique"
+                    f"Item '{item_id}': english_options must be unique: {english_options}"
                 )
             prompt_ids = [p["id"] for p in prompts]
             if len(prompt_ids) != len(set(prompt_ids)):
                 raise jsonschema.ValidationError(
-                    f"Item '{item_id}': prompt ids must be unique"
+                    f"Item '{item_id}': prompt ids must be unique: {prompt_ids}"
                 )
             for prompt in prompts:
                 if prompt["correct_english"] not in english_options:
@@ -263,6 +350,13 @@ def validate_lesson(lesson: dict[str, Any]) -> None:
                         f"Item '{item_id}': prompt '{prompt['id']}' reference_telugu "
                         "must contain Telugu script characters"
                     )
+
+    declared_counts = lesson.get("question_type_counts", {})
+    if declared_counts != actual_counts:
+        raise jsonschema.ValidationError(
+            "question_type_counts must match actual item type counts: "
+            f"declared={declared_counts} actual={actual_counts}"
+        )
 
 
 def validate_manifest(manifest: dict[str, Any]) -> None:

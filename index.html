@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="app-title" content="Amba Paluku — Daily Telugu" />
   <title>Amba Paluku — Daily Telugu</title>
+  <link rel="stylesheet" href="https://unpkg.com/survey-core/defaultV2.min.css" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
 
   <header class="app-header">
-    <span class="app-logo">అంబ పలుకు</span>
+    <span id="app-logo" class="app-logo">
+      <span id="logo-line-1" class="logo-line">అంబ</span>
+      <span id="logo-line-2" class="logo-line">పలుకు</span>
+    </span>
     <nav>
-      <button id="btn-home"    class="nav-btn active">Today</button>
+      <button id="btn-landing" class="nav-btn active">Home</button>
+      <button id="btn-home"    class="nav-btn">Today</button>
       <button id="btn-archive" class="nav-btn">Archive</button>
     </nav>
   </header>
@@ -26,10 +32,23 @@
 
   <main id="app-main">
 
+    <!-- Landing -->
+    <div id="view-landing" class="view hidden" aria-live="polite">
+      <section class="landing-card">
+        <p id="landing-kicker" class="landing-kicker">Daily bilingual practice</p>
+        <h1 id="landing-heading">Welcome to Amba Paluku</h1>
+        <p id="landing-subheading" class="landing-subheading">
+          Learn English-Telugu with short daily sessions, audio-supported questions,
+          and archive-based review.
+        </p>
+        <button id="btn-start-learning" class="btn-primary landing-cta">Start Today\'s Session</button>
+      </section>
+    </div>
+
     <!-- Loading -->
     <div id="view-loading" class="view" aria-live="polite">
       <div class="spinner" aria-hidden="true"></div>
-      <p>Loading lesson…</p>
+      <p id="loading-text">Loading lesson…</p>
     </div>
 
     <!-- Error -->
@@ -40,25 +59,13 @@
 
     <!-- Quiz -->
     <div id="view-quiz" class="view hidden">
-      <div class="question-card">
-        <p class="question-label">Translate to Telugu</p>
-        <p id="english-sentence" class="english-text"></p>
-        <button id="btn-audio" class="audio-btn" aria-label="Play Telugu pronunciation">
-          <span aria-hidden="true">🔊</span>
-        </button>
-      </div>
-
-      <div id="mcq-options" class="options-grid" role="group" aria-label="Answer choices"></div>
-
-      <button id="btn-next" class="btn-next hidden" aria-label="Go to next question">
-        Next →
-      </button>
+      <div id="survey-root" class="survey-host"></div>
     </div>
 
     <!-- Summary -->
     <div id="view-summary" class="view hidden" aria-live="polite">
       <div class="summary-card">
-        <h2>Session complete!</h2>
+        <h2 id="summary-heading">Session complete!</h2>
         <p id="summary-score"  class="score-text"></p>
         <p id="summary-date"   class="meta-text"></p>
         <button id="btn-restart"    class="btn-primary">Restart lesson</button>
@@ -68,12 +75,13 @@
 
     <!-- Archive -->
     <div id="view-archive" class="view hidden">
-      <h2>Past Lessons</h2>
+      <h2 id="archive-heading">Past Lessons</h2>
       <ul id="archive-list" class="archive-list" aria-label="Lesson archive"></ul>
     </div>
 
   </main>
-
+  <script src="https://unpkg.com/survey-core/survey.core.min.js"></script>
+  <script src="https://unpkg.com/survey-js-ui/survey-js-ui.min.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>
