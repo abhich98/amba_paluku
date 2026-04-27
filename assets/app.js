@@ -67,7 +67,7 @@ const el = {
   errorMsg:        document.getElementById('error-msg'),
 
   btnLanding:      document.getElementById('btn-landing'),
-  btnHome:         document.getElementById('btn-home'),
+  btnToday:        document.getElementById('btn-today'),
   btnArchive:      document.getElementById('btn-archive'),
   btnRetry:        document.getElementById('btn-retry'),
   btnRestart:      document.getElementById('btn-restart'),
@@ -144,7 +144,7 @@ function applyUiTextConfig(ui) {
   if (el.logoLine2 && ui?.logo?.line2) el.logoLine2.textContent = ui.logo.line2;
 
   if (el.btnLanding && ui?.nav?.home) el.btnLanding.textContent = ui.nav.home;
-  if (el.btnHome && ui?.nav?.today) el.btnHome.textContent = ui.nav.today;
+  if (el.btnToday && ui?.nav?.today) el.btnToday.textContent = ui.nav.today;
   if (el.btnArchive && ui?.nav?.archive) el.btnArchive.textContent = ui.nav.archive;
 
   if (el.landingKicker && ui?.landing?.kicker) el.landingKicker.textContent = ui.landing.kicker;
@@ -162,7 +162,7 @@ function applyUiTextConfig(ui) {
 function setActiveNav(active) {
   const navMap = {
     landing: el.btnLanding,
-    today: el.btnHome,
+    today: el.btnToday,
     archive: el.btnArchive,
   };
   Object.entries(navMap).forEach(([name, node]) => {
@@ -1025,17 +1025,14 @@ el.btnLanding.addEventListener('click', () => {
   renderLanding();
 });
 
-el.btnHome.addEventListener('click', () => {
-  const dateStr = getDateParam() || manifest?.lessons[0]?.date;
-  if (dateStr) {
-    pushDateParam(dateStr);
-    startQuiz(dateStr);
-  }
+el.btnToday.addEventListener('click', () => {
+  const dateStr = new Date().toISOString().slice(0, 10);
+  pushDateParam(dateStr);
+  startQuiz(dateStr);
 });
 
 el.btnStartLearning.addEventListener('click', () => {
-  const dateStr = manifest?.lessons[0]?.date;
-  if (!dateStr) return;
+  const dateStr = new Date().toISOString().slice(0, 10);
   pushDateParam(dateStr);
   startQuiz(dateStr);
 });
