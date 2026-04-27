@@ -66,7 +66,9 @@ Contributions are welcome. This project is open source under the MIT License. Se
 
 ## TODOs:
 
-- [ ] Update the README.md file to include instructions on how to use the project.
+- [ ] Update the README.md to the current state of the project.
 - [ ] Update the homepage to include a welcome message and a feedback form for users to submit their thoughts on the project.
-- [ ] The match the following question is meant for words and not sentences.
+- [ ] The frontend is out of sync with the latest lesson schema changes.
+- [ ] Inspect the generated lesson schema and look into how each question is defined.
+- [ ] Inspect how the lessons are generated on consecutive days and look into how the sentences vary across days.
 - [ ] The app.js file is getting too long and needs to be refactored into smaller components.

@@ -1,0 +1,7 @@
+telugu:
+  transliteration: True
+  audio: True
+
+english:
+  transliteration: False
+  audio: False

@@ -6,6 +6,7 @@ can be added without changing top-level lesson shape.
 """
 from __future__ import annotations
 
+import copy
 import re
 import unicodedata
 from typing import Any
@@ -16,49 +17,61 @@ import jsonschema
 # JSON Schema definitions
 # ---------------------------------------------------------------------------
 
-_OPTION_SCHEMA: dict[str, Any] = {
+_SENTENCE_SCHEMA: dict[str, Any] = {
     "type": "object",
-    "required": ["id", "transliteration", "telugu"],
+    "required": ["id", "text", "language", "audio_path", "transliteration"],
     "additionalProperties": False,
     "properties": {
         "id": {"type": "string", "minLength": 1},
-        "transliteration": {"type": "string", "minLength": 1},
-        "telugu": {"type": "string", "minLength": 1},
+        "text": {"type": "string", "minLength": 1},
+        "language": {"type": "string", "minLength": 1},
         "audio_path": {"type": ["string", "null"], "minLength": 1},
+        "transliteration": {"type": ["string", "null"], "minLength": 1},
     },
 }
 
-_MCQ_BIMODAL_SCHEMA: dict[str, Any] = {
+
+def set_audio_required(sentence_schema: dict[str, Any]) -> dict[str, Any]:
+    """Return a copy of the given schema with all audio_path fields made required."""
+    new_schema = copy.deepcopy(sentence_schema)
+    if "audio_path" in new_schema["properties"]:
+        new_schema["properties"]["audio_path"]["type"] = "string"
+    return new_schema
+
+
+_QUES_MCQ_BIMODAL_SCHEMA: dict[str, Any] = {
     "type": "object",
-    "required": ["id", "type", "sentence_english", "options", "correct_option_id"],
+    "required": [
+        "id",
+        "type",
+        "question_sentence",
+        "options",
+        "correct_option_id",
+    ],
     "additionalProperties": False,
     "properties": {
         "id": {"type": "string", "minLength": 1},
         "type": {"const": "mcq_bimodal"},
-        "sentence_english": {"type": "string", "minLength": 1},
+        "question_sentence": _SENTENCE_SCHEMA,
         "options": {
             "type": "array",
             "minItems": 4,
             "maxItems": 4,
-            "items": _OPTION_SCHEMA,
+            "items": _SENTENCE_SCHEMA,
         },
         "correct_option_id": {"type": "string", "minLength": 1},
     },
 }
 
-_FILL_BLANK_AUDIO_SCHEMA: dict[str, Any] = {
+_QUES_FILL_BLANK_AUDIO_SCHEMA: dict[str, Any] = {
     "type": "object",
     "required": [
         "id",
         "type",
-        "question_language",
         "question_sentence",
         "reference_sentence",
         "answer_mode",
-        "reference_transliteration",
-        "reference_telugu",
         "omit_loc",
-        "audio_path",
         "accepted_answers",
         "display_correct_answer",
     ],
@@ -66,22 +79,15 @@ _FILL_BLANK_AUDIO_SCHEMA: dict[str, Any] = {
     "properties": {
         "id": {"type": "string", "minLength": 1},
         "type": {"const": "fill_blank_audio"},
-        "question_language": {
-            "type": "string",
-            "enum": ["english", "telugu_transliteration"],
-        },
-        "question_sentence": {"type": "string", "minLength": 1},
-        "reference_sentence": {"type": "string", "minLength": 1},
+        "question_sentence": _SENTENCE_SCHEMA,
+        "reference_sentence": _SENTENCE_SCHEMA,
         "answer_mode": {
             "type": "string",
-            "enum": ["english", "transliteration"],
+            "enum": ["exact", "fuzzy"],
         },
-        "reference_transliteration": {"type": "string", "minLength": 1},
-        "reference_telugu": {"type": "string", "minLength": 1},
         "omit_loc": {
             "type": "integer", "minimum": 1, "description": "1-based index of the word to omit in the question sentence"
         },
-        "audio_path": {"type": ["string", "null"], "minLength": 1},
         "accepted_answers": {
             "type": "array",
             "minItems": 1,
@@ -95,24 +101,20 @@ _MATCH_PROMPT_SCHEMA: dict[str, Any] = {
     "type": "object",
     "required": [
         "id",
-        "reference_transliteration",
-        "reference_telugu",
-        "audio_path",
-        "correct_english",
+        "prompt_sentence",
+        "answer_sentence",
     ],
     "additionalProperties": False,
     "properties": {
         "id": {"type": "string", "minLength": 1},
-        "reference_transliteration": {"type": "string", "minLength": 1},
-        "reference_telugu": {"type": "string", "minLength": 1},
-        "audio_path": {"type": ["string", "null"], "minLength": 1},
-        "correct_english": {"type": "string", "minLength": 1},
+        "prompt_sentence": set_audio_required(_SENTENCE_SCHEMA),
+        "answer_sentence": _SENTENCE_SCHEMA,
     },
 }
 
-_MATCH_AUDIO_TEXT_SCHEMA: dict[str, Any] = {
+_QUES_MATCH_AUDIO_TEXT_SCHEMA: dict[str, Any] = {
     "type": "object",
-    "required": ["id", "type", "prompts", "english_options"],
+    "required": ["id", "type", "prompts", "prompt_mode", "options"],
     "additionalProperties": False,
     "properties": {
         "id": {"type": "string", "minLength": 1},
@@ -123,11 +125,15 @@ _MATCH_AUDIO_TEXT_SCHEMA: dict[str, Any] = {
             "maxItems": 4,
             "items": _MATCH_PROMPT_SCHEMA,
         },
-        "english_options": {
+        "prompt_mode": {
+            "type": "string",
+            "enum": ["audio", "text", "audio_text"],
+        },
+        "options": {
             "type": "array",
             "minItems": 2,
             "maxItems": 4,
-            "items": {"type": "string", "minLength": 1},
+            "items": _SENTENCE_SCHEMA,
         },
     },
 }
@@ -159,7 +165,16 @@ LESSON_SCHEMA: dict[str, Any] = {
         "generated_at": {"type": "string", "minLength": 1},
         "provider": {"type": "string", "minLength": 1},
         "model": {"type": "string", "minLength": 1},
-        "prompt_version": {"type": "string", "minLength": 1},
+        "prompt_version": {
+            "type": "object",
+            "required": ["mcq_bimodal", "fill_blank_audio", "match_audio_text"],
+            "additionalProperties": False,
+            "properties": {
+                "mcq_bimodal": {"type": "string", "minLength": 1},
+                "fill_blank_audio": {"type": "string", "minLength": 1},
+                "match_audio_text": {"type": "string", "minLength": 1},
+            },
+        },
         "question_type_weights": {
             "type": "object",
             "required": ["mcq_bimodal", "fill_blank_audio", "match_audio_text"],
@@ -185,9 +200,9 @@ LESSON_SCHEMA: dict[str, Any] = {
             "minItems": 1,
             "items": {
                 "oneOf": [
-                    _MCQ_BIMODAL_SCHEMA,
-                    _FILL_BLANK_AUDIO_SCHEMA,
-                    _MATCH_AUDIO_TEXT_SCHEMA,
+                    _QUES_MCQ_BIMODAL_SCHEMA,
+                    _QUES_FILL_BLANK_AUDIO_SCHEMA,
+                    _QUES_MATCH_AUDIO_TEXT_SCHEMA,
                 ]
             },
         },
@@ -229,20 +244,18 @@ MANIFEST_SCHEMA: dict[str, Any] = {
 # ---------------------------------------------------------------------------
 
 
-def _contains_telugu_script(text: str) -> bool:
-    return any("\u0C00" <= c <= "\u0C7F" for c in text)
+def _normalize_exact_answer(text: str) -> str:
+    stripped = text.strip()
+    normalized_edges = re.sub(r"^\W+|\W+$", "", stripped, flags=re.UNICODE)
+    return normalized_edges.casefold()
 
 
-def _normalize_english_answer(text: str) -> str:
-    return text.strip(".,!?;:'\"()[]{}").strip().lower()
-
-
-def _normalize_transliteration_answer(text: str) -> str:
+def _normalize_fuzzy_answer(text: str) -> str:
     stripped = text.strip(".,!?;:'\"()[]{}").strip()
     normalized = unicodedata.normalize("NFKD", stripped)
     without_diacritics = "".join(c for c in normalized if not unicodedata.combining(c))
-    simplified = re.sub(r"[^a-zA-Z0-9\s]", " ", without_diacritics)
-    return re.sub(r"\s+", " ", simplified).strip().lower()
+    simplified = re.sub(r"[^\w\s]", " ", without_diacritics, flags=re.UNICODE)
+    return re.sub(r"\s+", " ", simplified).strip().casefold()
 
 
 def validate_lesson(lesson: dict[str, Any]) -> None:
@@ -277,39 +290,37 @@ def validate_lesson(lesson: dict[str, Any]) -> None:
                 raise jsonschema.ValidationError(
                     f"Item '{item_id}': correct_option_id must match one option id"
                 )
-            for opt in options:
-                if not _contains_telugu_script(opt["telugu"]):
-                    raise jsonschema.ValidationError(
-                        f"Item '{item_id}': option '{opt['id']}' telugu must contain "
-                        "Telugu script characters"
-                    )
+
+            question_sentence = item.get("question_sentence") or {}
+            question_language = question_sentence.get("language")
+            option_languages = {opt.get("language") for opt in options}
+
+            if len(option_languages) > 1:
+                raise jsonschema.ValidationError(
+                    f"Item '{item_id}': all options must share the same language"
+                )
+
+            option_language = next(iter(option_languages), None)
+            if question_language and option_language and question_language == option_language:
+                raise jsonschema.ValidationError(
+                    f"Item '{item_id}': question_language and option_language should differ"
+                )
 
         if item_type == "fill_blank_audio":
-            if not _contains_telugu_script(item["reference_telugu"]):
-                raise jsonschema.ValidationError(
-                    f"Item '{item_id}': reference_telugu must contain Telugu script "
-                    "characters"
-                )
-            words = item["question_sentence"].split()
+            question_sentence = item["question_sentence"]
+            question_text = question_sentence["text"]
+            words = question_text.split()
             omit_loc = item["omit_loc"]
             if omit_loc > len(words):
                 raise jsonschema.ValidationError(
                     f"Item '{item_id}': omit_loc must point to a word in question_sentence"
                 )
             omitted_word = words[omit_loc - 1]
-            if item["question_language"] == "english" and item["answer_mode"] != "english":
-                raise jsonschema.ValidationError(
-                    f"Item '{item_id}': answer_mode must be 'english' when question_language is 'english'"
-                )
-            if item["question_language"] == "telugu_transliteration" and item["answer_mode"] != "transliteration":
-                raise jsonschema.ValidationError(
-                    f"Item '{item_id}': answer_mode must be 'transliteration' when question_language is 'telugu_transliteration'"
-                )
 
-            if item["answer_mode"] == "transliteration":
-                normalize = _normalize_transliteration_answer
+            if item["answer_mode"] == "fuzzy":
+                normalize = _normalize_fuzzy_answer
             else:
-                normalize = _normalize_english_answer
+                normalize = _normalize_exact_answer
 
             normalized_accepted_answers = {
                 normalize(answer)
@@ -329,26 +340,51 @@ def validate_lesson(lesson: dict[str, Any]) -> None:
 
         if item_type == "match_audio_text":
             prompts = item.get("prompts", [])
-            english_options = item.get("english_options", [])
-            if len(english_options) != len(set(english_options)):
+            options = item.get("options", [])
+            option_ids = [option["id"] for option in options]
+            if len(option_ids) != len(set(option_ids)):
                 raise jsonschema.ValidationError(
-                    f"Item '{item_id}': english_options must be unique: {english_options}"
+                    f"Item '{item_id}': option ids must be unique: {option_ids}"
                 )
+
+            option_languages = {option["language"] for option in options}
+            if len(option_languages) > 1:
+                raise jsonschema.ValidationError(
+                    f"Item '{item_id}': all options must share the same language"
+                )
+
+            option_by_id = {option["id"]: option for option in options}
             prompt_ids = [p["id"] for p in prompts]
             if len(prompt_ids) != len(set(prompt_ids)):
                 raise jsonschema.ValidationError(
                     f"Item '{item_id}': prompt ids must be unique: {prompt_ids}"
                 )
             for prompt in prompts:
-                if prompt["correct_english"] not in english_options:
+                prompt_sentence = prompt["prompt_sentence"]
+                answer_sentence = prompt["answer_sentence"]
+                matching_option = option_by_id.get(answer_sentence["id"])
+
+                if matching_option is None:
                     raise jsonschema.ValidationError(
-                        f"Item '{item_id}': prompt '{prompt['id']}' has correct_english "
-                        "not present in english_options"
+                        f"Item '{item_id}': prompt '{prompt['id']}' answer_sentence.id "
+                        "not present in options"
                     )
-                if not _contains_telugu_script(prompt["reference_telugu"]):
+
+                if answer_sentence["text"] != matching_option["text"]:
                     raise jsonschema.ValidationError(
-                        f"Item '{item_id}': prompt '{prompt['id']}' reference_telugu "
-                        "must contain Telugu script characters"
+                        f"Item '{item_id}': prompt '{prompt['id']}' answer_sentence.text must "
+                        "match the option text for the same id"
+                    )
+
+                if answer_sentence["language"] != matching_option["language"]:
+                    raise jsonschema.ValidationError(
+                        f"Item '{item_id}': prompt '{prompt['id']}' answer_sentence.language must "
+                        "match the option language for the same id"
+                    )
+
+                if prompt_sentence["language"] == answer_sentence["language"]:
+                    raise jsonschema.ValidationError(
+                        f"Item '{item_id}': prompt '{prompt['id']}' prompt and answer languages should differ"
                     )
 
     declared_counts = lesson.get("question_type_counts", {})

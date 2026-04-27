@@ -1,0 +1,21 @@
+date: "0000-00-00"
+reference_lang: english
+target_lang: telugu
+difficulty: A1
+num_questions: 12
+
+question_type_weights:
+  mcq_bimodal: 0.55
+  fill_blank_audio: 0.30
+  match_audio_text: 0.15
+
+# Text provider config
+text_provider: openrouter
+LLM_model: google/gemini-3-flash-preview
+
+# Speech provider config
+speech_provider: sarvam
+speech_opts:
+  model: bulbul:v2
+  speaker: anushka
+  pace: 0.8
