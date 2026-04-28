@@ -1,6 +1,7 @@
 telugu:
   transliteration: True
   audio: True
+  unicode_range: [0x0C00, 0x0C7F]
 
 english:
   transliteration: False

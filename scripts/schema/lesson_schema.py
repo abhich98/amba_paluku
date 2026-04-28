@@ -91,9 +91,9 @@ _QUES_FILL_BLANK_AUDIO_SCHEMA: dict[str, Any] = {
         "accepted_answers": {
             "type": "array",
             "minItems": 1,
-            "items": {"type": "string", "minLength": 1},
+            "items": _SENTENCE_SCHEMA,
         },
-        "display_correct_answer": {"type": "string", "minLength": 1},
+        "display_correct_answer": _SENTENCE_SCHEMA,
     },
 }
 
@@ -112,6 +112,22 @@ _MATCH_PROMPT_SCHEMA: dict[str, Any] = {
     },
 }
 
+# Text-only variant: prompt_sentence audio is nullable (used for draft lessons before audio generation)
+_MATCH_PROMPT_SCHEMA_TEXT_ONLY: dict[str, Any] = {
+    "type": "object",
+    "required": [
+        "id",
+        "prompt_sentence",
+        "answer_sentence",
+    ],
+    "additionalProperties": False,
+    "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "prompt_sentence": _SENTENCE_SCHEMA,
+        "answer_sentence": _SENTENCE_SCHEMA,
+    },
+}
+
 _QUES_MATCH_AUDIO_TEXT_SCHEMA: dict[str, Any] = {
     "type": "object",
     "required": ["id", "type", "prompts", "prompt_mode", "options"],
@@ -124,6 +140,32 @@ _QUES_MATCH_AUDIO_TEXT_SCHEMA: dict[str, Any] = {
             "minItems": 2,
             "maxItems": 4,
             "items": _MATCH_PROMPT_SCHEMA,
+        },
+        "prompt_mode": {
+            "type": "string",
+            "enum": ["audio", "text", "audio_text"],
+        },
+        "options": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 4,
+            "items": _SENTENCE_SCHEMA,
+        },
+    },
+}
+
+_QUES_MATCH_AUDIO_TEXT_SCHEMA_TEXT_ONLY: dict[str, Any] = {
+    "type": "object",
+    "required": ["id", "type", "prompts", "prompt_mode", "options"],
+    "additionalProperties": False,
+    "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "type": {"const": "match_audio_text"},
+        "prompts": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 4,
+            "items": _MATCH_PROMPT_SCHEMA_TEXT_ONLY,
         },
         "prompt_mode": {
             "type": "string",
@@ -162,9 +204,15 @@ LESSON_SCHEMA: dict[str, Any] = {
             "type": "string",
             "enum": ["A1", "A2", "B1", "B2", "C1", "C2"],
         },
+        "reference_lang": {"type": "string", "minLength": 1},
+        "target_lang": {"type": "string", "minLength": 1},
         "generated_at": {"type": "string", "minLength": 1},
         "provider": {"type": "string", "minLength": 1},
         "model": {"type": "string", "minLength": 1},
+        "status": {
+            "type": "string",
+            "enum": ["draft", "active"],
+        },
         "prompt_version": {
             "type": "object",
             "required": ["mcq_bimodal", "fill_blank_audio", "match_audio_text"],
@@ -209,6 +257,25 @@ LESSON_SCHEMA: dict[str, Any] = {
     },
 }
 
+# Text-only variant of LESSON_SCHEMA: used when validating draft lessons (no audio yet).
+LESSON_SCHEMA_TEXT_ONLY: dict[str, Any] = {
+    **LESSON_SCHEMA,
+    "properties": {
+        **LESSON_SCHEMA["properties"],
+        "items": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "oneOf": [
+                    _QUES_MCQ_BIMODAL_SCHEMA,
+                    _QUES_FILL_BLANK_AUDIO_SCHEMA,
+                    _QUES_MATCH_AUDIO_TEXT_SCHEMA_TEXT_ONLY,
+                ]
+            },
+        },
+    },
+}
+
 MANIFEST_SCHEMA: dict[str, Any] = {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
@@ -233,6 +300,10 @@ MANIFEST_SCHEMA: dict[str, Any] = {
                     },
                     "item_count": {"type": "integer", "minimum": 1},
                     "path": {"type": "string", "minLength": 1},
+                    "status": {
+                        "type": "string",
+                        "enum": ["draft", "active"],
+                    },
                 },
             },
         },
@@ -258,12 +329,13 @@ def _normalize_fuzzy_answer(text: str) -> str:
     return re.sub(r"\s+", " ", simplified).strip().casefold()
 
 
-def validate_lesson(lesson: dict[str, Any]) -> None:
+def validate_lesson(lesson: dict[str, Any], *, text_only: bool = False) -> None:
     """Validate a lesson dict against LESSON_SCHEMA.
 
     Raises jsonschema.ValidationError with a human-readable message on failure.
     """
-    jsonschema.validate(instance=lesson, schema=LESSON_SCHEMA)
+    schema = LESSON_SCHEMA_TEXT_ONLY if text_only else LESSON_SCHEMA
+    jsonschema.validate(instance=lesson, schema=schema)
 
     # Cross-validate type-specific invariants.
     actual_counts = {
@@ -323,9 +395,9 @@ def validate_lesson(lesson: dict[str, Any]) -> None:
                 normalize = _normalize_exact_answer
 
             normalized_accepted_answers = {
-                normalize(answer)
+                normalize(answer["text"])
                 for answer in item["accepted_answers"]
-                if normalize(answer)
+                if normalize(answer["text"])
             }
             normalized_omitted_word = normalize(omitted_word)
             if normalized_omitted_word not in normalized_accepted_answers:
@@ -333,7 +405,7 @@ def validate_lesson(lesson: dict[str, Any]) -> None:
                     f"Item '{item_id}': accepted_answers must include the omitted word "
                     "from question_sentence"
                 )
-            if normalize(item["display_correct_answer"]) != normalized_omitted_word:
+            if normalize(item["display_correct_answer"]["text"]) != normalized_omitted_word:
                 raise jsonschema.ValidationError(
                     f"Item '{item_id}': display_correct_answer must match the omitted word"
                 )

@@ -74,10 +74,14 @@ class SarvamSpeechGenerator(SpeechGenerator):
         api_key: str | None = None,
         voice: str | None = None,
         language_code: str = "te-IN",
+        model: str | None = None,
+        pace: float | None = None,
     ) -> None:
         self._api_key = api_key or os.environ["SARVAM_API_KEY"]
-        self._voice = voice or os.environ.get("SARVAM_VOICE", DEFAULT_SARVAM_VOICE)
+        self._voice = voice or DEFAULT_SARVAM_VOICE
         self._language_code = language_code
+        self._model = model or "bulbul:v2"
+        self._pace = pace or 1.0
         self._client = httpx.Client(timeout=30.0)
 
     @retry(
@@ -105,10 +109,10 @@ class SarvamSpeechGenerator(SpeechGenerator):
                 "inputs": [text],
                 "target_language_code": self._language_code,
                 "speaker": self._voice,
-                "pace": 0.8,
-                "speech_sample_rate": 22050,
+                "pace": self._pace,
+                "speech_sample_rate": 16000,
                 "enable_preprocessing": True,
-                "model": "bulbul:v2",
+                "model": self._model,
             },
         )
 
@@ -137,32 +141,33 @@ class SarvamSpeechGenerator(SpeechGenerator):
 
 
 # ---------------------------------------------------------------------------
-# Utility helpers
-# ---------------------------------------------------------------------------
-
-
-def item_audio_filename(item_id: str) -> str:
-    """Return the canonical MP3 filename for a lesson item ID.
-
-    Example: '2026-04-25_003' -> '2026-04-25_003.mp3'
-    """
-    return f"{item_id}.mp3"
-
-
-# ---------------------------------------------------------------------------
 # Factory
 # ---------------------------------------------------------------------------
 
 
-def get_speech_generator(provider: str | None = None) -> SpeechGenerator:
+def get_speech_generator(
+    provider: str | None = None,
+    *,
+    voice: str | None = None,
+    language_code: str = "te-IN",
+    model: str | None = None,
+    pace: float | None = None,
+    api_key: str | None = None,
+) -> SpeechGenerator:
     """Return a configured SpeechGenerator for the given provider name.
 
     Reads SPEECH_PROVIDER env var when provider is None.
     Currently supported: 'sarvam'
     """
-    provider = provider or os.environ.get("SPEECH_PROVIDER", "sarvam")
+    provider = provider or "sarvam"
     if provider == "sarvam":
-        return SarvamSpeechGenerator()
+        return SarvamSpeechGenerator(
+            api_key=api_key,
+            voice=voice,
+            language_code=language_code,
+            model=model,
+            pace=pace,
+        )
     raise NotImplementedError(
         f"Speech provider '{provider}' is not implemented. "
         "Supported providers: sarvam"
