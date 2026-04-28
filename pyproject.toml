@@ -10,6 +10,7 @@ dependencies = [
     "tenacity>=8.3.0",
     "python-dotenv>=1.0.0",
     "indic-transliteration>=2.3.82",
+    "pyyaml>=6.0.2",
 ]
 
 [dependency-groups]
