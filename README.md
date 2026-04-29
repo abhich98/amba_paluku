@@ -71,6 +71,4 @@ Contributions are welcome. This project is open source under the MIT License. Se
 ## TODOs:
 
 - [ ] Update the README.md to the current state of the project.
-- [ ] Inspect the generated lesson schema and look into how each question is defined.
 - [ ] Inspect how the lessons are generated on consecutive days and look into how the sentences vary across days.
-- [ ] Almost ready, make final inspections and frontend adjustments.

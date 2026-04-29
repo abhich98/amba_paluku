@@ -1,4 +1,4 @@
-date: "0000-00-01"
+date: "2026-04-29"
 reference_lang: english
 target_lang: telugu
 difficulty: A1
@@ -23,6 +23,6 @@ LLM_model: google/gemini-3-flash-preview
 speech_provider: sarvam
 speech_opts:
   model: bulbul:v2
-  speaker: anushka
+  speaker: vidya
   pace: 0.8
   
