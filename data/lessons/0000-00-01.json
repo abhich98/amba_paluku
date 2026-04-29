@@ -1,0 +1,593 @@
+{
+  "lesson_id": "0000-00-01",
+  "date": "0000-00-01",
+  "status": "active",
+  "difficulty": "A1",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-04-28T22:18:54.655086+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 6,
+    "fill_blank_audio": 4,
+    "match_audio_text": 2
+  },
+  "items": [
+    {
+      "id": "0000-00-01_001",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "0000-00-01_001_question",
+        "text": "My name is Ravi.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "0000-00-01_001_opt3",
+          "text": "నా ఊరు రవి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/bb3caef8609394a2.mp3",
+          "transliteration": "nā ūru ravi."
+        },
+        {
+          "id": "0000-00-01_001_opt0",
+          "text": "నా పేరు రవి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/4bff402f51048c96.mp3",
+          "transliteration": "nā peru ravi."
+        },
+        {
+          "id": "0000-00-01_001_opt2",
+          "text": "నీ పేరు రవి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/7631bc3185d42b32.mp3",
+          "transliteration": "nī peru ravi."
+        },
+        {
+          "id": "0000-00-01_001_opt1",
+          "text": "అతని పేరు రవి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/6c5cd934b32893ae.mp3",
+          "transliteration": "atani peru ravi."
+        }
+      ],
+      "correct_option_id": "0000-00-01_001_opt0"
+    },
+    {
+      "id": "0000-00-01_002",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "0000-00-01_002_question",
+        "text": "I am fine, thank you.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "0000-00-01_002_opt3",
+          "text": "నువ్వు బాగున్నావు, ధన్యవాదాలు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/9cd49bebafb42883.mp3",
+          "transliteration": "nuvvu bāgunnāvu, dhanyavādālu."
+        },
+        {
+          "id": "0000-00-01_002_opt1",
+          "text": "నేను వస్తున్నాను, ధన్యవాదాలు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/ab9d830da530a843.mp3",
+          "transliteration": "nenu vastunnānu, dhanyavādālu."
+        },
+        {
+          "id": "0000-00-01_002_opt2",
+          "text": "నేను వెళ్తున్నాను, ధన్యవాదాలు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/342e335f264a7611.mp3",
+          "transliteration": "nenu vèḻtunnānu, dhanyavādālu."
+        },
+        {
+          "id": "0000-00-01_002_opt0",
+          "text": "నేను బాగున్నాను, ధన్యవాదాలు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/3ac566a89fb255ef.mp3",
+          "transliteration": "nenu bāgunnānu, dhanyavādālu."
+        }
+      ],
+      "correct_option_id": "0000-00-01_002_opt0"
+    },
+    {
+      "id": "0000-00-01_003",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "0000-00-01_003_question",
+        "text": "మీకు సహాయం కావాలా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/fcd0ccb053b51ed2.mp3",
+        "transliteration": "mīku sahāyaṃ kāvālā?"
+      },
+      "reference_sentence": {
+        "id": "0000-00-01_003_reference",
+        "text": "Do you need help?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "exact",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "0000-00-01_003_ans0",
+          "text": "కావాలా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/c08bfa5015f8ca20.mp3",
+          "transliteration": "kāvālā?"
+        },
+        {
+          "id": "0000-00-01_003_ans1",
+          "text": "కావాలా",
+          "language": "telugu",
+          "audio_path": "resources/audio/f86c4d4b991ddf85.mp3",
+          "transliteration": "kāvālā"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "0000-00-01_003_display_answer",
+        "text": "కావాలా",
+        "language": "telugu",
+        "audio_path": "resources/audio/f86c4d4b991ddf85.mp3",
+        "transliteration": "kāvālā"
+      }
+    },
+    {
+      "id": "0000-00-01_004",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "0000-00-01_004_p1",
+          "prompt_sentence": {
+            "id": "0000-00-01_004_p1_prompt",
+            "text": "నాన్న",
+            "language": "telugu",
+            "audio_path": "resources/audio/32d18f5a34711d4b.mp3",
+            "transliteration": "nānna"
+          },
+          "answer_sentence": {
+            "id": "0000-00-01_004_opt1",
+            "text": "father",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "0000-00-01_004_p2",
+          "prompt_sentence": {
+            "id": "0000-00-01_004_p2_prompt",
+            "text": "నమస్కారం",
+            "language": "telugu",
+            "audio_path": "resources/audio/6cc2af81ba5949a3.mp3",
+            "transliteration": "namaskāraṃ"
+          },
+          "answer_sentence": {
+            "id": "0000-00-01_004_opt2",
+            "text": "Greetings",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "0000-00-01_004_p3",
+          "prompt_sentence": {
+            "id": "0000-00-01_004_p3_prompt",
+            "text": "వైద్యుడు",
+            "language": "telugu",
+            "audio_path": "resources/audio/e9465266ba0e944d.mp3",
+            "transliteration": "vaidyuḍu"
+          },
+          "answer_sentence": {
+            "id": "0000-00-01_004_opt3",
+            "text": "Doctor",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "0000-00-01_004_opt3",
+          "text": "Doctor",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "0000-00-01_004_opt1",
+          "text": "father",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "0000-00-01_004_opt2",
+          "text": "Greetings",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "0000-00-01_005",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "0000-00-01_005_question",
+        "text": "Good evening, father.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "0000-00-01_005_opt1",
+          "text": "శుభ రాత్రి, నాన్న.",
+          "language": "telugu",
+          "audio_path": "resources/audio/3087447452add8b8.mp3",
+          "transliteration": "śubha rātri, nānna."
+        },
+        {
+          "id": "0000-00-01_005_opt0",
+          "text": "శుభ సాయంత్రం, నాన్న.",
+          "language": "telugu",
+          "audio_path": "resources/audio/0ea5c399e48f1854.mp3",
+          "transliteration": "śubha sāyaṃtraṃ, nānna."
+        },
+        {
+          "id": "0000-00-01_005_opt2",
+          "text": "శుభ మధ్యాహ్నం, నాన్న.",
+          "language": "telugu",
+          "audio_path": "resources/audio/25c0aced782b047d.mp3",
+          "transliteration": "śubha madhyāhnaṃ, nānna."
+        },
+        {
+          "id": "0000-00-01_005_opt3",
+          "text": "వస్తాను నాన్న.",
+          "language": "telugu",
+          "audio_path": "resources/audio/e717b045fabcb489.mp3",
+          "transliteration": "vastānu nānna."
+        }
+      ],
+      "correct_option_id": "0000-00-01_005_opt0"
+    },
+    {
+      "id": "0000-00-01_006",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "0000-00-01_006_question",
+        "text": "I have a headache.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "0000-00-01_006_opt3",
+          "text": "నాకు నిద్ర వస్తోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/18353fe0a77efe96.mp3",
+          "transliteration": "nāku nidra vastoṃdi."
+        },
+        {
+          "id": "0000-00-01_006_opt1",
+          "text": "నాకు కడుపునొప్పిగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/d7fcefd95bafbe6b.mp3",
+          "transliteration": "nāku kaḍupunòppigā uṃdi."
+        },
+        {
+          "id": "0000-00-01_006_opt2",
+          "text": "నాకు ఆకలిగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/0acafba0dbed7f34.mp3",
+          "transliteration": "nāku ākaligā uṃdi."
+        },
+        {
+          "id": "0000-00-01_006_opt0",
+          "text": "నాకు తలనొప్పిగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/d8905f64a03f5b50.mp3",
+          "transliteration": "nāku talanòppigā uṃdi."
+        }
+      ],
+      "correct_option_id": "0000-00-01_006_opt0"
+    },
+    {
+      "id": "0000-00-01_007",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "0000-00-01_007_question",
+        "text": "Where is the doctor?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "0000-00-01_007_reference",
+        "text": "డాక్టర్ ఎక్కడ ఉన్నారు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/d660da59e89fbcf9.mp3",
+        "transliteration": "ḍākṭar èkkaḍa unnāru?"
+      },
+      "answer_mode": "exact",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "0000-00-01_007_ans0",
+          "text": "Where",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "0000-00-01_007_display_answer",
+        "text": "Where",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "0000-00-01_008",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "0000-00-01_008_question",
+        "text": "మందులు వేసుకోండి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/f657a687c97cdd43.mp3",
+        "transliteration": "maṃdulu vesukoṃḍi."
+      },
+      "options": [
+        {
+          "id": "0000-00-01_008_opt3",
+          "text": "Take rest.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "0000-00-01_008_opt2",
+          "text": "Eat rice/food.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "0000-00-01_008_opt0",
+          "text": "Take the medicine.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "0000-00-01_008_opt1",
+          "text": "Drink water.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "0000-00-01_008_opt0"
+    },
+    {
+      "id": "0000-00-01_009",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "0000-00-01_009_question",
+        "text": "Sorry, I did not understand.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "0000-00-01_009_reference",
+        "text": "క్షమించండి, నాకు అర్థం కాలేదు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/aaf1d715ac98ffbd.mp3",
+        "transliteration": "kṣamiṃcaṃḍi, nāku arthaṃ kāledu."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "0000-00-01_009_ans0",
+          "text": "not",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "0000-00-01_009_display_answer",
+        "text": "not",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "0000-00-01_010",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "0000-00-01_010_question",
+        "text": "మళ్ళీ కలుద్దాం.",
+        "language": "telugu",
+        "audio_path": "resources/audio/abe6cdfa0a4225e8.mp3",
+        "transliteration": "maḻḻī kaluddāṃ."
+      },
+      "options": [
+        {
+          "id": "0000-00-01_010_opt0",
+          "text": "Let's meet again.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "0000-00-01_010_opt1",
+          "text": "Let's talk later.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "0000-00-01_010_opt2",
+          "text": "Let's go now.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "0000-00-01_010_opt3",
+          "text": "Come quickly.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "0000-00-01_010_opt0"
+    },
+    {
+      "id": "0000-00-01_011",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "0000-00-01_011_p1",
+          "prompt_sentence": {
+            "id": "0000-00-01_011_p1_prompt",
+            "text": "జబ్బు",
+            "language": "telugu",
+            "audio_path": "resources/audio/993c35daeada6390.mp3",
+            "transliteration": "jabbu"
+          },
+          "answer_sentence": {
+            "id": "0000-00-01_011_opt1",
+            "text": "Sickness",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "0000-00-01_011_p2",
+          "prompt_sentence": {
+            "id": "0000-00-01_011_p2_prompt",
+            "text": "రక్షించండి",
+            "language": "telugu",
+            "audio_path": "resources/audio/aba19c9a83dba22b.mp3",
+            "transliteration": "rakṣiṃcaṃḍi"
+          },
+          "answer_sentence": {
+            "id": "0000-00-01_011_opt2",
+            "text": "Rescue",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "0000-00-01_011_p3",
+          "prompt_sentence": {
+            "id": "0000-00-01_011_p3_prompt",
+            "text": "శుభోదయం",
+            "language": "telugu",
+            "audio_path": "resources/audio/773b5bc6b90f25bf.mp3",
+            "transliteration": "śubhodayaṃ"
+          },
+          "answer_sentence": {
+            "id": "0000-00-01_011_opt3",
+            "text": "Good morning",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "0000-00-01_011_opt1",
+          "text": "Sickness",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "0000-00-01_011_opt2",
+          "text": "Rescue",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "0000-00-01_011_opt3",
+          "text": "Good morning",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "0000-00-01_012",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "0000-00-01_012_question",
+        "text": "Take care of your health.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "0000-00-01_012_reference",
+        "text": "మీ ఆరోగ్యం జాగ్రత్త.",
+        "language": "telugu",
+        "audio_path": "resources/audio/7dffd478c53d7d2b.mp3",
+        "transliteration": "mī ārogyaṃ jāgratta."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 2,
+      "accepted_answers": [
+        {
+          "id": "0000-00-01_012_ans0",
+          "text": "care",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "0000-00-01_012_display_answer",
+        "text": "care",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "appTitle": "Amba Paluku — Daily Telugu Practice (probably!)",
+  "logo": {
+    "line1": "అంబ",
+    "line2": "పలుకు"
+  },
+  "nav": {
+    "home": "Home",
+    "today": "Today",
+    "archive": "Archive"
+  },
+  "landing": {
+    "kicker": "Daily Telugu Practice (probably!)",
+    "heading": "Welcome to Amba Paluku",
+    "subheading": "Short daily Telugu practice sessions with audio-supported questions and archive-based review.",
+    "cta": "Start Today's Session",
+    "feedbackCta": "Give Feedback",
+    "feedbackUrl": "https://forms.gle/3HUiEHotiXKtwfSX9"
+  },
+  "instructions": {
+    "heading": {
+      "en": "How it works",
+      "te": "ఎలా పని చేస్తుందంటే"
+    },
+    "items": [
+      {
+        "en": "It is assumed you are not starting from scratch — some prior/basic familiarity with Telugu is expected, whether through self-study, engagement with Telugu speakers, or a basic course. The questions are not lessons per se — they are a fun, engaging way to practise and reinforce your Telugu skills on a daily basis. Each session is a mix of multiple-choice and fill-in-the-blank questions, with audio support to help you practise listening and pronunciation. Transliteration is provided to keep it accessible to everyone.",
+        "te": "మీ స్నేహితుల ద్వారా కానీ, మీ సొంత ప్రయత్నం ద్వారా కానీ, మీకు ఇప్పటికే తెలుగు భాషతో కొంత పరిచయం ఉండి ఉండాలి. సెషన్లలో పాఠాలు ఉండవు, ప్రశ్నలు మాత్రమే. రోజూ సాధన చేస్తూ మీ తెలుగును మెరుగుపర్చుకోడానికి ఇది ఉపయోగపడుతుందని నా ఆలోచన. ప్రతి సెషన్లో బహుళ ఎంపిక ప్రశ్నలు, ఖాళీలను పూరించడం వంటి ప్రశ్నలు ఉంటాయి. తెలుగు వినటం, ఉఛ్చారణ సాధన చేయటానికి ఆడియో ఉంటుంది. అందరికీ అందుబాటులో ఉండేలా లిప్యంతరీకరణ కూడా ఉంటుంది."
+      },
+      {
+        "en": "This is a supplement to be added to your daily Telugu learning routine, not a substitute. Other resources include mobile apps like 'Indilingo' and 'Airlearn', textbooks, and online courses.",
+        "te": "ఇది మీ రోజువారీ తెలుగు సాధనకు ప్రత్యామ్నాయం కాదు, తోడు మాత్రమే. Indilingo, Airlearn వంటి మొబైల్ యాప్లు, పాఠ్యపుస్తకాలు, ఆన్లైన్ కోర్సులు వంటి ఇతర వనరులు కూడా ఉపయోగించండి."
+      },
+      {
+        "en": "A new lesson is added every day before 9 am IST (I will try, no guarantees). Each lesson has 10–15 questions and should take around 10–15 minutes. This is a work in progress — expect some rough edges. Feedback is very welcome!",
+        "te": "ప్రతి రోజూ IST ఉదయం 9 గంటలకు ముందే కొత్త పాఠం జోడించే ప్రయత్నం చేస్తాను. ప్రతి పాఠంలో 10–15 ప్రశ్నలు ఉంటాయి, సెషన్ పూర్తిచేయడానికి దాదాపు 10–15 నిమిషాలు పడుతుంది. ఇంకా అభివృద్ధి జరుగుతోంది కాబట్టి కొన్ని లోపాలు ఉండవచ్చు. మీ అభిప్రాయాలను కింది లంకె ద్వారా పంపండి."
+      }
+    ]
+  },
+  "loadingText": "Loading lesson...",
+  "summaryHeading": "Session complete!",
+  "archiveHeading": "Past Lessons"
+}

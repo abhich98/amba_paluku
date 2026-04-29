@@ -42,6 +42,25 @@
           and archive-based review.
         </p>
         <button id="btn-start-learning" class="btn-primary landing-cta">Start Today's Session</button>
+
+        <!-- Instructions -->
+        <section id="landing-instructions" class="landing-instructions" aria-label="How it works">
+          <h2 id="landing-instructions-heading" class="instructions-heading"></h2>
+          <div class="instructions-columns-header" aria-hidden="true">
+            <span class="instructions-col-label instructions-col-label--en"></span>
+            <span class="instructions-col-label instructions-col-label--te"></span>
+          </div>
+          <div id="landing-instructions-list" class="instructions-list" role="list"></div>
+        </section>
+
+        <!-- Feedback -->
+        <div class="landing-feedback">
+          <a id="btn-feedback" class="btn-secondary landing-feedback-btn"
+             href="https://forms.gle/3HUiEHotiXKtwfSX9"
+             target="_blank" rel="noopener noreferrer">
+            Give Feedback
+          </a>
+        </div>
       </section>
     </div>
 
@@ -82,6 +101,6 @@
   </main>
   <script src="https://unpkg.com/survey-core/survey.core.min.js"></script>
   <script src="https://unpkg.com/survey-js-ui/survey-js-ui.min.js"></script>
-  <script src="assets/app.js"></script>
+  <script type="module" src="assets/app.js"></script>
 </body>
 </html>

@@ -241,7 +241,7 @@ def build_lesson(
             "id": item_id,
             "type": "match_audio_text",
             "prompts": prompts,
-            "prompt_mode": "audio_text",
+            "prompt_mode": "audio",
             "options": option_records,
         }
 

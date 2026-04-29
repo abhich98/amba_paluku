@@ -1,0 +1,26 @@
+{
+  "updated_at": "2026-04-29T14:23:06.778632+00:00",
+  "lessons": [
+    {
+      "date": "2026-04-29",
+      "difficulty": "A1",
+      "status": "active",
+      "item_count": 12,
+      "path": "data/lessons/2026-04-29.json"
+    },
+    {
+      "date": "0000-00-01",
+      "difficulty": "A1",
+      "status": "active",
+      "item_count": 12,
+      "path": "data/lessons/0000-00-01.json"
+    },
+    {
+      "date": "0000-00-00",
+      "difficulty": "A2",
+      "status": "active",
+      "item_count": 12,
+      "path": "data/lessons/0000-00-00.json"
+    }
+  ]
+}

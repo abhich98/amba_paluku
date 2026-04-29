@@ -175,6 +175,102 @@ nav {
   margin: 0 auto;
 }
 
+/* ── Landing instructions ─────────────────────────────────────────────────── */
+
+.landing-instructions {
+  margin-top: 2.4rem;
+  text-align: left;
+}
+
+.instructions-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--c-ink-muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.instructions-columns-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1.2rem;
+  padding: 0 0 0.4rem;
+  border-bottom: 2px solid var(--c-border);
+  margin-bottom: 0.2rem;
+}
+
+.instructions-col-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--c-ink-muted);
+  padding: 0 0.2rem;
+}
+
+.instructions-col-label--te {
+  font-family: var(--font-telugu);
+}
+
+.instructions-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.instructions-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1.2rem;
+  padding: 0.75rem 0.2rem;
+  border-bottom: 1px solid var(--c-border);
+}
+
+.instructions-row:last-child {
+  border-bottom: none;
+}
+
+.instructions-cell {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--c-ink);
+}
+
+.instructions-cell--te {
+  font-family: var(--font-telugu);
+  color: var(--c-ink-muted);
+}
+
+/* ── Landing feedback ──────────────────────────────────────────────────────── */
+
+.landing-feedback {
+  margin-top: 1.8rem;
+  text-align: center;
+}
+
+.landing-feedback-btn {
+  display: inline-block;
+  text-decoration: none;
+}
+
+@media (max-width: 560px) {
+  .instructions-columns-header {
+    display: none;
+  }
+
+  .instructions-row {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .instructions-cell--te {
+    padding-left: 0.8rem;
+    border-left: 3px solid var(--c-border);
+    font-size: 0.84rem;
+  }
+}
+
 .survey-host {
   padding: 1rem;
 }
@@ -307,9 +403,13 @@ nav {
 }
 
 .choice-script {
-  font-family: var(--font-telugu);
   color: var(--c-ink-muted);
   font-size: 0.93rem;
+}
+
+.choice-script[data-language="telugu"],
+.fill-question-line[data-language="telugu"] {
+  font-family: var(--font-telugu);
 }
 
 .choice-option {
@@ -330,6 +430,20 @@ nav {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.08rem;
+}
+
+.choice-copy--prompt {
+  width: 100%;
+}
+
+.sentence-support {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 10px;
+  border: 1px dashed #c7d6ea;
+  background: #fbfdff;
 }
 
 .fill-script {
@@ -358,6 +472,7 @@ nav {
   gap: 1rem;
   justify-items: center;
   margin-bottom: 0.35rem;
+  width: 100%;
 }
 
 .fill-question-line {
@@ -465,6 +580,12 @@ nav {
   gap: 0.6rem;
 }
 
+.match-option-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
 .match-card-copy {
   display: flex;
   flex-direction: column;
@@ -472,7 +593,23 @@ nav {
   min-width: 0;
 }
 
+.match-card-copy--audio-only {
+  justify-content: center;
+}
+
 .match-card-copy .choice-script {
+  display: block;
+}
+
+.prompt-audio-only-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #607086;
+  text-transform: uppercase;
+}
+
+.match-assigned {
   display: block;
 }
 
