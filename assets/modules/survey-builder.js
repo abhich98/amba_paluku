@@ -33,7 +33,7 @@ function mkFillReferenceBlock(item) {
 function mkFillPromptBlock(item) {
   const questionSentence = item.question_sentence || {};
   const questionLang = getSentenceLanguage(questionSentence, 'answer');
-  const helperText = `Fill in the missing ${questionLang} word.`;
+  const helperText = `Fill in the missing ${questionLang}/transliteration word.`;
   const blankedTransliteration = buildBlankedSentenceText(getSentenceTransliteration(questionSentence, ''), item.omit_loc);
   const promptSupport = buildSentenceSupportBlock(questionSentence, {
     showText: false,
@@ -108,7 +108,7 @@ export function buildSurveyDefinition(lesson) {
             name: qName,
             titleLocation: 'hidden',
             isRequired: true,
-            instructionText: 'Match each prompt with the correct option.',
+            instructionText: 'Listen to the audio and match each prompt with the correct option.',
             promptsJson: buildMatchPromptsJson(item.prompts),
             optionsJson: buildMatchOptionsJson(item.options),
             promptMode: item.prompt_mode || 'audio_text',

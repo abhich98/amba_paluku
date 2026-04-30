@@ -81,7 +81,7 @@ def _resolve_path(path_str: str) -> Path:
 
 def _audio_hash(text: str, speaker: str, model: str, pace: float) -> str:
     """Return a 16-char hex hash identifying this (text, voice) combination."""
-    key = f"{text}|{speaker}|{model}|{pace}"
+    key = f"{text}|{pace}"
     return hashlib.sha256(key.encode()).hexdigest()[:16]
 
 

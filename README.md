@@ -72,3 +72,5 @@ Contributions are welcome. This project is open source under the MIT License. Se
 
 - [ ] Update the README.md to the current state of the project.
 - [ ] Inspect how the lessons are generated on consecutive days and look into how the sentences vary across days.
+- [ ] Added a github action to run lesson generation on a daily basis and push the generated content to the repository.
+- [ ] Find better transliteration which is closer to human text, and check the scoring method for fill in the blank questions to allow for more variation in answers.
