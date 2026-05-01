@@ -79,7 +79,7 @@ def _resolve_path(path_str: str) -> Path:
     return candidate
 
 
-def _audio_hash(text: str, speaker: str, model: str, pace: float) -> str:
+def _audio_hash(text: str, pace: float) -> str:
     """Return a 16-char hex hash identifying this (text, voice) combination."""
     key = f"{text}|{pace}"
     return hashlib.sha256(key.encode()).hexdigest()[:16]
@@ -118,8 +118,6 @@ def _fill_transliterations(
 def _fill_audio_paths(
     lesson: dict[str, Any],
     language_props: dict[str, dict[str, bool]],
-    speaker: str,
-    model: str,
     pace: float,
 ) -> list[tuple[str, str, str]]:
     """Fill in null audio_path fields in-place and return audio jobs.
@@ -139,7 +137,7 @@ def _fill_audio_paths(
             if not text:
                 continue
 
-            hash_key = _audio_hash(text, speaker, model, pace)
+            hash_key = _audio_hash(text, pace)
             rel_path = _audio_rel_path(hash_key)
             sentence["audio_path"] = rel_path
 
@@ -325,7 +323,7 @@ def main() -> None:
     logger.info("Transliteration filled for %d sentence objects", translit_count)
 
     # Fill in audio_path for every sentence that needs it
-    audio_jobs = _fill_audio_paths(lesson, language_props, speaker, model, pace)
+    audio_jobs = _fill_audio_paths(lesson, language_props, pace)
     logger.info("Audio jobs: %d unique files to generate", len(audio_jobs))
 
     # Validate lesson with full (non-text-only) schema now that audio_path is filled
