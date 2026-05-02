@@ -1,76 +1,92 @@
-# Amba Paluku/అంబ పలుకు
+# Amba Paluku / అంబ పలుకు
 
-**Amba Paluku** is a daily Telugu learning web app with audio-supported questions and an archive of past lessons. 
+[**Amba Paluku**](https://abhich98.github.io/amba_paluku/) is a daily Telugu learning web app with audio-supported questions and an archive of past lessons. It consists of:
 
-**అంబ పలుకు**, తెలుగు నేర్చుకుంటున్న వారు రోజూ అభ్యాసం చెయ్యటానికి ఉపయోగపడే అంతర్జాల ఆప్.
+- a Python pipeline that generates and finalizes lesson JSON + audio assets
+- a browser quiz app (SurveyJS-based) for daily practice and archive review
+- schema validation to keep lesson/manifest data consistent
 
+[**అంబ పలుకు**](https://abhich98.github.io/amba_paluku/), తెలుగు నేర్చుకుంటున్న వారు రోజూ అభ్యాసం చెయ్యటానికి ఉపయోగపడే అంతర్జాల ఆప్.
 
 > _Amba Paluku, Jagadamba Paluku_ is just a popular Telugu phrase used by Budabukkala storytellers and fortune tellers, meaning they are speaking the words of the goddess Jagadamba. The name is randomly chosen since it is playful.
 
-The repository includes:
-- a Python content-generation pipeline for daily lessons and audio assets
-- a browser-based quiz app built using SurveyJS elements
-- schema validation to keep generated lesson data consistent and reliable
+## What This Repo Does
 
-## Goals
-- Create a sustainable daily content generation pipeline for Telugu learners
-- Provide daily practice with a variety of question types and audio support
-- Accumulate a growing archive of lessons and resources (sentences, words, audio) following the CEFR language levels (starting with A1)
+The workflow is intentionally split into two stages:
 
-## Features
+1. Draft generation (text only)
+- Script: `scripts/generate_daily_lesson.py`
+- Produces `data/lessons/{date}.json` with status `draft`
+- No audio is generated in this stage
 
-- Daily lesson generation with configurable date, difficulty, and question count
-- Current question types:
-	- Multiple choice (English to Telugu translation)
-	- Fill in the blank (English and transliteration sentences)
-	- Match the following (audio words to English meanings)
-- Audio per question/option for listening practice
-- Session summary with per-question review
-- Archive view for previous lessons
+2. Finalization (audio + publishing)
+- Script: `scripts/finalize_lesson.py`
+- Fills transliteration/audio fields
+- Generates/rehydrates audio under `resources/audio/`
+- Updates `data/manifest.json`
+- Appends reusable sentence/word pairs into `resources/{CEFR}.md`
+- Marks lesson status as `active`
+
+## Current Question Types
+
+- `mcq_bimodal`: multiple-choice translation
+- `fill_blank_audio`: fill-in-the-blank with prompt/reference support
+- `match_audio_text`: match prompt cards to options (prompt mode currently audio)
+
+Language direction is bilingual and can vary per item depending on generation logic.
 
 ## Tech Stack
 
 - Python 3.11+
-- `uv` for Python environment and dependency management
-- SurveyJS (`survey-core`, `survey-js-ui`) for quiz rendering
-- OpenRouter (text generation)
-- Sarvam AI (speech generation)
+- `uv` for env/dependency management
+- SurveyJS (`survey-core`, `survey-js-ui`) on the frontend
+- OpenRouter for text generation
+- Sarvam AI for text-to-speech
 
-## Repository Layout
+## Quick Start
 
-- `scripts/generate_daily_lesson.py`: main lesson generation pipeline
-- `scripts/schema/`: lesson and manifest validation
-- `scripts/providers/`: provider adapters for text and speech
-- `data/lessons/`: generated lesson JSON files
-- `data/audio/`: generated audio assets
-- `data/manifest.json`: lesson index consumed by the frontend
-- `assets/app.js`: frontend quiz runtime
-- `assets/styles.css`: frontend styling
-- `index.html`: app entry page
+For a step-by-step setup and runbook, see [QUICK_START.md](QUICK_START.md).
 
-> Read the [QUICK_START.md](QUICK_START.md) for detailed setup and usage instructions.
+## Repository Structure
 
-## Contributing
+- `scripts/generate_daily_lesson.py`: stage 1 draft generation
+- `scripts/finalize_lesson.py`: stage 2 finalization and publishing
+- `scripts/lesson_builder.py`: question assembly from generated pairs
+- `scripts/providers/text_generator.py`: LLM adapter (OpenRouter)
+- `scripts/providers/speech_generator.py`: TTS adapter (Sarvam)
+- `scripts/providers/resource_loader.py`: load reusable pairs
+- `scripts/providers/resource_writer.py`: append reusable pairs
+- `scripts/schema/lesson_schema.py`: lesson/manifest validation
+- `scripts/schema/language_properties.yml`: per-language transliteration/audio rules
+- `config.yml`: default generation/finalization config
+- `data/lessons/`: lesson JSON files
+- `data/manifest.json`: lesson index consumed by frontend
+- `data/ui-text.json`: configurable frontend text content
+- `resources/`: CEFR resource files used for reuse (`A1.md`, `A2.md`, `B1.md`, ...)
+- `resources/audio/`: generated audio assets
+- `assets/app.js`: frontend entrypoint (ES module)
+- `assets/modules/`: modular frontend runtime (scoring, views, survey, routing, etc.)
+- `assets/styles.css`: frontend styles
+- `index.html`: app shell and SurveyJS bootstrapping
+- `.github/workflows/daily-content.yml`: scheduled/manual automation for generation
 
-Contributions are welcome. This project is open source under the MIT License. See the `LICENSE` file for details.
+## GitHub Actions
 
-### Suggested workflow
+> NOTE: NOT SET UP YET.
 
-1. Fork the repository
-2. Create a feature branch
-3. Make focused changes
-4. Run validation/checks locally
-5. Open a pull request with a clear summary
+The workflow `.github/workflows/daily-content.yml` currently exists and supports:
 
-### Before opening a PR
+- scheduled runs (daily)
+- manual dispatch with optional date/difficulty/count inputs
 
-- Ensure generated data still validates
-- Verify quiz flow and summary behavior in browser
-- Keep changes small and scoped when possible
+It commits generated changes under `data/` when differences are detected.
 
-## TODOs:
+## Development Notes
 
-- [ ] Update the README.md to the current state of the project.
-- [ ] Inspect how the lessons are generated on consecutive days and look into how the sentences vary across days.
-- [ ] Added a github action to run lesson generation on a daily basis and push the generated content to the repository.
-- [ ] Find better transliteration which is closer to human text, and check the scoring method for fill in the blank questions to allow for more variation in answers.
+- Validate and review `data/lessons/{date}.json` before running finalization.
+- Frontend reads only active lessons from `data/manifest.json`.
+- Keep docs and CLI flags aligned with script arg names (`--num-questions`, not legacy aliases).
+
+## License
+
+MIT. See `LICENSE`.
