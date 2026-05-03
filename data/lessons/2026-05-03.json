@@ -1,0 +1,587 @@
+{
+  "lesson_id": "2026-05-03",
+  "date": "2026-05-03",
+  "status": "active",
+  "difficulty": "A1",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-05-03T07:40:25.007670+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 5,
+    "fill_blank_audio": 5,
+    "match_audio_text": 2
+  },
+  "items": [
+    {
+      "id": "2026-05-03_001",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-03_001_question",
+        "text": "I am going to my hometown.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-03_001_opt0",
+          "text": "నేను మా ఊరికి వెళ్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/9fe1176e2d4f9353.mp3",
+          "transliteration": "nenu mā ūriki vèḻtunnānu."
+        },
+        {
+          "id": "2026-05-03_001_opt3",
+          "text": "నేను ఆఫీసుకి వెళ్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/69921115aa5ffccc.mp3",
+          "transliteration": "nenu āphīsuki vèḻtunnānu."
+        },
+        {
+          "id": "2026-05-03_001_opt2",
+          "text": "నేను బడికి వెళ్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/5528e2b325002a3b.mp3",
+          "transliteration": "nenu baḍiki vèḻtunnānu."
+        },
+        {
+          "id": "2026-05-03_001_opt1",
+          "text": "నేను వెళ్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/c1260bd3a8d7bd60.mp3",
+          "transliteration": "nenu vèḻtunnānu."
+        }
+      ],
+      "correct_option_id": "2026-05-03_001_opt0"
+    },
+    {
+      "id": "2026-05-03_002",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-03_002_question",
+        "text": "నాకు కడుపు నొప్పిగా ఉంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/0ae2d53e84fc8ddf.mp3",
+        "transliteration": "nāku kaḍupu nòppigā uṃdi."
+      },
+      "reference_sentence": {
+        "id": "2026-05-03_002_reference",
+        "text": "I have a stomach ache.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-05-03_002_ans0",
+          "text": "నొప్పిగా",
+          "language": "telugu",
+          "audio_path": "resources/audio/d59c27455127c40f.mp3",
+          "transliteration": "nòppigā"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-03_002_display_answer",
+        "text": "నొప్పిగా",
+        "language": "telugu",
+        "audio_path": "resources/audio/d59c27455127c40f.mp3",
+        "transliteration": "nòppigā"
+      }
+    },
+    {
+      "id": "2026-05-03_003",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-03_003_question",
+        "text": "What does your father do?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-03_003_opt3",
+          "text": "తను మీ తమ్ముడా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/5d1f96724d6b27e1.mp3",
+          "transliteration": "tanu mī tammuḍā?"
+        },
+        {
+          "id": "2026-05-03_003_opt2",
+          "text": "మీరు ఎక్కడ పని చేస్తున్నారు?",
+          "language": "telugu",
+          "audio_path": "resources/audio/19a6026808c588ae.mp3",
+          "transliteration": "mīru èkkaḍa pani cestunnāru?"
+        },
+        {
+          "id": "2026-05-03_003_opt0",
+          "text": "మీ నాన్నగారు ఏం చేస్తారు?",
+          "language": "telugu",
+          "audio_path": "resources/audio/42ca88fb47b17408.mp3",
+          "transliteration": "mī nānnagāru eṃ cestāru?"
+        },
+        {
+          "id": "2026-05-03_003_opt1",
+          "text": "మీ అమ్మగారు ఎక్కడ ఉన్నారు?",
+          "language": "telugu",
+          "audio_path": "resources/audio/736e89e5cedd2a5a.mp3",
+          "transliteration": "mī ammagāru èkkaḍa unnāru?"
+        }
+      ],
+      "correct_option_id": "2026-05-03_003_opt0"
+    },
+    {
+      "id": "2026-05-03_004",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-03_004_p1",
+          "prompt_sentence": {
+            "id": "2026-05-03_004_p1_prompt",
+            "text": "శుభ రాత్రి",
+            "language": "telugu",
+            "audio_path": "resources/audio/a8e3b309a9180103.mp3",
+            "transliteration": "śubha rātri"
+          },
+          "answer_sentence": {
+            "id": "2026-05-03_004_opt1",
+            "text": "Good night",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-03_004_p2",
+          "prompt_sentence": {
+            "id": "2026-05-03_004_p2_prompt",
+            "text": "ఎవరు",
+            "language": "telugu",
+            "audio_path": "resources/audio/fa4b9f06f0305fc9.mp3",
+            "transliteration": "èvaru"
+          },
+          "answer_sentence": {
+            "id": "2026-05-03_004_opt2",
+            "text": "who",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-03_004_p3",
+          "prompt_sentence": {
+            "id": "2026-05-03_004_p3_prompt",
+            "text": "కొడుకు",
+            "language": "telugu",
+            "audio_path": "resources/audio/777271dd760fc7ba.mp3",
+            "transliteration": "kòḍuku"
+          },
+          "answer_sentence": {
+            "id": "2026-05-03_004_opt3",
+            "text": "son",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-03_004_opt2",
+          "text": "who",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-03_004_opt3",
+          "text": "son",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-03_004_opt1",
+          "text": "Good night",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-03_005",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-03_005_question",
+        "text": "ఈమె నా చిన్న చెల్లి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/d0da91def8e9bfd0.mp3",
+        "transliteration": "īmè nā cinna cèlli."
+      },
+      "reference_sentence": {
+        "id": "2026-05-03_005_reference",
+        "text": "She is my younger sister.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-05-03_005_ans0",
+          "text": "చిన్న",
+          "language": "telugu",
+          "audio_path": "resources/audio/30aad0877923868c.mp3",
+          "transliteration": "cinna"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-03_005_display_answer",
+        "text": "చిన్న",
+        "language": "telugu",
+        "audio_path": "resources/audio/30aad0877923868c.mp3",
+        "transliteration": "cinna"
+      }
+    },
+    {
+      "id": "2026-05-03_006",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-03_006_question",
+        "text": "How many brothers do you have?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-03_006_opt0",
+          "text": "నీకు ఎంతమంది అన్నదమ్ములు ఉన్నారు?",
+          "language": "telugu",
+          "audio_path": "resources/audio/0a0b72408204d701.mp3",
+          "transliteration": "nīku èṃtamaṃdi annadammulu unnāru?"
+        },
+        {
+          "id": "2026-05-03_006_opt3",
+          "text": "నీ స్నేహితుడు ఎవరు?",
+          "language": "telugu",
+          "audio_path": "resources/audio/b5a80ebc53780012.mp3",
+          "transliteration": "nī snehituḍu èvaru?"
+        },
+        {
+          "id": "2026-05-03_006_opt1",
+          "text": "నీకు ఎంతమంది పిల్లలు?",
+          "language": "telugu",
+          "audio_path": "resources/audio/18d705da6524ad09.mp3",
+          "transliteration": "nīku èṃtamaṃdi pillalu?"
+        },
+        {
+          "id": "2026-05-03_006_opt2",
+          "text": "నీ వయస్సు ఎంత?",
+          "language": "telugu",
+          "audio_path": "resources/audio/95a98e1d97386d45.mp3",
+          "transliteration": "nī vayassu èṃta?"
+        }
+      ],
+      "correct_option_id": "2026-05-03_006_opt0"
+    },
+    {
+      "id": "2026-05-03_007",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-03_007_p1",
+          "prompt_sentence": {
+            "id": "2026-05-03_007_p1_prompt",
+            "text": "కూతురు",
+            "language": "telugu",
+            "audio_path": "resources/audio/e5893eb87a94f962.mp3",
+            "transliteration": "kūturu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-03_007_opt1",
+            "text": "daughter",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-03_007_p2",
+          "prompt_sentence": {
+            "id": "2026-05-03_007_p2_prompt",
+            "text": "తింటున్నాను",
+            "language": "telugu",
+            "audio_path": "resources/audio/22709560a4b08fe2.mp3",
+            "transliteration": "tiṃṭunnānu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-03_007_opt2",
+            "text": "eating",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-03_007_p3",
+          "prompt_sentence": {
+            "id": "2026-05-03_007_p3_prompt",
+            "text": "వెళ్తున్నాను",
+            "language": "telugu",
+            "audio_path": "resources/audio/77597341bde73ba1.mp3",
+            "transliteration": "vèḻtunnānu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-03_007_opt3",
+            "text": "going",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-03_007_opt2",
+          "text": "eating",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-03_007_opt3",
+          "text": "going",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-03_007_opt1",
+          "text": "daughter",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-03_008",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-03_008_question",
+        "text": "నేను ఇప్పుడు అన్నం తింటున్నాను.",
+        "language": "telugu",
+        "audio_path": "resources/audio/d3b4192fb510247d.mp3",
+        "transliteration": "nenu ippuḍu annaṃ tiṃṭunnānu."
+      },
+      "options": [
+        {
+          "id": "2026-05-03_008_opt3",
+          "text": "I am sleeping.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-03_008_opt1",
+          "text": "I am drinking milk.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-03_008_opt2",
+          "text": "I am cooking.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-03_008_opt0",
+          "text": "I am eating rice now.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-03_008_opt0"
+    },
+    {
+      "id": "2026-05-03_009",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-03_009_question",
+        "text": "When will you come?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-03_009_reference",
+        "text": "మీరు ఎప్పుడు వస్తారు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/6a345c290348f390.mp3",
+        "transliteration": "mīru èppuḍu vastāru?"
+      },
+      "answer_mode": "exact",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-05-03_009_ans0",
+          "text": "When",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-03_009_display_answer",
+        "text": "When",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-03_010",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-03_010_question",
+        "text": "మా అమ్మ వంట బాగా చేస్తుంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/23fac84241ac6d8a.mp3",
+        "transliteration": "mā amma vaṃṭa bāgā cestuṃdi."
+      },
+      "reference_sentence": {
+        "id": "2026-05-03_010_reference",
+        "text": "My mother cooks well.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 2,
+      "accepted_answers": [
+        {
+          "id": "2026-05-03_010_ans0",
+          "text": "అమ్మ",
+          "language": "telugu",
+          "audio_path": "resources/audio/b69a1015c123c7a8.mp3",
+          "transliteration": "amma"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-03_010_display_answer",
+        "text": "అమ్మ",
+        "language": "telugu",
+        "audio_path": "resources/audio/b69a1015c123c7a8.mp3",
+        "transliteration": "amma"
+      }
+    },
+    {
+      "id": "2026-05-03_011",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-03_011_question",
+        "text": "మీరు ఎక్కడ చదువుతున్నారు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/8c1098dc46ff0c4b.mp3",
+        "transliteration": "mīru èkkaḍa caduvutunnāru?"
+      },
+      "options": [
+        {
+          "id": "2026-05-03_011_opt2",
+          "text": "Where are you staying?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-03_011_opt0",
+          "text": "Where are you studying?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-03_011_opt3",
+          "text": "Where are you going?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-03_011_opt1",
+          "text": "What are you studying?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-03_011_opt0"
+    },
+    {
+      "id": "2026-05-03_012",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-03_012_question",
+        "text": "ఆయన నా స్నేహితుడు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/5bbffc694d490843.mp3",
+        "transliteration": "āyana nā snehituḍu."
+      },
+      "reference_sentence": {
+        "id": "2026-05-03_012_reference",
+        "text": "He is my friend.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-05-03_012_ans0",
+          "text": "స్నేహితుడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b4bf3645313d78ed.mp3",
+          "transliteration": "snehituḍu."
+        },
+        {
+          "id": "2026-05-03_012_ans1",
+          "text": "స్నేహితుడు",
+          "language": "telugu",
+          "audio_path": "resources/audio/259d92aff5c06ba3.mp3",
+          "transliteration": "snehituḍu"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-03_012_display_answer",
+        "text": "స్నేహితుడు",
+        "language": "telugu",
+        "audio_path": "resources/audio/259d92aff5c06ba3.mp3",
+        "transliteration": "snehituḍu"
+      }
+    }
+  ]
+}
