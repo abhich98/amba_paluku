@@ -1,0 +1,604 @@
+{
+  "lesson_id": "2026-05-05",
+  "date": "2026-05-05",
+  "status": "active",
+  "difficulty": "A1",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-05-05T07:50:40.057390+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 9,
+    "fill_blank_audio": 1,
+    "match_audio_text": 2
+  },
+  "items": [
+    {
+      "id": "2026-05-05_001",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-05_001_question",
+        "text": "I have a fever.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-05_001_opt3",
+          "text": "నాకు నిద్ర వస్తోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/cf65f3065871fb35.mp3",
+          "transliteration": "nāku nidra vastoṃdi."
+        },
+        {
+          "id": "2026-05-05_001_opt0",
+          "text": "నాకు జ్వరంగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/2f52b8c2880f07ac.mp3",
+          "transliteration": "nāku jvaraṃgā uṃdi."
+        },
+        {
+          "id": "2026-05-05_001_opt2",
+          "text": "నాకు దాహం వస్తోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/5982e79820f00fd2.mp3",
+          "transliteration": "nāku dāhaṃ vastoṃdi."
+        },
+        {
+          "id": "2026-05-05_001_opt1",
+          "text": "నాకు ఆకలిగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/0fbf8b5406d7e09b.mp3",
+          "transliteration": "nāku ākaligā uṃdi."
+        }
+      ],
+      "correct_option_id": "2026-05-05_001_opt0"
+    },
+    {
+      "id": "2026-05-05_002",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-05_002_question",
+        "text": "Do you need help?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-05_002_opt0",
+          "text": "మీకు సహాయం కావాలా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/01049d95caf8f99b.mp3",
+          "transliteration": "mīku sahāyaṃ kāvālā?"
+        },
+        {
+          "id": "2026-05-05_002_opt1",
+          "text": "మీకు పెన్ను కావాలా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/c0dd300bdb47830d.mp3",
+          "transliteration": "mīku pènnu kāvālā?"
+        },
+        {
+          "id": "2026-05-05_002_opt2",
+          "text": "మీకు నీళ్లు కావాలా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/6f7c026388d90994.mp3",
+          "transliteration": "mīku nīḻlu kāvālā?"
+        },
+        {
+          "id": "2026-05-05_002_opt3",
+          "text": "మీకు అన్నం కావాలా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/49aeaf910de71eec.mp3",
+          "transliteration": "mīku annaṃ kāvālā?"
+        }
+      ],
+      "correct_option_id": "2026-05-05_002_opt0"
+    },
+    {
+      "id": "2026-05-05_003",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-05_003_p1",
+          "prompt_sentence": {
+            "id": "2026-05-05_003_p1_prompt",
+            "text": "తమ్ముడు",
+            "language": "telugu",
+            "audio_path": "resources/audio/b2d9c6df93408a80.mp3",
+            "transliteration": "tammuḍu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-05_003_opt1",
+            "text": "brother",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-05_003_p2",
+          "prompt_sentence": {
+            "id": "2026-05-05_003_p2_prompt",
+            "text": "ఓటు",
+            "language": "telugu",
+            "audio_path": "resources/audio/b20c482cf60a51cc.mp3",
+            "transliteration": "oṭu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-05_003_opt2",
+            "text": "vote",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-05_003_p3",
+          "prompt_sentence": {
+            "id": "2026-05-05_003_p3_prompt",
+            "text": "నాయకుడు",
+            "language": "telugu",
+            "audio_path": "resources/audio/414069aa65fcc890.mp3",
+            "transliteration": "nāyakuḍu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-05_003_opt3",
+            "text": "leader",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-05_003_opt1",
+          "text": "brother",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-05_003_opt3",
+          "text": "leader",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-05_003_opt2",
+          "text": "vote",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-05_004",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-05_004_question",
+        "text": "I am casting my vote.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-05_004_opt0",
+          "text": "నేను ఓటు వేస్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/9e7433ee5ecc07ac.mp3",
+          "transliteration": "nenu oṭu vestunnānu."
+        },
+        {
+          "id": "2026-05-05_004_opt3",
+          "text": "నేను పాడుతున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/f41f21d6c9f9af14.mp3",
+          "transliteration": "nenu pāḍutunnānu."
+        },
+        {
+          "id": "2026-05-05_004_opt2",
+          "text": "నేను చదువుతున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/f9e3cbb2a4f38b6e.mp3",
+          "transliteration": "nenu caduvutunnānu."
+        },
+        {
+          "id": "2026-05-05_004_opt1",
+          "text": "నేను పని చేస్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/e0bfac9790e7fe9f.mp3",
+          "transliteration": "nenu pani cestunnānu."
+        }
+      ],
+      "correct_option_id": "2026-05-05_004_opt0"
+    },
+    {
+      "id": "2026-05-05_005",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-05_005_question",
+        "text": "ఈరోజు ఎన్నికలు జరుగుతున్నాయి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/72b5e7005bfa9ff4.mp3",
+        "transliteration": "īroju ènnikalu jarugutunnāyi."
+      },
+      "options": [
+        {
+          "id": "2026-05-05_005_opt1",
+          "text": "It is raining today.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-05_005_opt2",
+          "text": "The exam is happening today.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-05_005_opt3",
+          "text": "The festival is happening today.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-05_005_opt0",
+          "text": "Elections are happening today.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-05_005_opt0"
+    },
+    {
+      "id": "2026-05-05_006",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-05_006_question",
+        "text": "మీరు ఎవరికి ఓటు వేస్తున్నారు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/8c76a5a0da27d194.mp3",
+        "transliteration": "mīru èvariki oṭu vestunnāru?"
+      },
+      "reference_sentence": {
+        "id": "2026-05-05_006_reference",
+        "text": "Who are you voting for?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-05-05_006_ans0",
+          "text": "ఓటు",
+          "language": "telugu",
+          "audio_path": "resources/audio/b20c482cf60a51cc.mp3",
+          "transliteration": "oṭu"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-05_006_display_answer",
+        "text": "ఓటు",
+        "language": "telugu",
+        "audio_path": "resources/audio/b20c482cf60a51cc.mp3",
+        "transliteration": "oṭu"
+      }
+    },
+    {
+      "id": "2026-05-05_007",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-05_007_p1",
+          "prompt_sentence": {
+            "id": "2026-05-05_007_p1_prompt",
+            "text": "చదువుతున్నాడు",
+            "language": "telugu",
+            "audio_path": "resources/audio/47e26f3b20182357.mp3",
+            "transliteration": "caduvutunnāḍu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-05_007_opt1",
+            "text": "reading",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-05_007_p2",
+          "prompt_sentence": {
+            "id": "2026-05-05_007_p2_prompt",
+            "text": "అమ్ముతున్నారు",
+            "language": "telugu",
+            "audio_path": "resources/audio/b2af6d9c7276c65d.mp3",
+            "transliteration": "ammutunnāru"
+          },
+          "answer_sentence": {
+            "id": "2026-05-05_007_opt2",
+            "text": "selling",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-05_007_p3",
+          "prompt_sentence": {
+            "id": "2026-05-05_007_p3_prompt",
+            "text": "గెలుపు",
+            "language": "telugu",
+            "audio_path": "resources/audio/3093f62b60aafaff.mp3",
+            "transliteration": "gèlupu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-05_007_opt3",
+            "text": "win",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-05_007_opt3",
+          "text": "win",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-05_007_opt2",
+          "text": "selling",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-05_007_opt1",
+          "text": "reading",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-05_008",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-05_008_question",
+        "text": "People are standing in the queue.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-05_008_opt0",
+          "text": "ప్రజలు క్యూలో నిలబడుతున్నారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/67a61b83abafc026.mp3",
+          "transliteration": "prajalu kyūlo nilabaḍutunnāru."
+        },
+        {
+          "id": "2026-05-05_008_opt3",
+          "text": "ప్రజలు నవ్వుతున్నారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/55c8a47b37297380.mp3",
+          "transliteration": "prajalu navvutunnāru."
+        },
+        {
+          "id": "2026-05-05_008_opt2",
+          "text": "ప్రజలు పరిగెడుతున్నారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/9fd8fb8fc19fc35e.mp3",
+          "transliteration": "prajalu parigèḍutunnāru."
+        },
+        {
+          "id": "2026-05-05_008_opt1",
+          "text": "మాట్లాడుతున్నారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/58bb03e9a88d577b.mp3",
+          "transliteration": "māṭlāḍutunnāru."
+        }
+      ],
+      "correct_option_id": "2026-05-05_008_opt0"
+    },
+    {
+      "id": "2026-05-05_009",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-05_009_question",
+        "text": "The leader is eating.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-05_009_opt0",
+          "text": "నాయకుడు ప్రసంగిస్తున్నాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b1ff1da0d7343671.mp3",
+          "transliteration": "nāyakuḍu prasaṃgistunnāḍu."
+        },
+        {
+          "id": "2026-05-05_009_opt1",
+          "text": "నాయకుడు తింటున్నాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/cf464ad78602599d.mp3",
+          "transliteration": "nāyakuḍu tiṃṭunnāḍu."
+        },
+        {
+          "id": "2026-05-05_009_opt2",
+          "text": "నాయకుడు",
+          "language": "telugu",
+          "audio_path": "resources/audio/414069aa65fcc890.mp3",
+          "transliteration": "nāyakuḍu"
+        },
+        {
+          "id": "2026-05-05_009_opt3",
+          "text": "నాయకుడు రాస్తున్నాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/359eb04e9341a882.mp3",
+          "transliteration": "nāyakuḍu rāstunnāḍu."
+        }
+      ],
+      "correct_option_id": "2026-05-05_009_opt1"
+    },
+    {
+      "id": "2026-05-05_010",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-05_010_question",
+        "text": "అతను వార్తలు చూస్తున్నాడు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/3a787eda7f185174.mp3",
+        "transliteration": "atanu vārtalu cūstunnāḍu."
+      },
+      "options": [
+        {
+          "id": "2026-05-05_010_opt2",
+          "text": "He is watching a game.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-05_010_opt0",
+          "text": "He is watching the news.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-05_010_opt1",
+          "text": "He is watching a movie.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-05_010_opt3",
+          "text": "He is washing clothes.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-05_010_opt0"
+    },
+    {
+      "id": "2026-05-05_011",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-05_011_question",
+        "text": "మేము ఓటు హక్కును ఉపయోగిస్తున్నాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/25f072b62d941ecf.mp3",
+        "transliteration": "memu oṭu hakkunu upayogistunnāmu."
+      },
+      "options": [
+        {
+          "id": "2026-05-05_011_opt1",
+          "text": "We are going to school.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-05_011_opt3",
+          "text": "We are having a meal.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-05_011_opt2",
+          "text": "We are playing games.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-05_011_opt0",
+          "text": "We are using our right to vote.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-05_011_opt0"
+    },
+    {
+      "id": "2026-05-05_012",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-05_012_question",
+        "text": "పోలీసులు రక్షణ కల్పిస్తున్నారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/6ea6b9bc52a4d624.mp3",
+        "transliteration": "polīsulu rakṣaṇa kalpistunnāru."
+      },
+      "options": [
+        {
+          "id": "2026-05-05_012_opt3",
+          "text": "The police are drinking.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-05_012_opt2",
+          "text": "The police are sleeping.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-05_012_opt1",
+          "text": "The police are walking.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-05_012_opt0",
+          "text": "The police are providing protection.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-05_012_opt0"
+    }
+  ]
+}
