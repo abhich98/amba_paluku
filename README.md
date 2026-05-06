@@ -90,3 +90,7 @@ It commits generated changes under `data/` when differences are detected.
 ## License
 
 MIT. See `LICENSE`.
+
+## TODO
+- [ ] Fill in the blank questions are set to `check mode: "exact"` even when the language of the question is Telugu and the answer is transliterated. Change it to `"fuzzy"` when comparing transliterated answers.
+- [ ] The finalization script is addding the senstence pairs from "fill in the blank" questions in a different order to the resource `...md`, file compared to "mcq" questions. This is a problem.
