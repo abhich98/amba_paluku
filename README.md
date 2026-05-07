@@ -94,3 +94,5 @@ MIT. See `LICENSE`.
 ## TODO
 - [ ] Fill in the blank questions are set to `check mode: "exact"` even when the language of the question is Telugu and the answer is transliterated. Change it to `"fuzzy"` when comparing transliterated answers.
 - [ ] The finalization script is addding the senstence pairs from "fill in the blank" questions in a different order to the resource `...md`, file compared to "mcq" questions. This is a problem.
+- [ ] In the review section, match the following prompt text is only visible in Telugu text (not transliterated). 
+- [ ] Maybe add audio to the sentences in the review section.
