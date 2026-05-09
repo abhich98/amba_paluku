@@ -157,27 +157,28 @@ def _extract_sentence_pairs(
     pairs: list[dict[str, Any]] = []
     for item in lesson.get("items", []):
         item_type = item.get("type")
+        ques, ans = {}, {}
+
         if item_type == "mcq_bimodal":
-            q = item.get("question_sentence", {})
+            ques = item.get("question_sentence", {})
             correct_id = item.get("correct_option_id")
-            correct_opt = next(
-                (o for o in item.get("options", []) if o.get("id") == correct_id), None
+            ans = next(
+                (o for o in item.get("options", []) if o.get("id") == correct_id), {}
             )
-            if q.get("text") and correct_opt:
-                pairs.append({
-                    reference_lang: q["text"],
-                    target_lang: correct_opt["text"],
-                    "transliteration": correct_opt.get("transliteration") or "",
-                })
+
         elif item_type == "fill_blank_audio":
-            q = item.get("question_sentence", {})
-            r = item.get("reference_sentence", {})
-            if q.get("text") and r.get("text"):
-                pairs.append({
-                    reference_lang: q["text"],
-                    target_lang: r["text"],
-                    "transliteration": r.get("transliteration") or "",
-                })
+            ques = item.get("question_sentence", {})
+            ans = item.get("reference_sentence", {})
+
+        if ques.get("text") and ans.get("text"):
+                if reference_lang in (ques.get("language"), ans.get("language")) and \
+                   target_lang in (ques.get("language"), ans.get("language")):
+                        reference_sent, target_sent = (ques, ans) if ques["language"] == reference_lang else (ans, ques)
+                        pairs.append({
+                            reference_lang: reference_sent["text"],
+                            target_lang: target_sent["text"],
+                            "transliteration": target_sent.get("transliteration") or "",
+                        })
     return pairs
 
 
