@@ -1,0 +1,555 @@
+{
+  "lesson_id": "2026-05-09",
+  "date": "2026-05-09",
+  "status": "active",
+  "difficulty": "A1",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-05-09T12:12:51.749801+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 6,
+    "fill_blank_audio": 5,
+    "match_audio_text": 1
+  },
+  "items": [
+    {
+      "id": "2026-05-09_001",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-09_001_question",
+        "text": "Do you need help?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-09_001_reference",
+        "text": "నీకు సహాయం కావాలా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/790cb823282e0839.mp3",
+        "transliteration": "nīku sahāyaṃ kāvālā?"
+      },
+      "answer_mode": "exact",
+      "omit_loc": 2,
+      "accepted_answers": [
+        {
+          "id": "2026-05-09_001_ans0",
+          "text": "you",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-09_001_display_answer",
+        "text": "you",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-09_002",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-09_002_p1",
+          "prompt_sentence": {
+            "id": "2026-05-09_002_p1_prompt",
+            "text": "నాయకుడు",
+            "language": "telugu",
+            "audio_path": "resources/audio/81b4ec148e3435e9.mp3",
+            "transliteration": "nāyakuḍu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-09_002_opt1",
+            "text": "leader",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-09_002_p2",
+          "prompt_sentence": {
+            "id": "2026-05-09_002_p2_prompt",
+            "text": "వెళ్ళాను",
+            "language": "telugu",
+            "audio_path": "resources/audio/abca728ec126aa66.mp3",
+            "transliteration": "vèḻḻānu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-09_002_opt2",
+            "text": "went",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-09_002_p3",
+          "prompt_sentence": {
+            "id": "2026-05-09_002_p3_prompt",
+            "text": "తుడవటం",
+            "language": "telugu",
+            "audio_path": "resources/audio/b2f88647ebef9b1c.mp3",
+            "transliteration": "tuḍavaṭaṃ"
+          },
+          "answer_sentence": {
+            "id": "2026-05-09_002_opt3",
+            "text": "sweeping",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-09_002_opt2",
+          "text": "went",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-09_002_opt1",
+          "text": "leader",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-09_002_opt3",
+          "text": "sweeping",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-09_003",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-09_003_question",
+        "text": "They are playing.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-09_003_opt0",
+          "text": "వాళ్ళు ఆడుతున్నారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/ef790913dad31ca8.mp3",
+          "transliteration": "vāḻḻu āḍutunnāru."
+        },
+        {
+          "id": "2026-05-09_003_opt3",
+          "text": "ఆమె పాడుతోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/c0a070927b9f3c64.mp3",
+          "transliteration": "āmè pāḍutoṃdi."
+        },
+        {
+          "id": "2026-05-09_003_opt1",
+          "text": "మేము తింటున్నాము.",
+          "language": "telugu",
+          "audio_path": "resources/audio/2f0ab784604c92eb.mp3",
+          "transliteration": "memu tiṃṭunnāmu."
+        },
+        {
+          "id": "2026-05-09_003_opt2",
+          "text": "అతను చదువుతున్నాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/00ee27a07253f7dc.mp3",
+          "transliteration": "atanu caduvutunnāḍu."
+        }
+      ],
+      "correct_option_id": "2026-05-09_003_opt0"
+    },
+    {
+      "id": "2026-05-09_004",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-09_004_question",
+        "text": "నేను నిన్న బట్టలు ఉతికాను.",
+        "language": "telugu",
+        "audio_path": "resources/audio/80ff6543b93e2a8e.mp3",
+        "transliteration": "nenu ninna baṭṭalu utikānu."
+      },
+      "options": [
+        {
+          "id": "2026-05-09_004_opt0",
+          "text": "I washed the clothes yesterday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-09_004_opt3",
+          "text": "She is cooking.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-09_004_opt1",
+          "text": "I will come tomorrow.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-09_004_opt2",
+          "text": "He drank milk.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-09_004_opt0"
+    },
+    {
+      "id": "2026-05-09_005",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-09_005_question",
+        "text": "When will the train arrive?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-09_005_opt1",
+          "text": "టికెట్ ధర ఎంత?",
+          "language": "telugu",
+          "audio_path": "resources/audio/597e2f0c25dba434.mp3",
+          "transliteration": "ṭikèṭ dhara èṃta?"
+        },
+        {
+          "id": "2026-05-09_005_opt3",
+          "text": "స్టేషన్ ఎక్కడ ఉంది?",
+          "language": "telugu",
+          "audio_path": "resources/audio/769ae32bc965a5d6.mp3",
+          "transliteration": "sṭeṣan èkkaḍa uṃdi?"
+        },
+        {
+          "id": "2026-05-09_005_opt0",
+          "text": "రైలు ఎప్పుడు వస్తుంది?",
+          "language": "telugu",
+          "audio_path": "resources/audio/4bfbe271d58fde2d.mp3",
+          "transliteration": "railu èppuḍu vastuṃdi?"
+        },
+        {
+          "id": "2026-05-09_005_opt2",
+          "text": "బస్సు వెళ్ళిపోయింది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/1d6a7187d9297c2a.mp3",
+          "transliteration": "bassu vèḻḻipoyiṃdi."
+        }
+      ],
+      "correct_option_id": "2026-05-09_005_opt0"
+    },
+    {
+      "id": "2026-05-09_006",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-09_006_question",
+        "text": "అతను గదిని శుభ్రం చేశాడు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/9846c1f2fbc6f78f.mp3",
+        "transliteration": "atanu gadini śubhraṃ ceśāḍu."
+      },
+      "reference_sentence": {
+        "id": "2026-05-09_006_reference",
+        "text": "He cleaned the room.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-05-09_006_ans0",
+          "text": "అతను",
+          "language": "telugu",
+          "audio_path": "resources/audio/f0787c3565405e0c.mp3",
+          "transliteration": "atanu"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-09_006_display_answer",
+        "text": "అతను",
+        "language": "telugu",
+        "audio_path": "resources/audio/f0787c3565405e0c.mp3",
+        "transliteration": "atanu"
+      }
+    },
+    {
+      "id": "2026-05-09_007",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-09_007_question",
+        "text": "మీరు టికెట్ కొన్నారా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/13c903a785cce18f.mp3",
+        "transliteration": "mīru ṭikèṭ kònnārā?"
+      },
+      "reference_sentence": {
+        "id": "2026-05-09_007_reference",
+        "text": "Did you buy the ticket?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-05-09_007_ans0",
+          "text": "కొన్నారా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/a1cddf3714064165.mp3",
+          "transliteration": "kònnārā?"
+        },
+        {
+          "id": "2026-05-09_007_ans1",
+          "text": "కొన్నారా",
+          "language": "telugu",
+          "audio_path": "resources/audio/66ea2cf1821bd98f.mp3",
+          "transliteration": "kònnārā"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-09_007_display_answer",
+        "text": "కొన్నారా",
+        "language": "telugu",
+        "audio_path": "resources/audio/66ea2cf1821bd98f.mp3",
+        "transliteration": "kònnārā"
+      }
+    },
+    {
+      "id": "2026-05-09_008",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-09_008_question",
+        "text": "She bought vegetables yesterday.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-09_008_opt1",
+          "text": "ఆమె పండ్లు తింటోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/4d4e7699cd0d3806.mp3",
+          "transliteration": "āmè paṃḍlu tiṃṭoṃdi."
+        },
+        {
+          "id": "2026-05-09_008_opt3",
+          "text": "నేను కాఫీ తాగాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/bd86fc012e59fd60.mp3",
+          "transliteration": "nenu kāphī tāgānu."
+        },
+        {
+          "id": "2026-05-09_008_opt0",
+          "text": "ఆమె నిన్న కూరగాయలు కొన్నది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/38c474ebea304d5d.mp3",
+          "transliteration": "āmè ninna kūragāyalu kònnadi."
+        },
+        {
+          "id": "2026-05-09_008_opt2",
+          "text": "అతను బజారుకు వెళ్ళాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/43a909e35a93c475.mp3",
+          "transliteration": "atanu bajāruku vèḻḻāḍu."
+        }
+      ],
+      "correct_option_id": "2026-05-09_008_opt0"
+    },
+    {
+      "id": "2026-05-09_009",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-09_009_question",
+        "text": "Which way is the airport?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-09_009_opt1",
+          "text": "హోటల్ ఎంత దూరంలో ఉంది?",
+          "language": "telugu",
+          "audio_path": "resources/audio/52a5a3ddd2aa8747.mp3",
+          "transliteration": "hoṭal èṃta dūraṃlo uṃdi?"
+        },
+        {
+          "id": "2026-05-09_009_opt3",
+          "text": "టాక్సీ ఎక్కడ దొరుకుతుంది?",
+          "language": "telugu",
+          "audio_path": "resources/audio/c0e7c09efa0e3690.mp3",
+          "transliteration": "ṭāksī èkkaḍa dòrukutuṃdi?"
+        },
+        {
+          "id": "2026-05-09_009_opt2",
+          "text": "ఇది నా పాస్‌పోర్ట్.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b981ac10c0ed2a96.mp3",
+          "transliteration": "idi nā pās‌porṭ."
+        },
+        {
+          "id": "2026-05-09_009_opt0",
+          "text": "విమానాశ్రయం ఎటువైపు ఉంది?",
+          "language": "telugu",
+          "audio_path": "resources/audio/e27f857f5e0207f0.mp3",
+          "transliteration": "vimānāśrayaṃ èṭuvaipu uṃdi?"
+        }
+      ],
+      "correct_option_id": "2026-05-09_009_opt0"
+    },
+    {
+      "id": "2026-05-09_010",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-09_010_question",
+        "text": "మేము నిన్న ఇల్లు సర్దాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/631ba7d4f81cea97.mp3",
+        "transliteration": "memu ninna illu sardāmu."
+      },
+      "options": [
+        {
+          "id": "2026-05-09_010_opt3",
+          "text": "He sang a song.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-09_010_opt1",
+          "text": "They came yesterday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-09_010_opt0",
+          "text": "We arranged the house yesterday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-09_010_opt2",
+          "text": "I am working.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-09_010_opt0"
+    },
+    {
+      "id": "2026-05-09_011",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-09_011_question",
+        "text": "మీరు మధ్యాహ్నం ఏం తిన్నారు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/f96d3de560fd807e.mp3",
+        "transliteration": "mīru madhyāhnaṃ eṃ tinnāru?"
+      },
+      "reference_sentence": {
+        "id": "2026-05-09_011_reference",
+        "text": "What did you eat for lunch?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-05-09_011_ans0",
+          "text": "మీరు",
+          "language": "telugu",
+          "audio_path": "resources/audio/cb63641d996016d5.mp3",
+          "transliteration": "mīru"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-09_011_display_answer",
+        "text": "మీరు",
+        "language": "telugu",
+        "audio_path": "resources/audio/cb63641d996016d5.mp3",
+        "transliteration": "mīru"
+      }
+    },
+    {
+      "id": "2026-05-09_012",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-09_012_question",
+        "text": "నా సామాను ఎక్కడ ఉంది?",
+        "language": "telugu",
+        "audio_path": "resources/audio/166f95db1f902749.mp3",
+        "transliteration": "nā sāmānu èkkaḍa uṃdi?"
+      },
+      "reference_sentence": {
+        "id": "2026-05-09_012_reference",
+        "text": "Where is my luggage?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-05-09_012_ans0",
+          "text": "ఉంది?",
+          "language": "telugu",
+          "audio_path": "resources/audio/99586bb7ade71099.mp3",
+          "transliteration": "uṃdi?"
+        },
+        {
+          "id": "2026-05-09_012_ans1",
+          "text": "ఉంది",
+          "language": "telugu",
+          "audio_path": "resources/audio/6fb3ec7eacc64a0d.mp3",
+          "transliteration": "uṃdi"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-09_012_display_answer",
+        "text": "ఉంది",
+        "language": "telugu",
+        "audio_path": "resources/audio/6fb3ec7eacc64a0d.mp3",
+        "transliteration": "uṃdi"
+      }
+    }
+  ]
+}
