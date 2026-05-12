@@ -1,0 +1,592 @@
+{
+  "lesson_id": "2026-05-12",
+  "date": "2026-05-12",
+  "status": "active",
+  "difficulty": "A1",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-05-12T07:26:32.577934+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 7,
+    "fill_blank_audio": 3,
+    "match_audio_text": 2
+  },
+  "items": [
+    {
+      "id": "2026-05-12_001",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-12_001_p1",
+          "prompt_sentence": {
+            "id": "2026-05-12_001_p1_prompt",
+            "text": "గెలుపు",
+            "language": "telugu",
+            "audio_path": "resources/audio/95d68e6637d61f2e.mp3",
+            "transliteration": "gèlupu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-12_001_opt1",
+            "text": "win",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-12_001_p2",
+          "prompt_sentence": {
+            "id": "2026-05-12_001_p2_prompt",
+            "text": "పిల్లలు",
+            "language": "telugu",
+            "audio_path": "resources/audio/cb5ed5e97274131d.mp3",
+            "transliteration": "pillalu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-12_001_opt2",
+            "text": "children",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-12_001_p3",
+          "prompt_sentence": {
+            "id": "2026-05-12_001_p3_prompt",
+            "text": "ఆట",
+            "language": "telugu",
+            "audio_path": "resources/audio/5abfa481f09aac23.mp3",
+            "transliteration": "āṭa"
+          },
+          "answer_sentence": {
+            "id": "2026-05-12_001_opt3",
+            "text": "game",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-12_001_opt2",
+          "text": "children",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-12_001_opt3",
+          "text": "game",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-12_001_opt1",
+          "text": "win",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-12_002",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-12_002_question",
+        "text": "What is this?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-12_002_opt0",
+          "text": "ఇది ఏమిటి?",
+          "language": "telugu",
+          "audio_path": "resources/audio/27a24937cd414de2.mp3",
+          "transliteration": "idi emiṭi?"
+        },
+        {
+          "id": "2026-05-12_002_opt2",
+          "text": "ఎవరు మీరు?",
+          "language": "telugu",
+          "audio_path": "resources/audio/073a5255048e6358.mp3",
+          "transliteration": "èvaru mīru?"
+        },
+        {
+          "id": "2026-05-12_002_opt1",
+          "text": "అది ఎక్కడ?",
+          "language": "telugu",
+          "audio_path": "resources/audio/1e4c6ef58130e839.mp3",
+          "transliteration": "adi èkkaḍa?"
+        },
+        {
+          "id": "2026-05-12_002_opt3",
+          "text": "ఎప్పుడు వస్తారు?",
+          "language": "telugu",
+          "audio_path": "resources/audio/51884b389f6d6449.mp3",
+          "transliteration": "èppuḍu vastāru?"
+        }
+      ],
+      "correct_option_id": "2026-05-12_002_opt0"
+    },
+    {
+      "id": "2026-05-12_003",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-12_003_question",
+        "text": "Take the medicine.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-12_003_opt3",
+          "text": "బాగా పడుకోండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/4ed66e43e6d781bc.mp3",
+          "transliteration": "bāgā paḍukoṃḍi."
+        },
+        {
+          "id": "2026-05-12_003_opt2",
+          "text": "త్వరగా రండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/9b6785e08b75ca03.mp3",
+          "transliteration": "tvaragā raṃḍi."
+        },
+        {
+          "id": "2026-05-12_003_opt1",
+          "text": "నీళ్లు తాగండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/d7efc5e9ef8a54a6.mp3",
+          "transliteration": "nīḻlu tāgaṃḍi."
+        },
+        {
+          "id": "2026-05-12_003_opt0",
+          "text": "మందులు వేసుకోండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/e052c0a9f4b8cf1b.mp3",
+          "transliteration": "maṃdulu vesukoṃḍi."
+        }
+      ],
+      "correct_option_id": "2026-05-12_003_opt0"
+    },
+    {
+      "id": "2026-05-12_004",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-12_004_question",
+        "text": "పిల్లలు బడికి వెళ్తారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/1c777bb71ebade42.mp3",
+        "transliteration": "pillalu baḍiki vèḻtāru."
+      },
+      "reference_sentence": {
+        "id": "2026-05-12_004_reference",
+        "text": "Children will go to school.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-05-12_004_ans0",
+          "text": "పిల్లలు",
+          "language": "telugu",
+          "audio_path": "resources/audio/cb5ed5e97274131d.mp3",
+          "transliteration": "pillalu"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-12_004_display_answer",
+        "text": "పిల్లలు",
+        "language": "telugu",
+        "audio_path": "resources/audio/cb5ed5e97274131d.mp3",
+        "transliteration": "pillalu"
+      }
+    },
+    {
+      "id": "2026-05-12_005",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-12_005_p1",
+          "prompt_sentence": {
+            "id": "2026-05-12_005_p1_prompt",
+            "text": "వంట",
+            "language": "telugu",
+            "audio_path": "resources/audio/0bcc499626804d91.mp3",
+            "transliteration": "vaṃṭa"
+          },
+          "answer_sentence": {
+            "id": "2026-05-12_005_opt1",
+            "text": "cooking",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-12_005_p2",
+          "prompt_sentence": {
+            "id": "2026-05-12_005_p2_prompt",
+            "text": "రేపు",
+            "language": "telugu",
+            "audio_path": "resources/audio/3603c9313311f099.mp3",
+            "transliteration": "repu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-12_005_opt2",
+            "text": "tomorrow",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-12_005_p3",
+          "prompt_sentence": {
+            "id": "2026-05-12_005_p3_prompt",
+            "text": "చదువుతాను",
+            "language": "telugu",
+            "audio_path": "resources/audio/48e96cd31a3a7acc.mp3",
+            "transliteration": "caduvutānu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-12_005_opt3",
+            "text": "will read",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-12_005_opt3",
+          "text": "will read",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-12_005_opt2",
+          "text": "tomorrow",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-12_005_opt1",
+          "text": "cooking",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-12_006",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-12_006_question",
+        "text": "I will mop the house tomorrow.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-12_006_opt2",
+          "text": "ఇల్లు చాలా పెద్దది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/67126f0d8e74bf76.mp3",
+          "transliteration": "illu cālā pèddadi."
+        },
+        {
+          "id": "2026-05-12_006_opt0",
+          "text": "నేను రేపు ఇల్లు తుడుస్తాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/7a9074facce78528.mp3",
+          "transliteration": "nenu repu illu tuḍustānu."
+        },
+        {
+          "id": "2026-05-12_006_opt1",
+          "text": "నేను ఇల్లు ఊడుస్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/d5e8c475b53b3e4b.mp3",
+          "transliteration": "nenu illu ūḍustunnānu."
+        },
+        {
+          "id": "2026-05-12_006_opt3",
+          "text": "అతను ఇల్లు కడిగాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/f1ac90f8ad8c99d4.mp3",
+          "transliteration": "atanu illu kaḍigāḍu."
+        }
+      ],
+      "correct_option_id": "2026-05-12_006_opt0"
+    },
+    {
+      "id": "2026-05-12_007",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-12_007_question",
+        "text": "She will cook.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-12_007_opt3",
+          "text": "ఆమె బజారుకు వెళ్ళింది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/923e592ee687da0d.mp3",
+          "transliteration": "āmè bajāruku vèḻḻiṃdi."
+        },
+        {
+          "id": "2026-05-12_007_opt0",
+          "text": "ఆమె వంట చేస్తుంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/4e7a223ee9137bcf.mp3",
+          "transliteration": "āmè vaṃṭa cestuṃdi."
+        },
+        {
+          "id": "2026-05-12_007_opt1",
+          "text": "ఆమె అన్నం తిన్నది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/27ae386657f7ae76.mp3",
+          "transliteration": "āmè annaṃ tinnadi."
+        },
+        {
+          "id": "2026-05-12_007_opt2",
+          "text": "వంట గది ఎక్కడ?",
+          "language": "telugu",
+          "audio_path": "resources/audio/fee8bee2a77d4aab.mp3",
+          "transliteration": "vaṃṭa gadi èkkaḍa?"
+        }
+      ],
+      "correct_option_id": "2026-05-12_007_opt0"
+    },
+    {
+      "id": "2026-05-12_008",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-12_008_question",
+        "text": "పిల్లలు రేపు కథలు వింటారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/3343bbaa12eb6ff2.mp3",
+        "transliteration": "pillalu repu kathalu viṃṭāru."
+      },
+      "reference_sentence": {
+        "id": "2026-05-12_008_reference",
+        "text": "Children will listen to stories tomorrow.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 2,
+      "accepted_answers": [
+        {
+          "id": "2026-05-12_008_ans0",
+          "text": "రేపు",
+          "language": "telugu",
+          "audio_path": "resources/audio/3603c9313311f099.mp3",
+          "transliteration": "repu"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-12_008_display_answer",
+        "text": "రేపు",
+        "language": "telugu",
+        "audio_path": "resources/audio/3603c9313311f099.mp3",
+        "transliteration": "repu"
+      }
+    },
+    {
+      "id": "2026-05-12_009",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-12_009_question",
+        "text": "మేము సాయంత్రం మొక్కలకు నీళ్లు పోస్తాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/32843391a8649167.mp3",
+        "transliteration": "memu sāyaṃtraṃ mòkkalaku nīḻlu postāmu."
+      },
+      "options": [
+        {
+          "id": "2026-05-12_009_opt1",
+          "text": "The plants are green.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-12_009_opt3",
+          "text": "There are flowers in the garden.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-12_009_opt2",
+          "text": "I plucked the fruits.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-12_009_opt0",
+          "text": "We will water the plants in the evening.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-12_009_opt0"
+    },
+    {
+      "id": "2026-05-12_010",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-12_010_question",
+        "text": "He will iron the clothes.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-12_010_opt1",
+          "text": "బట్టలు కొత్తవి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/a6ecd00e60a1c762.mp3",
+          "transliteration": "baṭṭalu kòttavi."
+        },
+        {
+          "id": "2026-05-12_010_opt3",
+          "text": "నేను బట్టలు కొంటాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/bc769ebfbb82da9b.mp3",
+          "transliteration": "nenu baṭṭalu kòṃṭānu."
+        },
+        {
+          "id": "2026-05-12_010_opt2",
+          "text": "ఆమె బట్టలు మడతపెట్టింది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b3fbb33a49d03386.mp3",
+          "transliteration": "āmè baṭṭalu maḍatapèṭṭiṃdi."
+        },
+        {
+          "id": "2026-05-12_010_opt0",
+          "text": "అతను బట్టలు ఇస్త్రీ చేస్తాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/bf79243c5312d002.mp3",
+          "transliteration": "atanu baṭṭalu istrī cestāḍu."
+        }
+      ],
+      "correct_option_id": "2026-05-12_010_opt0"
+    },
+    {
+      "id": "2026-05-12_011",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-12_011_question",
+        "text": "వాళ్ళు రేపు వస్తారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/4c9651fa71926bd0.mp3",
+        "transliteration": "vāḻḻu repu vastāru."
+      },
+      "options": [
+        {
+          "id": "2026-05-12_011_opt2",
+          "text": "They have left.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-12_011_opt0",
+          "text": "They will come tomorrow.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-12_011_opt1",
+          "text": "Where are they?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-12_011_opt3",
+          "text": "We are coming.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-12_011_opt0"
+    },
+    {
+      "id": "2026-05-12_012",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-12_012_question",
+        "text": "నేను గిన్నెలు కడుగుతాను.",
+        "language": "telugu",
+        "audio_path": "resources/audio/db32f5aa225ff68d.mp3",
+        "transliteration": "nenu ginnèlu kaḍugutānu."
+      },
+      "reference_sentence": {
+        "id": "2026-05-12_012_reference",
+        "text": "I will wash the dishes.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-05-12_012_ans0",
+          "text": "నేను",
+          "language": "telugu",
+          "audio_path": "resources/audio/05e59cfc1f39328c.mp3",
+          "transliteration": "nenu"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-12_012_display_answer",
+        "text": "నేను",
+        "language": "telugu",
+        "audio_path": "resources/audio/05e59cfc1f39328c.mp3",
+        "transliteration": "nenu"
+      }
+    }
+  ]
+}

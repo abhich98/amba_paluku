@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-05-11T10:55:02.622568+00:00",
+  "updated_at": "2026-05-12T07:32:46.672170+00:00",
   "lessons": [
+    {
+      "date": "2026-05-12",
+      "difficulty": "A1",
+      "status": "active",
+      "item_count": 12,
+      "path": "data/lessons/2026-05-12.json"
+    },
     {
       "date": "2026-05-11",
       "difficulty": "A1",
