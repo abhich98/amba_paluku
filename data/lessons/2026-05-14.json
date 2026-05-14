@@ -1,0 +1,560 @@
+{
+  "lesson_id": "2026-05-14",
+  "date": "2026-05-14",
+  "status": "active",
+  "difficulty": "A1",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-05-14T06:38:40.840645+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 8,
+    "fill_blank_audio": 3,
+    "match_audio_text": 1
+  },
+  "items": [
+    {
+      "id": "2026-05-14_001",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-14_001_question",
+        "text": "I am drinking coffee.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-14_001_opt1",
+          "text": "నేను పాలు తాగుతున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/c7c72766a5f389a9.mp3",
+          "transliteration": "nenu pālu tāgutunnānu."
+        },
+        {
+          "id": "2026-05-14_001_opt2",
+          "text": "నేను టీ తాగుతున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b349883f5ee7e073.mp3",
+          "transliteration": "nenu ṭī tāgutunnānu."
+        },
+        {
+          "id": "2026-05-14_001_opt0",
+          "text": "నేను కాఫీ తాగుతున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/89679166fb3f2530.mp3",
+          "transliteration": "nenu kāphī tāgutunnānu."
+        },
+        {
+          "id": "2026-05-14_001_opt3",
+          "text": "నేను నీళ్లు తాగుతున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/037072de4a8422b2.mp3",
+          "transliteration": "nenu nīḻlu tāgutunnānu."
+        }
+      ],
+      "correct_option_id": "2026-05-14_001_opt0"
+    },
+    {
+      "id": "2026-05-14_002",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-14_002_question",
+        "text": "ఆమె గిన్నెలు తోముతోంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/bd30754540c92214.mp3",
+        "transliteration": "āmè ginnèlu tomutoṃdi."
+      },
+      "reference_sentence": {
+        "id": "2026-05-14_002_reference",
+        "text": "She is scrubbing the dishes.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-05-14_002_ans0",
+          "text": "ఆమె",
+          "language": "telugu",
+          "audio_path": "resources/audio/0669a765b441598d.mp3",
+          "transliteration": "āmè"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-14_002_display_answer",
+        "text": "ఆమె",
+        "language": "telugu",
+        "audio_path": "resources/audio/0669a765b441598d.mp3",
+        "transliteration": "āmè"
+      }
+    },
+    {
+      "id": "2026-05-14_003",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-14_003_question",
+        "text": "మేము రేపు మా మామయ్య ఇంటికి వెళ్తాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/f1cb124bf45761d3.mp3",
+        "transliteration": "memu repu mā māmayya iṃṭiki vèḻtāmu."
+      },
+      "options": [
+        {
+          "id": "2026-05-14_003_opt1",
+          "text": "We went to uncle's house yesterday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-14_003_opt2",
+          "text": "I am going to uncle's house.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-14_003_opt3",
+          "text": "They will come to uncle's house.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-14_003_opt0",
+          "text": "We will go to our uncle's house tomorrow.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-14_003_opt0"
+    },
+    {
+      "id": "2026-05-14_004",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-14_004_question",
+        "text": "The samosas on the cart are very tasty.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-14_004_opt0",
+          "text": "బండి మీద సమోసాలు చాలా రుచిగా ఉన్నాయి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/878b02e64f85631b.mp3",
+          "transliteration": "baṃḍi mīda samosālu cālā rucigā unnāyi."
+        },
+        {
+          "id": "2026-05-14_004_opt1",
+          "text": "సమోసాలు చాలా వేడిగా ఉన్నాయి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/3605da70474611eb.mp3",
+          "transliteration": "samosālu cālā veḍigā unnāyi."
+        },
+        {
+          "id": "2026-05-14_004_opt3",
+          "text": "సమోసా ధర పది రూపాయలు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/dadbb2215521acd8.mp3",
+          "transliteration": "samosā dhara padi rūpāyalu."
+        },
+        {
+          "id": "2026-05-14_004_opt2",
+          "text": "బండి మీద పండ్లు ఉన్నాయి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/1ecd18f5118bad2a.mp3",
+          "transliteration": "baṃḍi mīda paṃḍlu unnāyi."
+        }
+      ],
+      "correct_option_id": "2026-05-14_004_opt0"
+    },
+    {
+      "id": "2026-05-14_005",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-14_005_question",
+        "text": "వచ్చే వారం మా అత్తయ్య వస్తుంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/6aa73817333f6c86.mp3",
+        "transliteration": "vacce vāraṃ mā attayya vastuṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-05-14_005_opt2",
+          "text": "My aunt will.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-14_005_opt1",
+          "text": "My aunt came yesterday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-14_005_opt0",
+          "text": "My aunt will come next week.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-14_005_opt3",
+          "text": "My uncle will come next month.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-14_005_opt0"
+    },
+    {
+      "id": "2026-05-14_006",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-14_006_question",
+        "text": "I will eat hot punugulu in the evening.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-14_006_opt2",
+          "text": "పునుగులు చల్లగా ఉన్నాయి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/5eff8eb658f22f67.mp3",
+          "transliteration": "punugulu callagā unnāyi."
+        },
+        {
+          "id": "2026-05-14_006_opt1",
+          "text": "నేను ఇప్పుడు పునుగులు తింటున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/aaab4654139a6601.mp3",
+          "transliteration": "nenu ippuḍu punugulu tiṃṭunnānu."
+        },
+        {
+          "id": "2026-05-14_006_opt3",
+          "text": "అతను పునుగులు తిన్నాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/a425b5d3c84e6b3c.mp3",
+          "transliteration": "atanu punugulu tinnāḍu."
+        },
+        {
+          "id": "2026-05-14_006_opt0",
+          "text": "నేను సాయంత్రం వేడి పునుగులు తింటాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/92ef1cc0cb6fccbb.mp3",
+          "transliteration": "nenu sāyaṃtraṃ veḍi punugulu tiṃṭānu."
+        }
+      ],
+      "correct_option_id": "2026-05-14_006_opt0"
+    },
+    {
+      "id": "2026-05-14_007",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-14_007_question",
+        "text": "Tomorrow my grandfather will tell us stories.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-14_007_reference",
+        "text": "రేపు మా తాతయ్య మాకు కథలు చెప్తారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/910e7a2ea5418a88.mp3",
+        "transliteration": "repu mā tātayya māku kathalu cèptāru."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 7,
+      "accepted_answers": [
+        {
+          "id": "2026-05-14_007_ans0",
+          "text": "stories.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-14_007_ans1",
+          "text": "stories",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-14_007_display_answer",
+        "text": "stories",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-14_008",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-14_008_question",
+        "text": "అతను రేపు ఐస్ క్రీమ్ కొంటాడు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/36e2566c000e540c.mp3",
+        "transliteration": "atanu repu ais krīm kòṃṭāḍu."
+      },
+      "options": [
+        {
+          "id": "2026-05-14_008_opt2",
+          "text": "She will buy ice cream.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-14_008_opt0",
+          "text": "He will buy ice cream tomorrow.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-14_008_opt3",
+          "text": "There is no ice cream in the market.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-14_008_opt1",
+          "text": "He ate ice cream.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-14_008_opt0"
+    },
+    {
+      "id": "2026-05-14_009",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-14_009_question",
+        "text": "My aunt (maternal) will cook a new pulao tomorrow.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-14_009_opt3",
+          "text": "మేము పలావు తింటాము.",
+          "language": "telugu",
+          "audio_path": "resources/audio/07b44303d1c3c5c7.mp3",
+          "transliteration": "memu palāvu tiṃṭāmu."
+        },
+        {
+          "id": "2026-05-14_009_opt1",
+          "text": "మా పిన్ని వంట చేస్తోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/38f4e66bf9b4d015.mp3",
+          "transliteration": "mā pinni vaṃṭa cestoṃdi."
+        },
+        {
+          "id": "2026-05-14_009_opt0",
+          "text": "మా పిన్ని రేపు కొత్త పలావు వండుతుంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/98ccc37a7f381a58.mp3",
+          "transliteration": "mā pinni repu kòtta palāvu vaṃḍutuṃdi."
+        },
+        {
+          "id": "2026-05-14_009_opt2",
+          "text": "అమ్మ పలావు వండింది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/44a974a92c0e4f73.mp3",
+          "transliteration": "amma palāvu vaṃḍiṃdi."
+        }
+      ],
+      "correct_option_id": "2026-05-14_009_opt0"
+    },
+    {
+      "id": "2026-05-14_010",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-14_010_question",
+        "text": "The bajji will be very spicy.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-14_010_reference",
+        "text": "బజ్జీలు చాలా కారంగా ఉంటాయి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/c7c72309e815d7b1.mp3",
+        "transliteration": "bajjīlu cālā kāraṃgā uṃṭāyi."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 6,
+      "accepted_answers": [
+        {
+          "id": "2026-05-14_010_ans0",
+          "text": "spicy",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-14_010_display_answer",
+        "text": "spicy",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-14_011",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-14_011_question",
+        "text": "వచ్చే సంవత్సరం మేము కొత్త కారు కొంటాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/f80b54ae66ca7734.mp3",
+        "transliteration": "vacce saṃvatsaraṃ memu kòtta kāru kòṃṭāmu."
+      },
+      "options": [
+        {
+          "id": "2026-05-14_011_opt1",
+          "text": "We will sell the old car.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-14_011_opt2",
+          "text": "He is driving the car.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-14_011_opt3",
+          "text": "I will buy a bicycle.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-14_011_opt0",
+          "text": "We will buy a new car next year.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-14_011_opt0"
+    },
+    {
+      "id": "2026-05-14_012",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-14_012_p1",
+          "prompt_sentence": {
+            "id": "2026-05-14_012_p1_prompt",
+            "text": "తమ్ముడు",
+            "language": "telugu",
+            "audio_path": "resources/audio/b2d9c6df93408a80.mp3",
+            "transliteration": "tammuḍu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-14_012_opt1",
+            "text": "brother",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-14_012_p2",
+          "prompt_sentence": {
+            "id": "2026-05-14_012_p2_prompt",
+            "text": "మామ",
+            "language": "telugu",
+            "audio_path": "resources/audio/41bad7d6d7509716.mp3",
+            "transliteration": "māma"
+          },
+          "answer_sentence": {
+            "id": "2026-05-14_012_opt2",
+            "text": "Uncle",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-14_012_p3",
+          "prompt_sentence": {
+            "id": "2026-05-14_012_p3_prompt",
+            "text": "వస్తాను",
+            "language": "telugu",
+            "audio_path": "resources/audio/cad721d17fe91e7a.mp3",
+            "transliteration": "vastānu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-14_012_opt3",
+            "text": "Will come",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-14_012_opt3",
+          "text": "Will come",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-14_012_opt1",
+          "text": "brother",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-14_012_opt2",
+          "text": "Uncle",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    }
+  ]
+}
