@@ -1,0 +1,676 @@
+{
+  "lesson_id": "2026-05-16",
+  "date": "2026-05-16",
+  "status": "active",
+  "difficulty": "A1",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-05-16T12:12:54.423834+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 6,
+    "fill_blank_audio": 2,
+    "match_audio_text": 4
+  },
+  "items": [
+    {
+      "id": "2026-05-16_001",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-16_001_question",
+        "text": "నేను ఇప్పుడు అన్నం తింటున్నాను.",
+        "language": "telugu",
+        "audio_path": "resources/audio/d3b4192fb510247d.mp3",
+        "transliteration": "nenu ippuḍu annaṃ tiṃṭunnānu."
+      },
+      "options": [
+        {
+          "id": "2026-05-16_001_opt0",
+          "text": "I am eating rice now.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_001_opt3",
+          "text": "I am cooking rice.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_001_opt2",
+          "text": "I will eat rice tomorrow.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_001_opt1",
+          "text": "I ate rice yesterday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-16_001_opt0"
+    },
+    {
+      "id": "2026-05-16_002",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-16_002_question",
+        "text": "I will eat panipuri tomorrow.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-16_002_opt0",
+          "text": "నేను రేపు పానీపూరీ తింటాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/7075c2c7c0e25dca.mp3",
+          "transliteration": "nenu repu pānīpūrī tiṃṭānu."
+        },
+        {
+          "id": "2026-05-16_002_opt3",
+          "text": "నాకు పానీపూరీ ఇష్టం లేదు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/2b69bd9864c9b1dc.mp3",
+          "transliteration": "nāku pānīpūrī iṣṭaṃ ledu."
+        },
+        {
+          "id": "2026-05-16_002_opt2",
+          "text": "నేను ఇప్పుడు పానీపూరీ తింటున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/4b7f17dc53d8d088.mp3",
+          "transliteration": "nenu ippuḍu pānīpūrī tiṃṭunnānu."
+        },
+        {
+          "id": "2026-05-16_002_opt1",
+          "text": "నేను నిన్న పానీపూరీ తిన్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/f5523c6f7408bf41.mp3",
+          "transliteration": "nenu ninna pānīpūrī tinnānu."
+        }
+      ],
+      "correct_option_id": "2026-05-16_002_opt0"
+    },
+    {
+      "id": "2026-05-16_003",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-16_003_question",
+        "text": "ఈ చొక్కా ధర ఎంత?",
+        "language": "telugu",
+        "audio_path": "resources/audio/9b95319d5cce35de.mp3",
+        "transliteration": "ī còkkā dhara èṃta?"
+      },
+      "options": [
+        {
+          "id": "2026-05-16_003_opt1",
+          "text": "This shirt is good.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_003_opt0",
+          "text": "What is the price of this shirt?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_003_opt2",
+          "text": "I want a new shirt.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_003_opt3",
+          "text": "That is my shirt.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-16_003_opt0"
+    },
+    {
+      "id": "2026-05-16_004",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-16_004_p1",
+          "prompt_sentence": {
+            "id": "2026-05-16_004_p1_prompt",
+            "text": "చెల్లెలు",
+            "language": "telugu",
+            "audio_path": "resources/audio/80fb74f5407fcb81.mp3",
+            "transliteration": "cèllèlu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-16_004_opt1",
+            "text": "sister",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-16_004_p2",
+          "prompt_sentence": {
+            "id": "2026-05-16_004_p2_prompt",
+            "text": "తిన్నాను",
+            "language": "telugu",
+            "audio_path": "resources/audio/9974a7fd58ca8066.mp3",
+            "transliteration": "tinnānu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-16_004_opt2",
+            "text": "ate",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-16_004_p3",
+          "prompt_sentence": {
+            "id": "2026-05-16_004_p3_prompt",
+            "text": "అమ్మమ్మ",
+            "language": "telugu",
+            "audio_path": "resources/audio/05bb91a4d26ce73f.mp3",
+            "transliteration": "ammamma"
+          },
+          "answer_sentence": {
+            "id": "2026-05-16_004_opt3",
+            "text": "Grandmother",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-16_004_opt3",
+          "text": "Grandmother",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_004_opt1",
+          "text": "sister",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_004_opt2",
+          "text": "ate",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-16_005",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-16_005_question",
+        "text": "మా మామయ్య బజారుకు వెళ్లారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/bd7cbf1c130ad62b.mp3",
+        "transliteration": "mā māmayya bajāruku vèḻlāru."
+      },
+      "options": [
+        {
+          "id": "2026-05-16_005_opt2",
+          "text": "My maternal uncle is at home.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_005_opt3",
+          "text": "My maternal uncle is hungry.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_005_opt1",
+          "text": "My maternal uncle is coming.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_005_opt0",
+          "text": "My maternal uncle went to the market.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-16_005_opt0"
+    },
+    {
+      "id": "2026-05-16_006",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-16_006_question",
+        "text": "I want one kilo of tomatoes.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-16_006_reference",
+        "text": "నాకు ఒక కిలో టమోటాలు కావాలి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/468007f1f574cc97.mp3",
+        "transliteration": "nāku òka kilo ṭamoṭālu kāvāli."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-05-16_006_ans0",
+          "text": "kilo",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-16_006_display_answer",
+        "text": "kilo",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-16_007",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-16_007_question",
+        "text": "మా అత్తయ్య సమోసాలు కొంటున్నారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/1228141654d0354b.mp3",
+        "transliteration": "mā attayya samosālu kòṃṭunnāru."
+      },
+      "reference_sentence": {
+        "id": "2026-05-16_007_reference",
+        "text": "My paternal aunt is buying samosas.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-05-16_007_ans0",
+          "text": "సమోసాలు",
+          "language": "telugu",
+          "audio_path": "resources/audio/2fcd233a719f87bd.mp3",
+          "transliteration": "samosālu"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-16_007_display_answer",
+        "text": "సమోసాలు",
+        "language": "telugu",
+        "audio_path": "resources/audio/2fcd233a719f87bd.mp3",
+        "transliteration": "samosālu"
+      }
+    },
+    {
+      "id": "2026-05-16_008",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-16_008_question",
+        "text": "This mirchi bajji is very spicy.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-16_008_opt3",
+          "text": "మిర్చి బజ్జీలు లేవు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/f669b82d0195f3f7.mp3",
+          "transliteration": "mirci bajjīlu levu."
+        },
+        {
+          "id": "2026-05-16_008_opt1",
+          "text": "నాకు మిర్చి బజ్జీ కావాలి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/989331fdb124733d.mp3",
+          "transliteration": "nāku mirci bajjī kāvāli."
+        },
+        {
+          "id": "2026-05-16_008_opt0",
+          "text": "ఈ మిర్చి బజ్జీ చాలా కారంగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/84d7526b0763d378.mp3",
+          "transliteration": "ī mirci bajjī cālā kāraṃgā uṃdi."
+        },
+        {
+          "id": "2026-05-16_008_opt2",
+          "text": "మిర్చి బజ్జీ వేడిగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/7f79d3d281ef1bc6.mp3",
+          "transliteration": "mirci bajjī veḍigā uṃdi."
+        }
+      ],
+      "correct_option_id": "2026-05-16_008_opt0"
+    },
+    {
+      "id": "2026-05-16_009",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-16_009_p1",
+          "prompt_sentence": {
+            "id": "2026-05-16_009_p1_prompt",
+            "text": "తాతయ్య",
+            "language": "telugu",
+            "audio_path": "resources/audio/1cec050f6d329f3b.mp3",
+            "transliteration": "tātayya"
+          },
+          "answer_sentence": {
+            "id": "2026-05-16_009_opt1",
+            "text": "Grandfather",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-16_009_p2",
+          "prompt_sentence": {
+            "id": "2026-05-16_009_p2_prompt",
+            "text": "మనవడు",
+            "language": "telugu",
+            "audio_path": "resources/audio/97ed591e283c9a69.mp3",
+            "transliteration": "manavaḍu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-16_009_opt2",
+            "text": "Grandson",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-16_009_p3",
+          "prompt_sentence": {
+            "id": "2026-05-16_009_p3_prompt",
+            "text": "బయట",
+            "language": "telugu",
+            "audio_path": "resources/audio/e1e81ee0dec0e708.mp3",
+            "transliteration": "bayaṭa"
+          },
+          "answer_sentence": {
+            "id": "2026-05-16_009_opt3",
+            "text": "Outside",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-16_009_opt2",
+          "text": "Grandson",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_009_opt1",
+          "text": "Grandfather",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_009_opt3",
+          "text": "Outside",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-16_010",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-16_010_p1",
+          "prompt_sentence": {
+            "id": "2026-05-16_010_p1_prompt",
+            "text": "బజ్జీ",
+            "language": "telugu",
+            "audio_path": "resources/audio/a151fabcfeada0d2.mp3",
+            "transliteration": "bajjī"
+          },
+          "answer_sentence": {
+            "id": "2026-05-16_010_opt1",
+            "text": "Fritter",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-16_010_p2",
+          "prompt_sentence": {
+            "id": "2026-05-16_010_p2_prompt",
+            "text": "దుకాణం",
+            "language": "telugu",
+            "audio_path": "resources/audio/06bb825d06e21e9f.mp3",
+            "transliteration": "dukāṇaṃ"
+          },
+          "answer_sentence": {
+            "id": "2026-05-16_010_opt2",
+            "text": "Shop",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-16_010_p3",
+          "prompt_sentence": {
+            "id": "2026-05-16_010_p3_prompt",
+            "text": "ధర",
+            "language": "telugu",
+            "audio_path": "resources/audio/6b76aea411a01bc8.mp3",
+            "transliteration": "dhara"
+          },
+          "answer_sentence": {
+            "id": "2026-05-16_010_opt3",
+            "text": "Price",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-16_010_opt3",
+          "text": "Price",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_010_opt1",
+          "text": "Fritter",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_010_opt2",
+          "text": "Shop",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-16_011",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-16_011_p1",
+          "prompt_sentence": {
+            "id": "2026-05-16_011_p1_prompt",
+            "text": "బట్టలు",
+            "language": "telugu",
+            "audio_path": "resources/audio/6c01c374fa8ab2e4.mp3",
+            "transliteration": "baṭṭalu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-16_011_opt1",
+            "text": "Clothes",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-16_011_p2",
+          "prompt_sentence": {
+            "id": "2026-05-16_011_p2_prompt",
+            "text": "సంచి",
+            "language": "telugu",
+            "audio_path": "resources/audio/c822c1a825f31982.mp3",
+            "transliteration": "saṃci"
+          },
+          "answer_sentence": {
+            "id": "2026-05-16_011_opt2",
+            "text": "Bag",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-16_011_p3",
+          "prompt_sentence": {
+            "id": "2026-05-16_011_p3_prompt",
+            "text": "చౌక",
+            "language": "telugu",
+            "audio_path": "resources/audio/66162a478cc5bbe3.mp3",
+            "transliteration": "cauka"
+          },
+          "answer_sentence": {
+            "id": "2026-05-16_011_opt3",
+            "text": "Cheap",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-16_011_opt3",
+          "text": "Cheap",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_011_opt2",
+          "text": "Bag",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-16_011_opt1",
+          "text": "Clothes",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-16_012",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-16_012_question",
+        "text": "My grandfather bought new clothes.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-16_012_opt3",
+          "text": "ఇవి మా తాతయ్య బట్టలు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/0fcd2474239b911f.mp3",
+          "transliteration": "ivi mā tātayya baṭṭalu."
+        },
+        {
+          "id": "2026-05-16_012_opt1",
+          "text": "మా తాతయ్య బట్టలు ఉతికారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/7ce5d9dcee473d45.mp3",
+          "transliteration": "mā tātayya baṭṭalu utikāru."
+        },
+        {
+          "id": "2026-05-16_012_opt0",
+          "text": "మా తాతయ్య కొత్త బట్టలు కొన్నారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/77f32dd48c657c95.mp3",
+          "transliteration": "mā tātayya kòtta baṭṭalu kònnāru."
+        },
+        {
+          "id": "2026-05-16_012_opt2",
+          "text": "మా తాతయ్యకు బట్టలు కావాలి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b38552ed17300bae.mp3",
+          "transliteration": "mā tātayyaku baṭṭalu kāvāli."
+        }
+      ],
+      "correct_option_id": "2026-05-16_012_opt0"
+    }
+  ]
+}
