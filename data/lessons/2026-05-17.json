@@ -1,0 +1,586 @@
+{
+  "lesson_id": "2026-05-17",
+  "date": "2026-05-17",
+  "status": "active",
+  "difficulty": "A1",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-05-17T07:52:46.574060+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 6,
+    "fill_blank_audio": 4,
+    "match_audio_text": 2
+  },
+  "items": [
+    {
+      "id": "2026-05-17_001",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-17_001_question",
+        "text": "I am fine, thank you.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-17_001_opt3",
+          "text": "అతను బాగున్నాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/f0be17c1fa732695.mp3",
+          "transliteration": "atanu bāgunnāḍu."
+        },
+        {
+          "id": "2026-05-17_001_opt0",
+          "text": "నేను బాగున్నాను, ధన్యవాదాలు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/ab4b70d3216a24d6.mp3",
+          "transliteration": "nenu bāgunnānu, dhanyavādālu."
+        },
+        {
+          "id": "2026-05-17_001_opt2",
+          "text": "నాకు ఆకలిగా లేదు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/149ee313710ac305.mp3",
+          "transliteration": "nāku ākaligā ledu."
+        },
+        {
+          "id": "2026-05-17_001_opt1",
+          "text": "నేను వెళ్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/c1260bd3a8d7bd60.mp3",
+          "transliteration": "nenu vèḻtunnānu."
+        }
+      ],
+      "correct_option_id": "2026-05-17_001_opt0"
+    },
+    {
+      "id": "2026-05-17_002",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-17_002_question",
+        "text": "అతను బట్టలు ఇస్త్రీ చేస్తాడు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/068646326787398d.mp3",
+        "transliteration": "atanu baṭṭalu istrī cestāḍu."
+      },
+      "options": [
+        {
+          "id": "2026-05-17_002_opt1",
+          "text": "She will fold the clothes.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-17_002_opt0",
+          "text": "He will iron the clothes.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-17_002_opt3",
+          "text": "We will dry the clothes.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-17_002_opt2",
+          "text": "He will buy clothes.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-17_002_opt0"
+    },
+    {
+      "id": "2026-05-17_003",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-17_003_p1",
+          "prompt_sentence": {
+            "id": "2026-05-17_003_p1_prompt",
+            "text": "బజ్జీ",
+            "language": "telugu",
+            "audio_path": "resources/audio/a151fabcfeada0d2.mp3",
+            "transliteration": "bajjī"
+          },
+          "answer_sentence": {
+            "id": "2026-05-17_003_opt1",
+            "text": "fritter",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-17_003_p2",
+          "prompt_sentence": {
+            "id": "2026-05-17_003_p2_prompt",
+            "text": "అత్త",
+            "language": "telugu",
+            "audio_path": "resources/audio/72e3e46a3101d381.mp3",
+            "transliteration": "atta"
+          },
+          "answer_sentence": {
+            "id": "2026-05-17_003_opt2",
+            "text": "Aunt",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-17_003_p3",
+          "prompt_sentence": {
+            "id": "2026-05-17_003_p3_prompt",
+            "text": "పెద్ద",
+            "language": "telugu",
+            "audio_path": "resources/audio/409ce363515dadbc.mp3",
+            "transliteration": "pèdda"
+          },
+          "answer_sentence": {
+            "id": "2026-05-17_003_opt3",
+            "text": "Big",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-17_003_opt2",
+          "text": "Aunt",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-17_003_opt1",
+          "text": "fritter",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-17_003_opt3",
+          "text": "Big",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-17_004",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-17_004_question",
+        "text": "This pani puri is very tasty.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-17_004_opt0",
+          "text": "ఈ పానీపూరీ చాలా రుచిగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/e302e024ab5449f3.mp3",
+          "transliteration": "ī pānīpūrī cālā rucigā uṃdi."
+        },
+        {
+          "id": "2026-05-17_004_opt1",
+          "text": "ఈ పానీపూరీ చాలా వేడిగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b2681d2ebdb2aead.mp3",
+          "transliteration": "ī pānīpūrī cālā veḍigā uṃdi."
+        },
+        {
+          "id": "2026-05-17_004_opt3",
+          "text": "నాకు పానీపూరీ వద్దు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/8c71ea3094e3c251.mp3",
+          "transliteration": "nāku pānīpūrī vaddu."
+        },
+        {
+          "id": "2026-05-17_004_opt2",
+          "text": "ఆ పానీపూరీ చేదుగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/e08e5b30bffa543e.mp3",
+          "transliteration": "ā pānīpūrī cedugā uṃdi."
+        }
+      ],
+      "correct_option_id": "2026-05-17_004_opt0"
+    },
+    {
+      "id": "2026-05-17_005",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-17_005_question",
+        "text": "మా పెద్దమ్మ ఊరి నుండి వచ్చింది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/b91d2e9d73781026.mp3",
+        "transliteration": "mā pèddamma ūri nuṃḍi vacciṃdi."
+      },
+      "reference_sentence": {
+        "id": "2026-05-17_005_reference",
+        "text": "My maternal aunt (elder) came from the village.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-05-17_005_ans0",
+          "text": "నుండి",
+          "language": "telugu",
+          "audio_path": "resources/audio/5250d5c37e487e0e.mp3",
+          "transliteration": "nuṃḍi"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-17_005_display_answer",
+        "text": "నుండి",
+        "language": "telugu",
+        "audio_path": "resources/audio/5250d5c37e487e0e.mp3",
+        "transliteration": "nuṃḍi"
+      }
+    },
+    {
+      "id": "2026-05-17_006",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-17_006_question",
+        "text": "They are selling samosas on a cart.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-17_006_reference",
+        "text": "బండి మీద సమోసాలు అమ్ముతున్నారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/ad8e66f1cb8dd281.mp3",
+        "transliteration": "baṃḍi mīda samosālu ammutunnāru."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-05-17_006_ans0",
+          "text": "selling",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-17_006_display_answer",
+        "text": "selling",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-17_007",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-17_007_question",
+        "text": "ఆ ఏనుగు చాలా పెద్దగా ఉంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/66e2c6d449b6e35f.mp3",
+        "transliteration": "ā enugu cālā pèddagā uṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-05-17_007_opt3",
+          "text": "That dog runs very fast.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-17_007_opt2",
+          "text": "That elephant is walking.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-17_007_opt1",
+          "text": "This cat is very small.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-17_007_opt0",
+          "text": "That elephant is very big.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-17_007_opt0"
+    },
+    {
+      "id": "2026-05-17_008",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-17_008_question",
+        "text": "My brother-in-law built a new house.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-17_008_opt3",
+          "text": "మా బావగారు రేపు వస్తారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/d94bab7dfd3036b4.mp3",
+          "transliteration": "mā bāvagāru repu vastāru."
+        },
+        {
+          "id": "2026-05-17_008_opt0",
+          "text": "మా బావగారు కొత్త ఇల్లు కట్టారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/6cca5a9c2af6f824.mp3",
+          "transliteration": "mā bāvagāru kòtta illu kaṭṭāru."
+        },
+        {
+          "id": "2026-05-17_008_opt1",
+          "text": "మా బావగారు ఆఫీసులో ఉన్నారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/47fa8df6b62f1881.mp3",
+          "transliteration": "mā bāvagāru āphīsulo unnāru."
+        },
+        {
+          "id": "2026-05-17_008_opt2",
+          "text": "మా అక్క కొత్త ఇల్లు కొన్నది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/70bae04d2cfccb45.mp3",
+          "transliteration": "mā akka kòtta illu kònnadi."
+        }
+      ],
+      "correct_option_id": "2026-05-17_008_opt0"
+    },
+    {
+      "id": "2026-05-17_009",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-17_009_question",
+        "text": "This coffee is very bitter.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-17_009_reference",
+        "text": "ఈ కాఫీ చాలా చేదుగా ఉంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/6db607b64d620182.mp3",
+        "transliteration": "ī kāphī cālā cedugā uṃdi."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-05-17_009_ans0",
+          "text": "This",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-17_009_display_answer",
+        "text": "This",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-17_010",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-17_010_question",
+        "text": "Grandmother tells old stories.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-17_010_opt1",
+          "text": "తాతయ్య పేపర్ చదువుతున్నారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/9968f0cfc443fa31.mp3",
+          "transliteration": "tātayya pepar caduvutunnāru."
+        },
+        {
+          "id": "2026-05-17_010_opt0",
+          "text": "నాన్నమ్మ పాత కథలు చెబుతుంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/9b27b7c11f632d00.mp3",
+          "transliteration": "nānnamma pāta kathalu cèbutuṃdi."
+        },
+        {
+          "id": "2026-05-17_010_opt3",
+          "text": "నాన్నమ్మ గుడికి వెళ్తోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/abba215bec746931.mp3",
+          "transliteration": "nānnamma guḍiki vèḻtoṃdi."
+        },
+        {
+          "id": "2026-05-17_010_opt2",
+          "text": "అమ్మ వంట చేస్తోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/559f1ff064d0621a.mp3",
+          "transliteration": "amma vaṃṭa cestoṃdi."
+        }
+      ],
+      "correct_option_id": "2026-05-17_010_opt0"
+    },
+    {
+      "id": "2026-05-17_011",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-17_011_p1",
+          "prompt_sentence": {
+            "id": "2026-05-17_011_p1_prompt",
+            "text": "చిన్న",
+            "language": "telugu",
+            "audio_path": "resources/audio/30aad0877923868c.mp3",
+            "transliteration": "cinna"
+          },
+          "answer_sentence": {
+            "id": "2026-05-17_011_opt1",
+            "text": "Small",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-17_011_p2",
+          "prompt_sentence": {
+            "id": "2026-05-17_011_p2_prompt",
+            "text": "వడ",
+            "language": "telugu",
+            "audio_path": "resources/audio/2ac152c01fae17e7.mp3",
+            "transliteration": "vaḍa"
+          },
+          "answer_sentence": {
+            "id": "2026-05-17_011_opt2",
+            "text": "Vada",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-17_011_p3",
+          "prompt_sentence": {
+            "id": "2026-05-17_011_p3_prompt",
+            "text": "కొత్త",
+            "language": "telugu",
+            "audio_path": "resources/audio/f295a49dc801967a.mp3",
+            "transliteration": "kòtta"
+          },
+          "answer_sentence": {
+            "id": "2026-05-17_011_opt3",
+            "text": "New",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-17_011_opt2",
+          "text": "Vada",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-17_011_opt3",
+          "text": "New",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-17_011_opt1",
+          "text": "Small",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-17_012",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-17_012_question",
+        "text": "బజారులో రంగు రంగుల పువ్వులు ఉన్నాయి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/e80fec1eb5f52a45.mp3",
+        "transliteration": "bajārulo raṃgu raṃgula puvvulu unnāyi."
+      },
+      "reference_sentence": {
+        "id": "2026-05-17_012_reference",
+        "text": "There are colorful flowers in the market.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "exact",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-05-17_012_ans0",
+          "text": "రంగుల",
+          "language": "telugu",
+          "audio_path": "resources/audio/8eae919db7b9b174.mp3",
+          "transliteration": "raṃgula"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-17_012_display_answer",
+        "text": "రంగుల",
+        "language": "telugu",
+        "audio_path": "resources/audio/8eae919db7b9b174.mp3",
+        "transliteration": "raṃgula"
+      }
+    }
+  ]
+}
