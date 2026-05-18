@@ -1,0 +1,586 @@
+{
+  "lesson_id": "2026-05-18",
+  "date": "2026-05-18",
+  "status": "active",
+  "difficulty": "A1",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-05-18T06:10:12.775698+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 6,
+    "fill_blank_audio": 4,
+    "match_audio_text": 2
+  },
+  "items": [
+    {
+      "id": "2026-05-18_001",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-18_001_question",
+        "text": "He is my friend.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-18_001_opt1",
+          "text": "ఆమె నా చెల్లి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/81f6e26cd95d30f0.mp3",
+          "transliteration": "āmè nā cèlli."
+        },
+        {
+          "id": "2026-05-18_001_opt0",
+          "text": "ఆయన నా స్నేహితుడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/5bbffc694d490843.mp3",
+          "transliteration": "āyana nā snehituḍu."
+        },
+        {
+          "id": "2026-05-18_001_opt3",
+          "text": "అతను నా గురువు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/70add3f4e05f64e2.mp3",
+          "transliteration": "atanu nā guruvu."
+        },
+        {
+          "id": "2026-05-18_001_opt2",
+          "text": "వారు నా తల్లిదండ్రులు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/046f86e2c3f93b7c.mp3",
+          "transliteration": "vāru nā tallidaṃḍrulu."
+        }
+      ],
+      "correct_option_id": "2026-05-18_001_opt0"
+    },
+    {
+      "id": "2026-05-18_002",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-18_002_p1",
+          "prompt_sentence": {
+            "id": "2026-05-18_002_p1_prompt",
+            "text": "అమ్మ",
+            "language": "telugu",
+            "audio_path": "resources/audio/b69a1015c123c7a8.mp3",
+            "transliteration": "amma"
+          },
+          "answer_sentence": {
+            "id": "2026-05-18_002_opt1",
+            "text": "mother",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-18_002_p2",
+          "prompt_sentence": {
+            "id": "2026-05-18_002_p2_prompt",
+            "text": "ప్రయాణం",
+            "language": "telugu",
+            "audio_path": "resources/audio/cb845133fe06a4c0.mp3",
+            "transliteration": "prayāṇaṃ"
+          },
+          "answer_sentence": {
+            "id": "2026-05-18_002_opt2",
+            "text": "Trip",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-18_002_p3",
+          "prompt_sentence": {
+            "id": "2026-05-18_002_p3_prompt",
+            "text": "నిద్ర",
+            "language": "telugu",
+            "audio_path": "resources/audio/1d92997cf4ce9b08.mp3",
+            "transliteration": "nidra"
+          },
+          "answer_sentence": {
+            "id": "2026-05-18_002_opt3",
+            "text": "Sleep",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-18_002_opt1",
+          "text": "mother",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-18_002_opt2",
+          "text": "Trip",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-18_002_opt3",
+          "text": "Sleep",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-18_003",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-18_003_question",
+        "text": "నువ్వు ఏమి తింటున్నావు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/5706976701328757.mp3",
+        "transliteration": "nuvvu emi tiṃṭunnāvu?"
+      },
+      "options": [
+        {
+          "id": "2026-05-18_003_opt1",
+          "text": "Where are you going?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-18_003_opt2",
+          "text": "What are you reading?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-18_003_opt3",
+          "text": "When do you sleep?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-18_003_opt0",
+          "text": "What are you eating?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-18_003_opt0"
+    },
+    {
+      "id": "2026-05-18_004",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-18_004_question",
+        "text": "This hotel is very good.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-18_004_reference",
+        "text": "ఈ హోటల్ చాలా బాగుంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/3866736e9bd982c5.mp3",
+        "transliteration": "ī hoṭal cālā bāguṃdi."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-05-18_004_ans0",
+          "text": "very",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-18_004_display_answer",
+        "text": "very",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-18_005",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-18_005_question",
+        "text": "నాకు కొంచెం విశ్రాంతి కావాలి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/bc2fcefc4912d5cd.mp3",
+        "transliteration": "nāku kòṃcèṃ viśrāṃti kāvāli."
+      },
+      "options": [
+        {
+          "id": "2026-05-18_005_opt3",
+          "text": "I want a holiday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-18_005_opt0",
+          "text": "I need some rest.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-18_005_opt1",
+          "text": "I want some rice.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-18_005_opt2",
+          "text": "I want new clothes.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-18_005_opt0"
+    },
+    {
+      "id": "2026-05-18_006",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-18_006_question",
+        "text": "రైలు ప్రయాణం చాలా సౌకర్యంగా ఉంటుంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/f82379be0fc2f917.mp3",
+        "transliteration": "railu prayāṇaṃ cālā saukaryaṃgā uṃṭuṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-05-18_006_opt1",
+          "text": "Train travel is very slow.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-18_006_opt3",
+          "text": "The path is very difficult.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-18_006_opt0",
+          "text": "Train travel is very comfortable.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-18_006_opt2",
+          "text": "The plane is very high.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-18_006_opt0"
+    },
+    {
+      "id": "2026-05-18_007",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-18_007_question",
+        "text": "Those hills are very beautiful.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-18_007_reference",
+        "text": "ఆ కొండలు చాలా అందంగా ఉన్నాయి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/4c65518fd145fcb0.mp3",
+        "transliteration": "ā kòṃḍalu cālā aṃdaṃgā unnāyi."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 5,
+      "accepted_answers": [
+        {
+          "id": "2026-05-18_007_ans0",
+          "text": "beautiful",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-18_007_display_answer",
+        "text": "beautiful",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-18_008",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-18_008_question",
+        "text": "I will sleep on the bed.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-18_008_reference",
+        "text": "నేను మంచం మీద పడుకుంటాను.",
+        "language": "telugu",
+        "audio_path": "resources/audio/d7cc2825d2908770.mp3",
+        "transliteration": "nenu maṃcaṃ mīda paḍukuṃṭānu."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 6,
+      "accepted_answers": [
+        {
+          "id": "2026-05-18_008_ans0",
+          "text": "bed",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-18_008_display_answer",
+        "text": "bed",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-18_009",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-18_009_question",
+        "text": "The ocean is very deep.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-18_009_opt3",
+          "text": "బావిలో నీళ్లు లేవు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/ae1b294cf3c8fd84.mp3",
+          "transliteration": "bāvilo nīḻlu levu."
+        },
+        {
+          "id": "2026-05-18_009_opt1",
+          "text": "నది చాలా వేగంగా ప్రవహిస్తోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/d25ae864df3fcf27.mp3",
+          "transliteration": "nadi cālā vegaṃgā pravahistoṃdi."
+        },
+        {
+          "id": "2026-05-18_009_opt2",
+          "text": "చెరువు చాలా చిన్నది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/f8e4cd8fddb103fe.mp3",
+          "transliteration": "cèruvu cālā cinnadi."
+        },
+        {
+          "id": "2026-05-18_009_opt0",
+          "text": "సముద్రం చాలా లోతుగా ఉంటుంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/be4bd4fc2978a832.mp3",
+          "transliteration": "samudraṃ cālā lotugā uṃṭuṃdi."
+        }
+      ],
+      "correct_option_id": "2026-05-18_009_opt0"
+    },
+    {
+      "id": "2026-05-18_010",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-18_010_question",
+        "text": "Shall we go on a tour tomorrow?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-18_010_opt2",
+          "text": "మనం సినిమా చూద్దామా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/ee31bd4e05f15d03.mp3",
+          "transliteration": "manaṃ sinimā cūddāmā?"
+        },
+        {
+          "id": "2026-05-18_010_opt1",
+          "text": "మనం ఇప్పుడు భోజనం చేద్దామా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/1b6c67a4dbfc4393.mp3",
+          "transliteration": "manaṃ ippuḍu bhojanaṃ ceddāmā?"
+        },
+        {
+          "id": "2026-05-18_010_opt0",
+          "text": "మనం రేపు టూర్‌కి వెళ్దామా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/1be88ee350812f5d.mp3",
+          "transliteration": "manaṃ repu ṭūr‌ki vèḻdāmā?"
+        },
+        {
+          "id": "2026-05-18_010_opt3",
+          "text": "మనం ఆటలు ఆడుకుందామా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/40a5924f422ebfa9.mp3",
+          "transliteration": "manaṃ āṭalu āḍukuṃdāmā?"
+        }
+      ],
+      "correct_option_id": "2026-05-18_010_opt0"
+    },
+    {
+      "id": "2026-05-18_011",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-18_011_question",
+        "text": "This mattress is very soft.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-18_011_reference",
+        "text": "ఈ పరుపు చాలా మెత్తగా ఉంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/4da7da8a1c1e045d.mp3",
+        "transliteration": "ī parupu cālā mèttagā uṃdi."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 5,
+      "accepted_answers": [
+        {
+          "id": "2026-05-18_011_ans0",
+          "text": "soft",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-18_011_display_answer",
+        "text": "soft",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-18_012",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-18_012_p1",
+          "prompt_sentence": {
+            "id": "2026-05-18_012_p1_prompt",
+            "text": "మంచి",
+            "language": "telugu",
+            "audio_path": "resources/audio/c9f81a1824ca27ff.mp3",
+            "transliteration": "maṃci"
+          },
+          "answer_sentence": {
+            "id": "2026-05-18_012_opt1",
+            "text": "Good",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-18_012_p2",
+          "prompt_sentence": {
+            "id": "2026-05-18_012_p2_prompt",
+            "text": "చాలా",
+            "language": "telugu",
+            "audio_path": "resources/audio/89514a160ed983f5.mp3",
+            "transliteration": "cālā"
+          },
+          "answer_sentence": {
+            "id": "2026-05-18_012_opt2",
+            "text": "Very",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-18_012_p3",
+          "prompt_sentence": {
+            "id": "2026-05-18_012_p3_prompt",
+            "text": "దూరం",
+            "language": "telugu",
+            "audio_path": "resources/audio/3cd9d3005b2e9bc8.mp3",
+            "transliteration": "dūraṃ"
+          },
+          "answer_sentence": {
+            "id": "2026-05-18_012_opt3",
+            "text": "Far",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-18_012_opt2",
+          "text": "Very",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-18_012_opt1",
+          "text": "Good",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-18_012_opt3",
+          "text": "Far",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    }
+  ]
+}
