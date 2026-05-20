@@ -1,0 +1,565 @@
+{
+  "lesson_id": "2026-05-20",
+  "date": "2026-05-20",
+  "status": "active",
+  "difficulty": "A1",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-05-20T06:33:56.796336+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 10,
+    "fill_blank_audio": 1,
+    "match_audio_text": 1
+  },
+  "items": [
+    {
+      "id": "2026-05-20_001",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-20_001_question",
+        "text": "We are eating.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-20_001_opt2",
+          "text": "వాళ్లు తింటున్నారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/f92bac35b02c6045.mp3",
+          "transliteration": "vāḻlu tiṃṭunnāru."
+        },
+        {
+          "id": "2026-05-20_001_opt3",
+          "text": "మేము వెళ్తున్నాము.",
+          "language": "telugu",
+          "audio_path": "resources/audio/2512ab8be40bbedf.mp3",
+          "transliteration": "memu vèḻtunnāmu."
+        },
+        {
+          "id": "2026-05-20_001_opt0",
+          "text": "మేము తింటున్నాము.",
+          "language": "telugu",
+          "audio_path": "resources/audio/3c7dc0ad769f1286.mp3",
+          "transliteration": "memu tiṃṭunnāmu."
+        },
+        {
+          "id": "2026-05-20_001_opt1",
+          "text": "నేను తింటున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/861b220f5c92e2fc.mp3",
+          "transliteration": "nenu tiṃṭunnānu."
+        }
+      ],
+      "correct_option_id": "2026-05-20_001_opt0"
+    },
+    {
+      "id": "2026-05-20_002",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-20_002_question",
+        "text": "I am going to the market.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-20_002_opt2",
+          "text": "అతను బజారుకు వెళ్తున్నాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/01a431fce9ac4222.mp3",
+          "transliteration": "atanu bajāruku vèḻtunnāḍu."
+        },
+        {
+          "id": "2026-05-20_002_opt0",
+          "text": "నేను బజారుకు వెళ్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/342c5e98bed448cb.mp3",
+          "transliteration": "nenu bajāruku vèḻtunnānu."
+        },
+        {
+          "id": "2026-05-20_002_opt1",
+          "text": "నేను బడికి వెళ్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/5528e2b325002a3b.mp3",
+          "transliteration": "nenu baḍiki vèḻtunnānu."
+        },
+        {
+          "id": "2026-05-20_002_opt3",
+          "text": "నేను బజారు నుండి వస్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/76d19f5b0f1df493.mp3",
+          "transliteration": "nenu bajāru nuṃḍi vastunnānu."
+        }
+      ],
+      "correct_option_id": "2026-05-20_002_opt0"
+    },
+    {
+      "id": "2026-05-20_003",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-20_003_question",
+        "text": "ఈ ఊరు చాలా అందంగా ఉంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/bbbcd1fb8635c4e9.mp3",
+        "transliteration": "ī ūru cālā aṃdaṃgā uṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-05-20_003_opt0",
+          "text": "This village is very beautiful.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_003_opt1",
+          "text": "This house is very big.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_003_opt2",
+          "text": "That village is very far.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_003_opt3",
+          "text": "This village is very old.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-20_003_opt0"
+    },
+    {
+      "id": "2026-05-20_004",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-20_004_question",
+        "text": "I will come tomorrow.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-20_004_opt3",
+          "text": "ఆమె రేపు వస్తుంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/d14f90e59af8cc94.mp3",
+          "transliteration": "āmè repu vastuṃdi."
+        },
+        {
+          "id": "2026-05-20_004_opt0",
+          "text": "నేను రేపు వస్తాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/a89dc3c69e7ce4e2.mp3",
+          "transliteration": "nenu repu vastānu."
+        },
+        {
+          "id": "2026-05-20_004_opt2",
+          "text": "నేను ఇప్పుడు వస్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/fa229bd11525fb8a.mp3",
+          "transliteration": "nenu ippuḍu vastunnānu."
+        },
+        {
+          "id": "2026-05-20_004_opt1",
+          "text": "నేను నిన్న వచ్చాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/67e5357c8c21f13a.mp3",
+          "transliteration": "nenu ninna vaccānu."
+        }
+      ],
+      "correct_option_id": "2026-05-20_004_opt0"
+    },
+    {
+      "id": "2026-05-20_005",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-20_005_question",
+        "text": "నీళ్ళు చాలా చల్లగా ఉన్నాయి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/4252eadeecd933e3.mp3",
+        "transliteration": "nīḻḻu cālā callagā unnāyi."
+      },
+      "reference_sentence": {
+        "id": "2026-05-20_005_reference",
+        "text": "The water is very cold.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-05-20_005_ans0",
+          "text": "చల్లగా",
+          "language": "telugu",
+          "audio_path": "resources/audio/1f932184d53c047c.mp3",
+          "transliteration": "callagā"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-20_005_display_answer",
+        "text": "చల్లగా",
+        "language": "telugu",
+        "audio_path": "resources/audio/1f932184d53c047c.mp3",
+        "transliteration": "callagā"
+      }
+    },
+    {
+      "id": "2026-05-20_006",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-20_006_question",
+        "text": "రైల్వే స్టేషన్ ఎక్కడ ఉంది?",
+        "language": "telugu",
+        "audio_path": "resources/audio/e748b8587c8de7a3.mp3",
+        "transliteration": "railve sṭeṣan èkkaḍa uṃdi?"
+      },
+      "options": [
+        {
+          "id": "2026-05-20_006_opt3",
+          "text": "Is this the railway station?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_006_opt1",
+          "text": "Where is the bus stand?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_006_opt0",
+          "text": "Where is the railway station?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_006_opt2",
+          "text": "When will the train come?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-20_006_opt0"
+    },
+    {
+      "id": "2026-05-20_007",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-20_007_question",
+        "text": "ఈ సంచి చాలా బరువుగా ఉంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/5531095503636db4.mp3",
+        "transliteration": "ī saṃci cālā baruvugā uṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-05-20_007_opt3",
+          "text": "This bag is empty.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_007_opt2",
+          "text": "That bag is mine.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_007_opt0",
+          "text": "This bag is very heavy.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_007_opt1",
+          "text": "This bag is very small.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-20_007_opt0"
+    },
+    {
+      "id": "2026-05-20_008",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-20_008_question",
+        "text": "నాకు తెలుగు కొంచెం తెలుసు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/77a8c234a9a2ea5f.mp3",
+        "transliteration": "nāku tèlugu kòṃcèṃ tèlusu."
+      },
+      "options": [
+        {
+          "id": "2026-05-20_008_opt1",
+          "text": "I don't know Telugu.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_008_opt2",
+          "text": "I know English.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_008_opt3",
+          "text": "Do you know Telugu?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_008_opt0",
+          "text": "I know a little Telugu.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-20_008_opt0"
+    },
+    {
+      "id": "2026-05-20_009",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-20_009_question",
+        "text": "Please show the way.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-20_009_opt0",
+          "text": "దారి చూపించండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/f4594e014d321aac.mp3",
+          "transliteration": "dāri cūpiṃcaṃḍi."
+        },
+        {
+          "id": "2026-05-20_009_opt2",
+          "text": "దారి ఎక్కడ ఉంది?",
+          "language": "telugu",
+          "audio_path": "resources/audio/83bf72fc07121dc9.mp3",
+          "transliteration": "dāri èkkaḍa uṃdi?"
+        },
+        {
+          "id": "2026-05-20_009_opt3",
+          "text": "లోపలికి రండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/5eb66693841a1c5c.mp3",
+          "transliteration": "lopaliki raṃḍi."
+        },
+        {
+          "id": "2026-05-20_009_opt1",
+          "text": "నన్ను అక్కడికి తీసుకెళ్ళండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/1cabfaedfda156e9.mp3",
+          "transliteration": "nannu akkaḍiki tīsukèḻḻaṃḍi."
+        }
+      ],
+      "correct_option_id": "2026-05-20_009_opt0"
+    },
+    {
+      "id": "2026-05-20_010",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-20_010_p1",
+          "prompt_sentence": {
+            "id": "2026-05-20_010_p1_prompt",
+            "text": "వెళ్ళాను",
+            "language": "telugu",
+            "audio_path": "resources/audio/18b2fb11bd443d36.mp3",
+            "transliteration": "vèḻḻānu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-20_010_opt1",
+            "text": "went",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-20_010_p2",
+          "prompt_sentence": {
+            "id": "2026-05-20_010_p2_prompt",
+            "text": "అవును",
+            "language": "telugu",
+            "audio_path": "resources/audio/4e7fd56df1d1450e.mp3",
+            "transliteration": "avunu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-20_010_opt2",
+            "text": "Yes",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-20_010_p3",
+          "prompt_sentence": {
+            "id": "2026-05-20_010_p3_prompt",
+            "text": "అందమైన",
+            "language": "telugu",
+            "audio_path": "resources/audio/ced450b46e757754.mp3",
+            "transliteration": "aṃdamaina"
+          },
+          "answer_sentence": {
+            "id": "2026-05-20_010_opt3",
+            "text": "Beautiful",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-20_010_opt3",
+          "text": "Beautiful",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_010_opt1",
+          "text": "went",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_010_opt2",
+          "text": "Yes",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-20_011",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-20_011_question",
+        "text": "ఆమె చాలా తెలివైనది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/1b8ffc71b9a2c08c.mp3",
+        "transliteration": "āmè cālā tèlivainadi."
+      },
+      "options": [
+        {
+          "id": "2026-05-20_011_opt2",
+          "text": "She is very tall.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_011_opt1",
+          "text": "He is very clever.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_011_opt0",
+          "text": "She is very clever.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_011_opt3",
+          "text": "She is singing.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-20_011_opt0"
+    },
+    {
+      "id": "2026-05-20_012",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-20_012_question",
+        "text": "హైదరాబాద్‌కు టికెట్ కావాలి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/3593260ca8754181.mp3",
+        "transliteration": "haidarābād‌ku ṭikèṭ kāvāli."
+      },
+      "options": [
+        {
+          "id": "2026-05-20_012_opt2",
+          "text": "What is the ticket price?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_012_opt1",
+          "text": "Where is the Hyderabad bus?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_012_opt3",
+          "text": "I want two tickets.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-20_012_opt0",
+          "text": "I want a ticket to Hyderabad.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-20_012_opt0"
+    }
+  ]
+}
