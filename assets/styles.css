@@ -170,6 +170,40 @@ nav {
   line-height: 1.65;
 }
 
+.temp-request-box {
+  max-width: 620px;
+  margin: 0 auto 1.2rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-sm);
+  background: var(--c-surface-soft);
+  text-align: left;
+}
+
+.temp-request-title {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--c-primary-dark);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.temp-request-text {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--c-ink-muted);
+}
+
+.temp-request-gif {
+  display: block;
+  width: min(100%, 360px);
+  height: auto;
+  margin: 0.65rem auto 0;
+  border-radius: 10px;
+  border: 1px solid var(--c-border);
+}
+
 .landing-cta {
   max-width: 360px;
   margin: 0 auto;

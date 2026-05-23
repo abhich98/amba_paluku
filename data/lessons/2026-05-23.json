@@ -1,0 +1,566 @@
+{
+  "lesson_id": "2026-05-23",
+  "date": "2026-05-23",
+  "status": "active",
+  "difficulty": "A1",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-05-23T07:26:29.633805+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 9,
+    "fill_blank_audio": 2,
+    "match_audio_text": 1
+  },
+  "items": [
+    {
+      "id": "2026-05-23_001",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-23_001_p1",
+          "prompt_sentence": {
+            "id": "2026-05-23_001_p1_prompt",
+            "text": "శుభ రాత్రి",
+            "language": "telugu",
+            "audio_path": "resources/audio/a8e3b309a9180103.mp3",
+            "transliteration": "śubha rātri"
+          },
+          "answer_sentence": {
+            "id": "2026-05-23_001_opt1",
+            "text": "Good night",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-23_001_p2",
+          "prompt_sentence": {
+            "id": "2026-05-23_001_p2_prompt",
+            "text": "పులి",
+            "language": "telugu",
+            "audio_path": "resources/audio/24af79fce1dcae97.mp3",
+            "transliteration": "puli"
+          },
+          "answer_sentence": {
+            "id": "2026-05-23_001_opt2",
+            "text": "tiger",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-23_001_p3",
+          "prompt_sentence": {
+            "id": "2026-05-23_001_p3_prompt",
+            "text": "పెద్దది",
+            "language": "telugu",
+            "audio_path": "resources/audio/9a71745b74a700e9.mp3",
+            "transliteration": "pèddadi"
+          },
+          "answer_sentence": {
+            "id": "2026-05-23_001_opt3",
+            "text": "large",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-23_001_opt3",
+          "text": "large",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_001_opt2",
+          "text": "tiger",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_001_opt1",
+          "text": "Good night",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-23_002",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-23_002_question",
+        "text": "He threw the trash out yesterday.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-23_002_opt2",
+          "text": "ఆమె నిన్న చెత్త ఊడ్చింది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/c8ef2d9a1b716c1c.mp3",
+          "transliteration": "āmè ninna cètta ūḍciṃdi."
+        },
+        {
+          "id": "2026-05-23_002_opt0",
+          "text": "అతను నిన్న చెత్త బయట పడేశాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/c204779afc4df05d.mp3",
+          "transliteration": "atanu ninna cètta bayaṭa paḍeśāḍu."
+        },
+        {
+          "id": "2026-05-23_002_opt1",
+          "text": "అతను రేపు చెత్త తీస్తాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/ee4733211228506d.mp3",
+          "transliteration": "atanu repu cètta tīstāḍu."
+        },
+        {
+          "id": "2026-05-23_002_opt3",
+          "text": "అతను లోపల ఉన్నాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/54971875d679e778.mp3",
+          "transliteration": "atanu lopala unnāḍu."
+        }
+      ],
+      "correct_option_id": "2026-05-23_002_opt0"
+    },
+    {
+      "id": "2026-05-23_003",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-23_003_question",
+        "text": "ఆసుపత్రి ఎంత దూరంలో ఉంది?",
+        "language": "telugu",
+        "audio_path": "resources/audio/98d27ae937d80228.mp3",
+        "transliteration": "āsupatri èṃta dūraṃlo uṃdi?"
+      },
+      "options": [
+        {
+          "id": "2026-05-23_003_opt1",
+          "text": "Where is the hospital?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_003_opt0",
+          "text": "How far is the hospital?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_003_opt3",
+          "text": "This is very far.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_003_opt2",
+          "text": "How far is the school?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-23_003_opt0"
+    },
+    {
+      "id": "2026-05-23_004",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-23_004_question",
+        "text": "The rabbit runs very fast.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-23_004_opt0",
+          "text": "కుందేలు చాలా వేగంగా పరిగెత్తుతుంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/d0e70c2048305087.mp3",
+          "transliteration": "kuṃdelu cālā vegaṃgā parigèttutuṃdi."
+        },
+        {
+          "id": "2026-05-23_004_opt2",
+          "text": "కుందేలు తెల్లగా ఉంటుంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b4bd92a2b9f60878.mp3",
+          "transliteration": "kuṃdelu tèllagā uṃṭuṃdi."
+        },
+        {
+          "id": "2026-05-23_004_opt1",
+          "text": "తాబేలు నెమ్మదిగా నడుస్తుంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/ecdfd219d5cba840.mp3",
+          "transliteration": "tābelu nèmmadigā naḍustuṃdi."
+        },
+        {
+          "id": "2026-05-23_004_opt3",
+          "text": "కుందేలు గడ్డి తింటుంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/869ac6f3f9eced97.mp3",
+          "transliteration": "kuṃdelu gaḍḍi tiṃṭuṃdi."
+        }
+      ],
+      "correct_option_id": "2026-05-23_004_opt0"
+    },
+    {
+      "id": "2026-05-23_005",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-23_005_question",
+        "text": "This cat is very small.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-23_005_opt1",
+          "text": "ఈ కుక్క పెద్దది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/670ee5bbb0953462.mp3",
+          "transliteration": "ī kukka pèddadi."
+        },
+        {
+          "id": "2026-05-23_005_opt2",
+          "text": "పిల్లి పాలు తాగుతోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/18a6f854a8661ba8.mp3",
+          "transliteration": "pilli pālu tāgutoṃdi."
+        },
+        {
+          "id": "2026-05-23_005_opt3",
+          "text": "ఆ పిల్లి నల్లగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/9f3256d50eb96ac1.mp3",
+          "transliteration": "ā pilli nallagā uṃdi."
+        },
+        {
+          "id": "2026-05-23_005_opt0",
+          "text": "ఈ పిల్లి చాలా చిన్నది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/dffb5fd89a91d9bb.mp3",
+          "transliteration": "ī pilli cālā cinnadi."
+        }
+      ],
+      "correct_option_id": "2026-05-23_005_opt0"
+    },
+    {
+      "id": "2026-05-23_006",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-23_006_question",
+        "text": "కోతి అరటిపండు తింటోంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/c40d8592fd9687f9.mp3",
+        "transliteration": "koti araṭipaṃḍu tiṃṭoṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-05-23_006_opt1",
+          "text": "The monkey is on the tree.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_006_opt2",
+          "text": "I am eating a banana.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_006_opt0",
+          "text": "The monkey is eating a banana.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_006_opt3",
+          "text": "The monkey is jumping.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-23_006_opt0"
+    },
+    {
+      "id": "2026-05-23_007",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-23_007_question",
+        "text": "Please say it again.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-23_007_opt3",
+          "text": "అక్కడ కూర్చోండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/45c033932517c947.mp3",
+          "transliteration": "akkaḍa kūrcoṃḍi."
+        },
+        {
+          "id": "2026-05-23_007_opt1",
+          "text": "త్వరగా చెప్పండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b87f5e6eea6ebdf9.mp3",
+          "transliteration": "tvaragā cèppaṃḍi."
+        },
+        {
+          "id": "2026-05-23_007_opt0",
+          "text": "మళ్ళీ చెప్పండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/d4549b489354df44.mp3",
+          "transliteration": "maḻḻī cèppaṃḍi."
+        },
+        {
+          "id": "2026-05-23_007_opt2",
+          "text": "నెమ్మదిగా మాట్లాడండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/0e397938a1d9658f.mp3",
+          "transliteration": "nèmmadigā māṭlāḍaṃḍi."
+        }
+      ],
+      "correct_option_id": "2026-05-23_007_opt0"
+    },
+    {
+      "id": "2026-05-23_008",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-23_008_question",
+        "text": "ఈ రోజు వాతావరణం చాలా బాగుంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/d14489495ec9a17b.mp3",
+        "transliteration": "ī roju vātāvaraṇaṃ cālā bāguṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-05-23_008_opt1",
+          "text": "It is very hot today.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_008_opt2",
+          "text": "It rained yesterday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_008_opt3",
+          "text": "The sky is cloudy.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_008_opt0",
+          "text": "The weather is very good today.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-23_008_opt0"
+    },
+    {
+      "id": "2026-05-23_009",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-23_009_question",
+        "text": "జిరాఫీ మెడ చాలా పొడవుగా ఉంటుంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/8562f307e9d5179d.mp3",
+        "transliteration": "jirāphī mèḍa cālā pòḍavugā uṃṭuṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-05-23_009_opt0",
+          "text": "The giraffe's neck is very long.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_009_opt3",
+          "text": "The giraffe eats leaves.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_009_opt1",
+          "text": "This is tall.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_009_opt2",
+          "text": "The elephant's trunk is long.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-23_009_opt0"
+    },
+    {
+      "id": "2026-05-23_010",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-23_010_question",
+        "text": "I like this color.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-23_010_reference",
+        "text": "నాకు ఈ రంగు అంటే ఇష్టం.",
+        "language": "telugu",
+        "audio_path": "resources/audio/21f10497997c4580.mp3",
+        "transliteration": "nāku ī raṃgu aṃṭe iṣṭaṃ."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 2,
+      "accepted_answers": [
+        {
+          "id": "2026-05-23_010_ans0",
+          "text": "like",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-23_010_display_answer",
+        "text": "like",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-23_011",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-23_011_question",
+        "text": "ఈ నీళ్లు చాలా వేడిగా ఉన్నాయి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/2e89a1f1b9526d21.mp3",
+        "transliteration": "ī nīḻlu cālā veḍigā unnāyi."
+      },
+      "options": [
+        {
+          "id": "2026-05-23_011_opt1",
+          "text": "Drink water.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_011_opt0",
+          "text": "This water is very hot.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_011_opt3",
+          "text": "The water is not cold.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-23_011_opt2",
+          "text": "The milk is hot.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-23_011_opt0"
+    },
+    {
+      "id": "2026-05-23_012",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-23_012_question",
+        "text": "నెమలి అందంగా నాట్యం చేస్తోంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/05a53d6b385549ea.mp3",
+        "transliteration": "nèmali aṃdaṃgā nāṭyaṃ cestoṃdi."
+      },
+      "reference_sentence": {
+        "id": "2026-05-23_012_reference",
+        "text": "The peacock is dancing beautifully.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-05-23_012_ans0",
+          "text": "చేస్తోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/283ba29f90c83097.mp3",
+          "transliteration": "cestoṃdi."
+        },
+        {
+          "id": "2026-05-23_012_ans1",
+          "text": "చేస్తోంది",
+          "language": "telugu",
+          "audio_path": "resources/audio/169256bfb4026cbb.mp3",
+          "transliteration": "cestoṃdi"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-23_012_display_answer",
+        "text": "చేస్తోంది",
+        "language": "telugu",
+        "audio_path": "resources/audio/169256bfb4026cbb.mp3",
+        "transliteration": "cestoṃdi"
+      }
+    }
+  ]
+}
