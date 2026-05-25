@@ -1,0 +1,568 @@
+{
+  "lesson_id": "2026-05-25",
+  "date": "2026-05-25",
+  "status": "active",
+  "difficulty": "A1",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-05-25T06:56:02.279662+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 7,
+    "fill_blank_audio": 4,
+    "match_audio_text": 1
+  },
+  "items": [
+    {
+      "id": "2026-05-25_001",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-25_001_question",
+        "text": "మీ నాన్న ఏం చేస్తారు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/974bc30a7317355d.mp3",
+        "transliteration": "mī nānna eṃ cestāru?"
+      },
+      "reference_sentence": {
+        "id": "2026-05-25_001_reference",
+        "text": "What does your father do?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-05-25_001_ans0",
+          "text": "చేస్తారు?",
+          "language": "telugu",
+          "audio_path": "resources/audio/d1f0fade363595a7.mp3",
+          "transliteration": "cestāru?"
+        },
+        {
+          "id": "2026-05-25_001_ans1",
+          "text": "చేస్తారు",
+          "language": "telugu",
+          "audio_path": "resources/audio/f23d8eb724b13237.mp3",
+          "transliteration": "cestāru"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-25_001_display_answer",
+        "text": "చేస్తారు",
+        "language": "telugu",
+        "audio_path": "resources/audio/f23d8eb724b13237.mp3",
+        "transliteration": "cestāru"
+      }
+    },
+    {
+      "id": "2026-05-25_002",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-25_002_question",
+        "text": "I am fine, thank you.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-25_002_reference",
+        "text": "నేను బాగున్నాను, ధన్యవాదాలు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/ab4b70d3216a24d6.mp3",
+        "transliteration": "nenu bāgunnānu, dhanyavādālu."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-05-25_002_ans0",
+          "text": "fine,",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_002_ans1",
+          "text": "fine",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-25_002_display_answer",
+        "text": "fine",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-25_003",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-25_003_question",
+        "text": "నాకు ఆపిల్ పండు కావాలి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/b066dde4998c2c06.mp3",
+        "transliteration": "nāku āpil paṃḍu kāvāli."
+      },
+      "options": [
+        {
+          "id": "2026-05-25_003_opt0",
+          "text": "I want an apple.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_003_opt2",
+          "text": "That is an apple.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_003_opt1",
+          "text": "I don't want an apple.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_003_opt3",
+          "text": "Where is the apple?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-25_003_opt0"
+    },
+    {
+      "id": "2026-05-25_004",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-25_004_question",
+        "text": "He is walking slowly.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-25_004_opt2",
+          "text": "అతను ఇక్కడ కూర్చున్నాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/06b3e49001de991f.mp3",
+          "transliteration": "atanu ikkaḍa kūrcunnāḍu."
+        },
+        {
+          "id": "2026-05-25_004_opt0",
+          "text": "అతను నెమ్మదిగా నడుస్తున్నాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/e9d4bec50b8e3318.mp3",
+          "transliteration": "atanu nèmmadigā naḍustunnāḍu."
+        },
+        {
+          "id": "2026-05-25_004_opt1",
+          "text": "అతను వేగంగా పరిగెత్తుతున్నాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/d8f4f1362c9bf48d.mp3",
+          "transliteration": "atanu vegaṃgā parigèttutunnāḍu."
+        },
+        {
+          "id": "2026-05-25_004_opt3",
+          "text": "అతను బాగా పాడుతున్నాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/fc1f87fa49dbaefb.mp3",
+          "transliteration": "atanu bāgā pāḍutunnāḍu."
+        }
+      ],
+      "correct_option_id": "2026-05-25_004_opt0"
+    },
+    {
+      "id": "2026-05-25_005",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-25_005_question",
+        "text": "ద్రాక్ష పండ్లు పుల్లగా ఉన్నాయి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/d86e5275fdc47517.mp3",
+        "transliteration": "drākṣa paṃḍlu pullagā unnāyi."
+      },
+      "options": [
+        {
+          "id": "2026-05-25_005_opt1",
+          "text": "The grapes are sweet.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_005_opt0",
+          "text": "The grapes are sour.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_005_opt2",
+          "text": "The grapes are red.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_005_opt3",
+          "text": "The grapes are not here.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-25_005_opt0"
+    },
+    {
+      "id": "2026-05-25_006",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-25_006_question",
+        "text": "ఆమె నవ్వుతూ ఉంటుంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/fa825788b579f30e.mp3",
+        "transliteration": "āmè navvutū uṃṭuṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-05-25_006_opt2",
+          "text": "She will come tomorrow.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_006_opt3",
+          "text": "She stood there.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_006_opt0",
+          "text": "She keeps smiling.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_006_opt1",
+          "text": "She is crying now.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-25_006_opt0"
+    },
+    {
+      "id": "2026-05-25_007",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-25_007_question",
+        "text": "Orange fruit contains Vitamin C.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-25_007_opt2",
+          "text": "నారింజ పండు రంగు నారింజ.",
+          "language": "telugu",
+          "audio_path": "resources/audio/79f3231237d5f074.mp3",
+          "transliteration": "nāriṃja paṃḍu raṃgu nāriṃja."
+        },
+        {
+          "id": "2026-05-25_007_opt3",
+          "text": "నారింజ పండు చాలా చిన్నది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/a83a560bfdf3b3d7.mp3",
+          "transliteration": "nāriṃja paṃḍu cālā cinnadi."
+        },
+        {
+          "id": "2026-05-25_007_opt1",
+          "text": "నారింజ పండు నాకు ఇష్టం లేదు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/455cd95bcd97fcee.mp3",
+          "transliteration": "nāriṃja paṃḍu nāku iṣṭaṃ ledu."
+        },
+        {
+          "id": "2026-05-25_007_opt0",
+          "text": "నారింజ పండులో విటమిన్ సి ఉంటుంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/e425917b84d697e3.mp3",
+          "transliteration": "nāriṃja paṃḍulo viṭamin si uṃṭuṃdi."
+        }
+      ],
+      "correct_option_id": "2026-05-25_007_opt0"
+    },
+    {
+      "id": "2026-05-25_008",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-25_008_question",
+        "text": "We exercise every day.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-25_008_reference",
+        "text": "మేము ప్రతిరోజూ వ్యాయామం చేస్తాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/dad460bc54f5c109.mp3",
+        "transliteration": "memu pratirojū vyāyāmaṃ cestāmu."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 2,
+      "accepted_answers": [
+        {
+          "id": "2026-05-25_008_ans0",
+          "text": "exercise",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-25_008_display_answer",
+        "text": "exercise",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-25_009",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-25_009_question",
+        "text": "సీతాఫలం చాలా రుచిగా ఉంటుంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/a64b31c801315186.mp3",
+        "transliteration": "sītāphalaṃ cālā rucigā uṃṭuṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-05-25_009_opt1",
+          "text": "Custard apple is very bitter.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_009_opt3",
+          "text": "Peel the custard apple.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_009_opt2",
+          "text": "Where can I get custard apple?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_009_opt0",
+          "text": "Custard apple is very tasty.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-25_009_opt0"
+    },
+    {
+      "id": "2026-05-25_010",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-25_010_p1",
+          "prompt_sentence": {
+            "id": "2026-05-25_010_p1_prompt",
+            "text": "బజ్జీ",
+            "language": "telugu",
+            "audio_path": "resources/audio/a151fabcfeada0d2.mp3",
+            "transliteration": "bajjī"
+          },
+          "answer_sentence": {
+            "id": "2026-05-25_010_opt1",
+            "text": "fritter",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-25_010_p2",
+          "prompt_sentence": {
+            "id": "2026-05-25_010_p2_prompt",
+            "text": "మామిడిపండు",
+            "language": "telugu",
+            "audio_path": "resources/audio/2f0ef4bdf0439412.mp3",
+            "transliteration": "māmiḍipaṃḍu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-25_010_opt2",
+            "text": "Mango",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-25_010_p3",
+          "prompt_sentence": {
+            "id": "2026-05-25_010_p3_prompt",
+            "text": "ఎల్లప్పుడూ",
+            "language": "telugu",
+            "audio_path": "resources/audio/97aeb1264bf2be8a.mp3",
+            "transliteration": "èllappuḍū"
+          },
+          "answer_sentence": {
+            "id": "2026-05-25_010_opt3",
+            "text": "Always",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-25_010_opt3",
+          "text": "Always",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_010_opt1",
+          "text": "fritter",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_010_opt2",
+          "text": "Mango",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-25_011",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-25_011_question",
+        "text": "అతను జాగ్రత్తగా కారు నడుపుతాడు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/8b25e2b507a59a29.mp3",
+        "transliteration": "atanu jāgrattagā kāru naḍuputāḍu."
+      },
+      "options": [
+        {
+          "id": "2026-05-25_011_opt1",
+          "text": "He bought a car.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_011_opt0",
+          "text": "He drives the car carefully.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_011_opt2",
+          "text": "He does not have a car.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-25_011_opt3",
+          "text": "He is looking for a car.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-25_011_opt0"
+    },
+    {
+      "id": "2026-05-25_012",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-25_012_question",
+        "text": "నిమ్మకాయ రసం ఆరోగ్యానికి మంచిది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/c872f05355b7c198.mp3",
+        "transliteration": "nimmakāya rasaṃ ārogyāniki maṃcidi."
+      },
+      "reference_sentence": {
+        "id": "2026-05-25_012_reference",
+        "text": "Lemon juice is good for health.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-05-25_012_ans0",
+          "text": "మంచిది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b7f447bbfdf6098c.mp3",
+          "transliteration": "maṃcidi."
+        },
+        {
+          "id": "2026-05-25_012_ans1",
+          "text": "మంచిది",
+          "language": "telugu",
+          "audio_path": "resources/audio/8aa4c3b8c6866e15.mp3",
+          "transliteration": "maṃcidi"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-25_012_display_answer",
+        "text": "మంచిది",
+        "language": "telugu",
+        "audio_path": "resources/audio/8aa4c3b8c6866e15.mp3",
+        "transliteration": "maṃcidi"
+      }
+    }
+  ]
+}
