@@ -1,0 +1,728 @@
+{
+  "lesson_id": "2026-05-26",
+  "date": "2026-05-26",
+  "status": "active",
+  "difficulty": "A1",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-05-26T07:54:02.739201+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 6,
+    "fill_blank_audio": 1,
+    "match_audio_text": 5
+  },
+  "items": [
+    {
+      "id": "2026-05-26_001",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-26_001_question",
+        "text": "She went to the temple yesterday.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-26_001_opt2",
+          "text": "అతను నిన్న గుడికి వెళ్ళాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/f991a69aaabd7a7f.mp3",
+          "transliteration": "atanu ninna guḍiki vèḻḻāḍu."
+        },
+        {
+          "id": "2026-05-26_001_opt1",
+          "text": "ఆమె రేపు గుడికి వెళ్తుంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/84b925d5c1874bac.mp3",
+          "transliteration": "āmè repu guḍiki vèḻtuṃdi."
+        },
+        {
+          "id": "2026-05-26_001_opt3",
+          "text": "ఆమె ఇప్పుడు గుడిలో ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/befd57e91a54daab.mp3",
+          "transliteration": "āmè ippuḍu guḍilo uṃdi."
+        },
+        {
+          "id": "2026-05-26_001_opt0",
+          "text": "ఆమె నిన్న గుడికి వెళ్ళింది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/ffc1fcaaeeaebd80.mp3",
+          "transliteration": "āmè ninna guḍiki vèḻḻiṃdi."
+        }
+      ],
+      "correct_option_id": "2026-05-26_001_opt0"
+    },
+    {
+      "id": "2026-05-26_002",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-26_002_p1",
+          "prompt_sentence": {
+            "id": "2026-05-26_002_p1_prompt",
+            "text": "శుభ్రం",
+            "language": "telugu",
+            "audio_path": "resources/audio/e8164246dde7d94c.mp3",
+            "transliteration": "śubhraṃ"
+          },
+          "answer_sentence": {
+            "id": "2026-05-26_002_opt1",
+            "text": "clean",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-26_002_p2",
+          "prompt_sentence": {
+            "id": "2026-05-26_002_p2_prompt",
+            "text": "కాదు",
+            "language": "telugu",
+            "audio_path": "resources/audio/c3e49c0d3ef106a1.mp3",
+            "transliteration": "kādu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-26_002_opt2",
+            "text": "No",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-26_002_p3",
+          "prompt_sentence": {
+            "id": "2026-05-26_002_p3_prompt",
+            "text": "బజ్జీ",
+            "language": "telugu",
+            "audio_path": "resources/audio/a151fabcfeada0d2.mp3",
+            "transliteration": "bajjī"
+          },
+          "answer_sentence": {
+            "id": "2026-05-26_002_opt3",
+            "text": "fritter",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-26_002_opt3",
+          "text": "fritter",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-26_002_opt2",
+          "text": "No",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-26_002_opt1",
+          "text": "clean",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-26_003",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-26_003_p1",
+          "prompt_sentence": {
+            "id": "2026-05-26_003_p1_prompt",
+            "text": "పని",
+            "language": "telugu",
+            "audio_path": "resources/audio/2ebd6275980904ab.mp3",
+            "transliteration": "pani"
+          },
+          "answer_sentence": {
+            "id": "2026-05-26_003_opt1",
+            "text": "work",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-26_003_p2",
+          "prompt_sentence": {
+            "id": "2026-05-26_003_p2_prompt",
+            "text": "కార్యాలయం",
+            "language": "telugu",
+            "audio_path": "resources/audio/657fb1ce42c7ec90.mp3",
+            "transliteration": "kāryālayaṃ"
+          },
+          "answer_sentence": {
+            "id": "2026-05-26_003_opt2",
+            "text": "office",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-26_003_p3",
+          "prompt_sentence": {
+            "id": "2026-05-26_003_p3_prompt",
+            "text": "జీతం",
+            "language": "telugu",
+            "audio_path": "resources/audio/c6db0302c8749362.mp3",
+            "transliteration": "jītaṃ"
+          },
+          "answer_sentence": {
+            "id": "2026-05-26_003_opt3",
+            "text": "salary",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-26_003_opt3",
+          "text": "salary",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-26_003_opt2",
+          "text": "office",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-26_003_opt1",
+          "text": "work",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-26_004",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-26_004_question",
+        "text": "I am working in the office.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-26_004_opt1",
+          "text": "నేను ఆఫీసుకు వెళ్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/68c5cfcc64a0964e.mp3",
+          "transliteration": "nenu āphīsuku vèḻtunnānu."
+        },
+        {
+          "id": "2026-05-26_004_opt3",
+          "text": "మేము పని చేస్తున్నాము.",
+          "language": "telugu",
+          "audio_path": "resources/audio/85bbd902ef0fde88.mp3",
+          "transliteration": "memu pani cestunnāmu."
+        },
+        {
+          "id": "2026-05-26_004_opt2",
+          "text": "ఆమె ఆఫీసులో ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/49aa0e60fe588f2d.mp3",
+          "transliteration": "āmè āphīsulo uṃdi."
+        },
+        {
+          "id": "2026-05-26_004_opt0",
+          "text": "నేను ఆఫీసులో పని చేస్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b16a443ee315ca04.mp3",
+          "transliteration": "nenu āphīsulo pani cestunnānu."
+        }
+      ],
+      "correct_option_id": "2026-05-26_004_opt0"
+    },
+    {
+      "id": "2026-05-26_005",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-26_005_question",
+        "text": "He is walking very fast.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-26_005_opt1",
+          "text": "అతను నెమ్మదిగా మాట్లాడుతున్నాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/ed9aabbc98a2f0d9.mp3",
+          "transliteration": "atanu nèmmadigā māṭlāḍutunnāḍu."
+        },
+        {
+          "id": "2026-05-26_005_opt3",
+          "text": "వారు వేగంగా వెళ్తున్నారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/fc97448522f395a0.mp3",
+          "transliteration": "vāru vegaṃgā vèḻtunnāru."
+        },
+        {
+          "id": "2026-05-26_005_opt2",
+          "text": "ఆమె వేగంగా పరిగెత్తుతోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/eaa1284a1a4911ed.mp3",
+          "transliteration": "āmè vegaṃgā parigèttutoṃdi."
+        },
+        {
+          "id": "2026-05-26_005_opt0",
+          "text": "అతను చాలా వేగంగా నడుస్తున్నాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/3003395e617b60ad.mp3",
+          "transliteration": "atanu cālā vegaṃgā naḍustunnāḍu."
+        }
+      ],
+      "correct_option_id": "2026-05-26_005_opt0"
+    },
+    {
+      "id": "2026-05-26_006",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-26_006_question",
+        "text": "Where do you work?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-26_006_opt1",
+          "text": "మీరు ఏమి చేస్తారు?",
+          "language": "telugu",
+          "audio_path": "resources/audio/37bf19a716569f84.mp3",
+          "transliteration": "mīru emi cestāru?"
+        },
+        {
+          "id": "2026-05-26_006_opt2",
+          "text": "ఆయన ఎక్కడ ఉన్నారు?",
+          "language": "telugu",
+          "audio_path": "resources/audio/9efe1d9a26c078e2.mp3",
+          "transliteration": "āyana èkkaḍa unnāru?"
+        },
+        {
+          "id": "2026-05-26_006_opt3",
+          "text": "నువ్వు ఎప్పుడు వస్తావు?",
+          "language": "telugu",
+          "audio_path": "resources/audio/2cdabdc592e2acd9.mp3",
+          "transliteration": "nuvvu èppuḍu vastāvu?"
+        },
+        {
+          "id": "2026-05-26_006_opt0",
+          "text": "నువ్వు ఎక్కడ పని చేస్తావు?",
+          "language": "telugu",
+          "audio_path": "resources/audio/7a2c700485749474.mp3",
+          "transliteration": "nuvvu èkkaḍa pani cestāvu?"
+        }
+      ],
+      "correct_option_id": "2026-05-26_006_opt0"
+    },
+    {
+      "id": "2026-05-26_007",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-26_007_p1",
+          "prompt_sentence": {
+            "id": "2026-05-26_007_p1_prompt",
+            "text": "సెలవు",
+            "language": "telugu",
+            "audio_path": "resources/audio/db856584906cbf2f.mp3",
+            "transliteration": "sèlavu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-26_007_opt1",
+            "text": "leave",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-26_007_p2",
+          "prompt_sentence": {
+            "id": "2026-05-26_007_p2_prompt",
+            "text": "మళ్ళీ",
+            "language": "telugu",
+            "audio_path": "resources/audio/6376f143dbf4f603.mp3",
+            "transliteration": "maḻḻī"
+          },
+          "answer_sentence": {
+            "id": "2026-05-26_007_opt2",
+            "text": "again",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-26_007_p3",
+          "prompt_sentence": {
+            "id": "2026-05-26_007_p3_prompt",
+            "text": "ఇప్పుడు",
+            "language": "telugu",
+            "audio_path": "resources/audio/66cb502aa4f5801c.mp3",
+            "transliteration": "ippuḍu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-26_007_opt3",
+            "text": "now",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-26_007_opt1",
+          "text": "leave",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-26_007_opt3",
+          "text": "now",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-26_007_opt2",
+          "text": "again",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-26_008",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-26_008_question",
+        "text": "Please come inside.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-26_008_opt2",
+          "text": "బయటకు వెళ్ళండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/732c81e42775d0e5.mp3",
+          "transliteration": "bayaṭaku vèḻḻaṃḍi."
+        },
+        {
+          "id": "2026-05-26_008_opt1",
+          "text": "దయచేసి కూర్చోండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/616d943b359e9c1a.mp3",
+          "transliteration": "dayacesi kūrcoṃḍi."
+        },
+        {
+          "id": "2026-05-26_008_opt0",
+          "text": "దయచేసి లోపలికి రండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/0d373b5f06d271c5.mp3",
+          "transliteration": "dayacesi lopaliki raṃḍi."
+        },
+        {
+          "id": "2026-05-26_008_opt3",
+          "text": "త్వరగా రండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/3e497cebecf1c208.mp3",
+          "transliteration": "tvaragā raṃḍi."
+        }
+      ],
+      "correct_option_id": "2026-05-26_008_opt0"
+    },
+    {
+      "id": "2026-05-26_009",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-26_009_p1",
+          "prompt_sentence": {
+            "id": "2026-05-26_009_p1_prompt",
+            "text": "తర్వాత",
+            "language": "telugu",
+            "audio_path": "resources/audio/e9617d60d3df8a13.mp3",
+            "transliteration": "tarvāta"
+          },
+          "answer_sentence": {
+            "id": "2026-05-26_009_opt1",
+            "text": "later",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-26_009_p2",
+          "prompt_sentence": {
+            "id": "2026-05-26_009_p2_prompt",
+            "text": "త్వరగా",
+            "language": "telugu",
+            "audio_path": "resources/audio/23d427da80eb4d58.mp3",
+            "transliteration": "tvaragā"
+          },
+          "answer_sentence": {
+            "id": "2026-05-26_009_opt2",
+            "text": "quickly",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-26_009_p3",
+          "prompt_sentence": {
+            "id": "2026-05-26_009_p3_prompt",
+            "text": "మెల్లగా",
+            "language": "telugu",
+            "audio_path": "resources/audio/02bf5a2f9f4e4f5d.mp3",
+            "transliteration": "mèllagā"
+          },
+          "answer_sentence": {
+            "id": "2026-05-26_009_opt3",
+            "text": "slowly",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-26_009_opt3",
+          "text": "slowly",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-26_009_opt1",
+          "text": "later",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-26_009_opt2",
+          "text": "quickly",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-05-26_010",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-26_010_question",
+        "text": "We are here.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-26_010_reference",
+        "text": "మేము ఇక్కడే ఉన్నాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/e3f5b87d8ac5776f.mp3",
+        "transliteration": "memu ikkaḍe unnāmu."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-05-26_010_ans0",
+          "text": "here.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-26_010_ans1",
+          "text": "here",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-26_010_display_answer",
+        "text": "here",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-26_011",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-26_011_question",
+        "text": "Finish the work quickly.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-26_011_opt2",
+          "text": "నెమ్మదిగా పూర్తి చేయు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/c74b268f6f7fd178.mp3",
+          "transliteration": "nèmmadigā pūrti ceyu."
+        },
+        {
+          "id": "2026-05-26_011_opt0",
+          "text": "పని త్వరగా పూర్తి చేయు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b3bc4b3aca79437b.mp3",
+          "transliteration": "pani tvaragā pūrti ceyu."
+        },
+        {
+          "id": "2026-05-26_011_opt3",
+          "text": "ఆమె పని చేస్తోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/e4def0002e0c3269.mp3",
+          "transliteration": "āmè pani cestoṃdi."
+        },
+        {
+          "id": "2026-05-26_011_opt1",
+          "text": "పని మొదలు పెట్టు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/556245cf9c5c3ec0.mp3",
+          "transliteration": "pani mòdalu pèṭṭu."
+        }
+      ],
+      "correct_option_id": "2026-05-26_011_opt0"
+    },
+    {
+      "id": "2026-05-26_012",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-05-26_012_p1",
+          "prompt_sentence": {
+            "id": "2026-05-26_012_p1_prompt",
+            "text": "నిజంగా",
+            "language": "telugu",
+            "audio_path": "resources/audio/1816c6ed4636e5ae.mp3",
+            "transliteration": "nijaṃgā"
+          },
+          "answer_sentence": {
+            "id": "2026-05-26_012_opt1",
+            "text": "really",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-26_012_p2",
+          "prompt_sentence": {
+            "id": "2026-05-26_012_p2_prompt",
+            "text": "బహుశా",
+            "language": "telugu",
+            "audio_path": "resources/audio/0236e00859c6cdec.mp3",
+            "transliteration": "bahuśā"
+          },
+          "answer_sentence": {
+            "id": "2026-05-26_012_opt2",
+            "text": "perhaps",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-05-26_012_p3",
+          "prompt_sentence": {
+            "id": "2026-05-26_012_p3_prompt",
+            "text": "తప్పు",
+            "language": "telugu",
+            "audio_path": "resources/audio/f0e58bd6f502ebe9.mp3",
+            "transliteration": "tappu"
+          },
+          "answer_sentence": {
+            "id": "2026-05-26_012_opt3",
+            "text": "mistake",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-05-26_012_opt2",
+          "text": "perhaps",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-26_012_opt3",
+          "text": "mistake",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-26_012_opt1",
+          "text": "really",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    }
+  ]
+}
