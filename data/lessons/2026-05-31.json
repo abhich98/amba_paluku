@@ -1,0 +1,515 @@
+{
+  "lesson_id": "2026-05-31",
+  "date": "2026-05-31",
+  "status": "active",
+  "difficulty": "A1",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-05-31T06:37:35.656502+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 8,
+    "fill_blank_audio": 4,
+    "match_audio_text": 0
+  },
+  "items": [
+    {
+      "id": "2026-05-31_001",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-31_001_question",
+        "text": "I am hungry.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-31_001_opt2",
+          "text": "నాకు నిద్ర వస్తోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/cf65f3065871fb35.mp3",
+          "transliteration": "nāku nidra vastoṃdi."
+        },
+        {
+          "id": "2026-05-31_001_opt0",
+          "text": "నాకు ఆకలిగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/0fbf8b5406d7e09b.mp3",
+          "transliteration": "nāku ākaligā uṃdi."
+        },
+        {
+          "id": "2026-05-31_001_opt1",
+          "text": "నాకు దాహంగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b7ce44949d8ca42f.mp3",
+          "transliteration": "nāku dāhaṃgā uṃdi."
+        },
+        {
+          "id": "2026-05-31_001_opt3",
+          "text": "నేను తింటున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/861b220f5c92e2fc.mp3",
+          "transliteration": "nenu tiṃṭunnānu."
+        }
+      ],
+      "correct_option_id": "2026-05-31_001_opt0"
+    },
+    {
+      "id": "2026-05-31_002",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-31_002_question",
+        "text": "మీరు క్రెడిట్ కార్డ్ తీసుకుంటారా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/25e1ef00441c576f.mp3",
+        "transliteration": "mīru krèḍiṭ kārḍ tīsukuṃṭārā?"
+      },
+      "reference_sentence": {
+        "id": "2026-05-31_002_reference",
+        "text": "Do you accept credit cards?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-05-31_002_ans0",
+          "text": "మీరు",
+          "language": "telugu",
+          "audio_path": "resources/audio/f49e82235d0c7ced.mp3",
+          "transliteration": "mīru"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-31_002_display_answer",
+        "text": "మీరు",
+        "language": "telugu",
+        "audio_path": "resources/audio/f49e82235d0c7ced.mp3",
+        "transliteration": "mīru"
+      }
+    },
+    {
+      "id": "2026-05-31_003",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-31_003_question",
+        "text": "I am at the office.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-31_003_opt3",
+          "text": "ఆమె ఆఫీసులో ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/49aa0e60fe588f2d.mp3",
+          "transliteration": "āmè āphīsulo uṃdi."
+        },
+        {
+          "id": "2026-05-31_003_opt1",
+          "text": "నేను ఇంటికి వెళ్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/cef0e660d7bb46cd.mp3",
+          "transliteration": "nenu iṃṭiki vèḻtunnānu."
+        },
+        {
+          "id": "2026-05-31_003_opt2",
+          "text": "ఆఫీసు ఎక్కడ ఉంది?",
+          "language": "telugu",
+          "audio_path": "resources/audio/9abd725d5e9939ba.mp3",
+          "transliteration": "āphīsu èkkaḍa uṃdi?"
+        },
+        {
+          "id": "2026-05-31_003_opt0",
+          "text": "నేను ఆఫీసులో ఉన్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/449b5ac4a23be5f1.mp3",
+          "transliteration": "nenu āphīsulo unnānu."
+        }
+      ],
+      "correct_option_id": "2026-05-31_003_opt0"
+    },
+    {
+      "id": "2026-05-31_004",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-31_004_question",
+        "text": "ఈరోజు చాలా వేడిగా ఉంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/b0ae3f82d6ed0c07.mp3",
+        "transliteration": "īroju cālā veḍigā uṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-05-31_004_opt1",
+          "text": "It was cold yesterday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-31_004_opt3",
+          "text": "The wind is blowing.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-31_004_opt2",
+          "text": "It is raining.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-31_004_opt0",
+          "text": "It is very hot today.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-31_004_opt0"
+    },
+    {
+      "id": "2026-05-31_005",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-31_005_question",
+        "text": "నువ్వు ఎక్కడ పని చేస్తున్నావు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/779f707c3b15099f.mp3",
+        "transliteration": "nuvvu èkkaḍa pani cestunnāvu?"
+      },
+      "options": [
+        {
+          "id": "2026-05-31_005_opt2",
+          "text": "Where is he?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-31_005_opt0",
+          "text": "Where are you working?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-31_005_opt1",
+          "text": "What are you doing?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-31_005_opt3",
+          "text": "When will you come?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-31_005_opt0"
+    },
+    {
+      "id": "2026-05-31_006",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-31_006_question",
+        "text": "నాకు సెలవు వద్దు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/e2b7091ced66535d.mp3",
+        "transliteration": "nāku sèlavu vaddu."
+      },
+      "options": [
+        {
+          "id": "2026-05-31_006_opt0",
+          "text": "I don't want a holiday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-31_006_opt2",
+          "text": "Tomorrow is a holiday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-31_006_opt1",
+          "text": "I have work.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-31_006_opt3",
+          "text": "She wants a holiday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-31_006_opt0"
+    },
+    {
+      "id": "2026-05-31_007",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-31_007_question",
+        "text": "We go on a trip in summer.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-31_007_reference",
+        "text": "మేము వేసవిలో ట్రిప్‌కి వెళ్తాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/790db3cb4213e84a.mp3",
+        "transliteration": "memu vesavilo ṭrip‌ki vèḻtāmu."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 7,
+      "accepted_answers": [
+        {
+          "id": "2026-05-31_007_ans0",
+          "text": "summer.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-31_007_ans1",
+          "text": "summer",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-31_007_display_answer",
+        "text": "summer",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-31_008",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-31_008_question",
+        "text": "ఏసీ ఆన్ చేయండి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/35e3b88a102770a4.mp3",
+        "transliteration": "esī ān ceyaṃḍi."
+      },
+      "options": [
+        {
+          "id": "2026-05-31_008_opt1",
+          "text": "Turn on the light.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-31_008_opt2",
+          "text": "Open the door.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-31_008_opt0",
+          "text": "Please turn on the AC.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-31_008_opt3",
+          "text": "Turn off the AC.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-31_008_opt0"
+    },
+    {
+      "id": "2026-05-31_009",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-31_009_question",
+        "text": "I want some tea.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-31_009_reference",
+        "text": "నాకు కొంచెం టీ కావాలి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/23aef02f60dd02e2.mp3",
+        "transliteration": "nāku kòṃcèṃ ṭī kāvāli."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-05-31_009_ans0",
+          "text": "some",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-31_009_display_answer",
+        "text": "some",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-31_010",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-31_010_question",
+        "text": "మీ బాస్ ఎవరు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/91af5c887def7f5d.mp3",
+        "transliteration": "mī bās èvaru?"
+      },
+      "options": [
+        {
+          "id": "2026-05-31_010_opt1",
+          "text": "What is your name?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-31_010_opt2",
+          "text": "He is my boss.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-31_010_opt3",
+          "text": "Who is your friend?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-05-31_010_opt0",
+          "text": "Who is your boss?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-05-31_010_opt0"
+    },
+    {
+      "id": "2026-05-31_011",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-05-31_011_question",
+        "text": "Cold drinks are good in summer.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-05-31_011_reference",
+        "text": "వేసవిలో కూల్ డ్రింక్స్ మంచివి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/d51ef91bb97f7be4.mp3",
+        "transliteration": "vesavilo kūl ḍriṃks maṃcivi."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-05-31_011_ans0",
+          "text": "good",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-05-31_011_display_answer",
+        "text": "good",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-05-31_012",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-05-31_012_question",
+        "text": "Is the work finished?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-05-31_012_opt2",
+          "text": "నేను పని చేస్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/e0bfac9790e7fe9f.mp3",
+          "transliteration": "nenu pani cestunnānu."
+        },
+        {
+          "id": "2026-05-31_012_opt1",
+          "text": "పని మొదలు పెట్టండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/dda628e9e27b72f3.mp3",
+          "transliteration": "pani mòdalu pèṭṭaṃḍi."
+        },
+        {
+          "id": "2026-05-31_012_opt0",
+          "text": "పని పూర్తి అయిందా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/a632fe5e57b3f441.mp3",
+          "transliteration": "pani pūrti ayiṃdā?"
+        },
+        {
+          "id": "2026-05-31_012_opt3",
+          "text": "రేపు పని చేద్దాం.",
+          "language": "telugu",
+          "audio_path": "resources/audio/ac4003878e258b50.mp3",
+          "transliteration": "repu pani ceddāṃ."
+        }
+      ],
+      "correct_option_id": "2026-05-31_012_opt0"
+    }
+  ]
+}
