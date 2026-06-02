@@ -1,0 +1,554 @@
+{
+  "lesson_id": "2026-06-02",
+  "date": "2026-06-02",
+  "status": "active",
+  "difficulty": "A2",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-06-02T06:40:41.978905+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 7,
+    "fill_blank_audio": 4,
+    "match_audio_text": 1
+  },
+  "items": [
+    {
+      "id": "2026-06-02_001",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-02_001_question",
+        "text": "This meal is very tasty.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-06-02_001_opt1",
+          "text": "ఈ నీళ్లు చాలా చల్లగా ఉన్నాయి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/caae1d847f7cd5f1.mp3",
+          "transliteration": "ī nīḻlu cālā callagā unnāyi."
+        },
+        {
+          "id": "2026-06-02_001_opt2",
+          "text": "ఈ భోజనం చాలా కారంగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/c6fe62bec5162ff4.mp3",
+          "transliteration": "ī bhojanaṃ cālā kāraṃgā uṃdi."
+        },
+        {
+          "id": "2026-06-02_001_opt0",
+          "text": "ఈ భోజనం చాలా రుచిగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/c0d6b4e07d5b95ed.mp3",
+          "transliteration": "ī bhojanaṃ cālā rucigā uṃdi."
+        },
+        {
+          "id": "2026-06-02_001_opt3",
+          "text": "నేను భోజనం వండుతున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/8c6c5d7458dba9cc.mp3",
+          "transliteration": "nenu bhojanaṃ vaṃḍutunnānu."
+        }
+      ],
+      "correct_option_id": "2026-06-02_001_opt0"
+    },
+    {
+      "id": "2026-06-02_002",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-02_002_question",
+        "text": "ఆమె కొత్త ఉద్యోగంలో చేరింది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/65b86fa4c3489534.mp3",
+        "transliteration": "āmè kòtta udyogaṃlo ceriṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-06-02_002_opt0",
+          "text": "She joined a new job.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_002_opt1",
+          "text": "She left her old job.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_002_opt2",
+          "text": "She came late to the office.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_002_opt3",
+          "text": "She bought a new car.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-02_002_opt0"
+    },
+    {
+      "id": "2026-06-02_003",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-02_003_question",
+        "text": "పిల్లలు ఇప్పుడు ఐస్ క్రీం తింటున్నారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/40f73e0f0721b12f.mp3",
+        "transliteration": "pillalu ippuḍu ais krīṃ tiṃṭunnāru."
+      },
+      "options": [
+        {
+          "id": "2026-06-02_003_opt2",
+          "text": "The children are drinking milk.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_003_opt3",
+          "text": "The children are playing in the ground.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_003_opt0",
+          "text": "The children are eating ice cream now.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_003_opt1",
+          "text": "The children will eat ice cream tomorrow.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-02_003_opt0"
+    },
+    {
+      "id": "2026-06-02_004",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-02_004_question",
+        "text": "వేసవిలో మామిడి పండ్లు దొరుకుతాయి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/94004d3925cc97a5.mp3",
+        "transliteration": "vesavilo māmiḍi paṃḍlu dòrukutāyi."
+      },
+      "options": [
+        {
+          "id": "2026-06-02_004_opt0",
+          "text": "Mangoes are available in summer.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_004_opt3",
+          "text": "The mangoes are very sour.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_004_opt1",
+          "text": "It rains in summer.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_004_opt2",
+          "text": "Mangoes don't come in winter.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-02_004_opt0"
+    },
+    {
+      "id": "2026-06-02_005",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-02_005_question",
+        "text": "అతను నన్ను పిలుస్తున్నాడు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/53033c01bb2d6fd9.mp3",
+        "transliteration": "atanu nannu pilustunnāḍu."
+      },
+      "reference_sentence": {
+        "id": "2026-06-02_005_reference",
+        "text": "He is calling me.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-06-02_005_ans0",
+          "text": "పిలుస్తున్నాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/ab7dd62bb49b1bc3.mp3",
+          "transliteration": "pilustunnāḍu."
+        },
+        {
+          "id": "2026-06-02_005_ans1",
+          "text": "పిలుస్తున్నాడు",
+          "language": "telugu",
+          "audio_path": "resources/audio/d933eed95d3e7f04.mp3",
+          "transliteration": "pilustunnāḍu"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-02_005_display_answer",
+        "text": "పిలుస్తున్నాడు",
+        "language": "telugu",
+        "audio_path": "resources/audio/d933eed95d3e7f04.mp3",
+        "transliteration": "pilustunnāḍu"
+      }
+    },
+    {
+      "id": "2026-06-02_006",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-02_006_question",
+        "text": "మేము రోజూ ఈతకు వెళ్తాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/08366e8585eede73.mp3",
+        "transliteration": "memu rojū ītaku vèḻtāmu."
+      },
+      "options": [
+        {
+          "id": "2026-06-02_006_opt1",
+          "text": "We went for swimming yesterday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_006_opt0",
+          "text": "We go for swimming every day.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_006_opt3",
+          "text": "We are learning swimming.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_006_opt2",
+          "text": "They walk every day.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-02_006_opt0"
+    },
+    {
+      "id": "2026-06-02_007",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-02_007_question",
+        "text": "She is telling them lessons.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-06-02_007_reference",
+        "text": "ఆమె వాళ్ళకి పాఠాలు చెప్తుంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/e8d84d9571195983.mp3",
+        "transliteration": "āmè vāḻḻaki pāṭhālu cèptuṃdi."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-06-02_007_ans0",
+          "text": "telling",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-02_007_display_answer",
+        "text": "telling",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-06-02_008",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-02_008_question",
+        "text": "ఎండ ఎక్కువగా ఉన్నప్పుడు బయటకు వెళ్లకండి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/facddff6ffa54d9e.mp3",
+        "transliteration": "èṃḍa èkkuvagā unnappuḍu bayaṭaku vèḻlakaṃḍi."
+      },
+      "reference_sentence": {
+        "id": "2026-06-02_008_reference",
+        "text": "Don't go out when the sun is strong.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-06-02_008_ans0",
+          "text": "ఎండ",
+          "language": "telugu",
+          "audio_path": "resources/audio/a2c10e20ff549141.mp3",
+          "transliteration": "èṃḍa"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-02_008_display_answer",
+        "text": "ఎండ",
+        "language": "telugu",
+        "audio_path": "resources/audio/a2c10e20ff549141.mp3",
+        "transliteration": "èṃḍa"
+      }
+    },
+    {
+      "id": "2026-06-02_009",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-02_009_question",
+        "text": "I will meet you tomorrow.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-06-02_009_opt2",
+          "text": "నువ్వు నన్ను కలిశావు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/2c3a25c35ce7e4dc.mp3",
+          "transliteration": "nuvvu nannu kaliśāvu."
+        },
+        {
+          "id": "2026-06-02_009_opt0",
+          "text": "నేను నిన్ను రేపు కలుస్తాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/db48b5c21c2d25b9.mp3",
+          "transliteration": "nenu ninnu repu kalustānu."
+        },
+        {
+          "id": "2026-06-02_009_opt1",
+          "text": "నేను అతన్ని రేపు కలుస్తాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/cbcfd2147f350714.mp3",
+          "transliteration": "nenu atanni repu kalustānu."
+        },
+        {
+          "id": "2026-06-02_009_opt3",
+          "text": "నేను నిన్ను ఈరోజు కలిశాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/9cc2c47e9627093c.mp3",
+          "transliteration": "nenu ninnu īroju kaliśānu."
+        }
+      ],
+      "correct_option_id": "2026-06-02_009_opt0"
+    },
+    {
+      "id": "2026-06-02_010",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-02_010_question",
+        "text": "Father is bringing us gifts.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-06-02_010_reference",
+        "text": "నాన్న మనకు బహుమతులు తెస్తున్నారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/fc03a8680b99cc93.mp3",
+        "transliteration": "nānna manaku bahumatulu tèstunnāru."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-06-02_010_ans0",
+          "text": "Father",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-02_010_display_answer",
+        "text": "Father",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-06-02_011",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-02_011_question",
+        "text": "సెలవుల్లో పిల్లలు అమ్మమ్మ ఇంటికి వెళ్తారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/d27735f05bbdbbf2.mp3",
+        "transliteration": "sèlavullo pillalu ammamma iṃṭiki vèḻtāru."
+      },
+      "options": [
+        {
+          "id": "2026-06-02_011_opt0",
+          "text": "Children go to grandmother's house during holidays.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_011_opt2",
+          "text": "Children are playing at home itself.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_011_opt1",
+          "text": "There is school during summer holidays.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_011_opt3",
+          "text": "Children do not like holidays.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-02_011_opt0"
+    },
+    {
+      "id": "2026-06-02_012",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-06-02_012_p1",
+          "prompt_sentence": {
+            "id": "2026-06-02_012_p1_prompt",
+            "text": "నీళ్లు",
+            "language": "telugu",
+            "audio_path": "resources/audio/f5bb181f5b9c0d5e.mp3",
+            "transliteration": "nīḻlu"
+          },
+          "answer_sentence": {
+            "id": "2026-06-02_012_opt1",
+            "text": "Water",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-02_012_p2",
+          "prompt_sentence": {
+            "id": "2026-06-02_012_p2_prompt",
+            "text": "నన్ను",
+            "language": "telugu",
+            "audio_path": "resources/audio/45cd0f88a66bdb2a.mp3",
+            "transliteration": "nannu"
+          },
+          "answer_sentence": {
+            "id": "2026-06-02_012_opt2",
+            "text": "me",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-02_012_p3",
+          "prompt_sentence": {
+            "id": "2026-06-02_012_p3_prompt",
+            "text": "మాట్లాడు",
+            "language": "telugu",
+            "audio_path": "resources/audio/01c280956f6cd65e.mp3",
+            "transliteration": "māṭlāḍu"
+          },
+          "answer_sentence": {
+            "id": "2026-06-02_012_opt3",
+            "text": "speak",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-06-02_012_opt1",
+          "text": "Water",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_012_opt2",
+          "text": "me",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-02_012_opt3",
+          "text": "speak",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    }
+  ]
+}
