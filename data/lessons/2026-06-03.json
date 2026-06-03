@@ -1,0 +1,542 @@
+{
+  "lesson_id": "2026-06-03",
+  "date": "2026-06-03",
+  "status": "active",
+  "difficulty": "A2",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-06-03T11:05:49.806494+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 5,
+    "fill_blank_audio": 6,
+    "match_audio_text": 1
+  },
+  "items": [
+    {
+      "id": "2026-06-03_001",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-03_001_question",
+        "text": "నీకు ఏ ఆహారం ఇష్టం?",
+        "language": "telugu",
+        "audio_path": "resources/audio/98fe69f05e720325.mp3",
+        "transliteration": "nīku e āhāraṃ iṣṭaṃ?"
+      },
+      "options": [
+        {
+          "id": "2026-06-03_001_opt3",
+          "text": "I do not like this food.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-03_001_opt0",
+          "text": "Which food do you like?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-03_001_opt1",
+          "text": "Where are you eating?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-03_001_opt2",
+          "text": "Do you cook food?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-03_001_opt0"
+    },
+    {
+      "id": "2026-06-03_002",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-06-03_002_p1",
+          "prompt_sentence": {
+            "id": "2026-06-03_002_p1_prompt",
+            "text": "రంగు",
+            "language": "telugu",
+            "audio_path": "resources/audio/85fb7b73fc81ab9c.mp3",
+            "transliteration": "raṃgu"
+          },
+          "answer_sentence": {
+            "id": "2026-06-03_002_opt1",
+            "text": "colour",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-03_002_p2",
+          "prompt_sentence": {
+            "id": "2026-06-03_002_p2_prompt",
+            "text": "వాన",
+            "language": "telugu",
+            "audio_path": "resources/audio/2a660753b7c8994d.mp3",
+            "transliteration": "vāna"
+          },
+          "answer_sentence": {
+            "id": "2026-06-03_002_opt2",
+            "text": "rain",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-03_002_p3",
+          "prompt_sentence": {
+            "id": "2026-06-03_002_p3_prompt",
+            "text": "ఆమెను పిలువు",
+            "language": "telugu",
+            "audio_path": "resources/audio/4141ed1d9ee93677.mp3",
+            "transliteration": "āmènu piluvu"
+          },
+          "answer_sentence": {
+            "id": "2026-06-03_002_opt3",
+            "text": "call her",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-06-03_002_opt3",
+          "text": "call her",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-03_002_opt1",
+          "text": "colour",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-03_002_opt2",
+          "text": "rain",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-06-03_003",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-03_003_question",
+        "text": "ఎండకాలంలో చాలా వేడిగా ఉంటుంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/8bf38af64b5a3db9.mp3",
+        "transliteration": "èṃḍakālaṃlo cālā veḍigā uṃṭuṃdi."
+      },
+      "reference_sentence": {
+        "id": "2026-06-03_003_reference",
+        "text": "It is very hot in the summer.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 2,
+      "accepted_answers": [
+        {
+          "id": "2026-06-03_003_ans0",
+          "text": "చాలా",
+          "language": "telugu",
+          "audio_path": "resources/audio/89514a160ed983f5.mp3",
+          "transliteration": "cālā"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-03_003_display_answer",
+        "text": "చాలా",
+        "language": "telugu",
+        "audio_path": "resources/audio/89514a160ed983f5.mp3",
+        "transliteration": "cālā"
+      }
+    },
+    {
+      "id": "2026-06-03_004",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-03_004_question",
+        "text": "It is raining heavily outside.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-06-03_004_opt3",
+          "text": "గాలి నెమ్మదిగా వీస్తోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/dfef6b07a6721cc9.mp3",
+          "transliteration": "gāli nèmmadigā vīstoṃdi."
+        },
+        {
+          "id": "2026-06-03_004_opt2",
+          "text": "ఆకాశం నీలంగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/ce5f29a8fec00f87.mp3",
+          "transliteration": "ākāśaṃ nīlaṃgā uṃdi."
+        },
+        {
+          "id": "2026-06-03_004_opt1",
+          "text": "నిన్న వర్షం పడింది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/96cc057d87a65279.mp3",
+          "transliteration": "ninna varṣaṃ paḍiṃdi."
+        },
+        {
+          "id": "2026-06-03_004_opt0",
+          "text": "బయట భారీగా వర్షం పడుతుంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/f9f060b3095969f2.mp3",
+          "transliteration": "bayaṭa bhārīgā varṣaṃ paḍutuṃdi."
+        }
+      ],
+      "correct_option_id": "2026-06-03_004_opt0"
+    },
+    {
+      "id": "2026-06-03_005",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-03_005_question",
+        "text": "He is asking me.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-06-03_005_reference",
+        "text": "అతను నన్ను అడుగుతున్నాడు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/8cef86864652bd5a.mp3",
+        "transliteration": "atanu nannu aḍugutunnāḍu."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-06-03_005_ans0",
+          "text": "me",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-03_005_display_answer",
+        "text": "me",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-06-03_006",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-03_006_question",
+        "text": "They are helping us.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-06-03_006_reference",
+        "text": "వాళ్ళు మాకు సహాయం చేస్తున్నారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/ef6cbf7c95376f3a.mp3",
+        "transliteration": "vāḻḻu māku sahāyaṃ cestunnāru."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-06-03_006_ans0",
+          "text": "They",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-03_006_display_answer",
+        "text": "They",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-06-03_007",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-03_007_question",
+        "text": "She is looking for her umbrella.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-06-03_007_reference",
+        "text": "ఆమె తన గొడుగును వెతుకుతుంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/e33de46ebd219cb0.mp3",
+        "transliteration": "āmè tana gòḍugunu vètukutuṃdi."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-06-03_007_ans0",
+          "text": "for",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-03_007_display_answer",
+        "text": "for",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-06-03_008",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-03_008_question",
+        "text": "It is cool when it rains.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-06-03_008_reference",
+        "text": "వర్షం పడేటప్పుడు చల్లగా ఉంటుంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/9416df3e2eca1cf7.mp3",
+        "transliteration": "varṣaṃ paḍeṭappuḍu callagā uṃṭuṃdi."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 6,
+      "accepted_answers": [
+        {
+          "id": "2026-06-03_008_ans0",
+          "text": "rains.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-03_008_ans1",
+          "text": "rains",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-03_008_display_answer",
+        "text": "rains",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-06-03_009",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-03_009_question",
+        "text": "నేను నిన్ను చూస్తున్నాను.",
+        "language": "telugu",
+        "audio_path": "resources/audio/0a500fa59b38350e.mp3",
+        "transliteration": "nenu ninnu cūstunnānu."
+      },
+      "options": [
+        {
+          "id": "2026-06-03_009_opt0",
+          "text": "I am looking at you.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-03_009_opt2",
+          "text": "We are looking at you.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-03_009_opt1",
+          "text": "You are looking at me.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-03_009_opt3",
+          "text": "He is looking at you.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-03_009_opt0"
+    },
+    {
+      "id": "2026-06-03_010",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-03_010_question",
+        "text": "పిల్లలు వర్షంలో ఆడుకుంటున్నారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/6265f309fee1103d.mp3",
+        "transliteration": "pillalu varṣaṃlo āḍukuṃṭunnāru."
+      },
+      "reference_sentence": {
+        "id": "2026-06-03_010_reference",
+        "text": "Children are playing in the rain.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-06-03_010_ans0",
+          "text": "పిల్లలు",
+          "language": "telugu",
+          "audio_path": "resources/audio/07cb71c84d346315.mp3",
+          "transliteration": "pillalu"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-03_010_display_answer",
+        "text": "పిల్లలు",
+        "language": "telugu",
+        "audio_path": "resources/audio/07cb71c84d346315.mp3",
+        "transliteration": "pillalu"
+      }
+    },
+    {
+      "id": "2026-06-03_011",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-03_011_question",
+        "text": "ఆమె అతడిని ఆహ్వానిస్తోంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/a7565dcbbe31a2f4.mp3",
+        "transliteration": "āmè ataḍini āhvānistoṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-06-03_011_opt0",
+          "text": "She is inviting him.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-03_011_opt2",
+          "text": "They are inviting us.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-03_011_opt1",
+          "text": "He is inviting her.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-03_011_opt3",
+          "text": "I am inviting them.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-03_011_opt0"
+    },
+    {
+      "id": "2026-06-03_012",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-03_012_question",
+        "text": "మేము ఇప్పుడు కాఫీ తాగుతున్నాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/005d50fd7d7998b8.mp3",
+        "transliteration": "memu ippuḍu kāphī tāgutunnāmu."
+      },
+      "options": [
+        {
+          "id": "2026-06-03_012_opt1",
+          "text": "They are drinking tea.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-03_012_opt3",
+          "text": "You are drinking water.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-03_012_opt2",
+          "text": "I am drinking milk.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-03_012_opt0",
+          "text": "We are drinking coffee now.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-03_012_opt0"
+    }
+  ]
+}
