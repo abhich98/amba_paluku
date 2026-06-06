@@ -1,0 +1,626 @@
+{
+  "lesson_id": "2026-06-06",
+  "date": "2026-06-06",
+  "status": "active",
+  "difficulty": "A2",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-06-06T07:49:34.477475+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 4,
+    "fill_blank_audio": 5,
+    "match_audio_text": 3
+  },
+  "items": [
+    {
+      "id": "2026-06-06_001",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-06_001_question",
+        "text": "మేము రోజూ ఈతకు వెళ్తాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/08366e8585eede73.mp3",
+        "transliteration": "memu rojū ītaku vèḻtāmu."
+      },
+      "options": [
+        {
+          "id": "2026-06-06_001_opt3",
+          "text": "We will go for swimming tomorrow.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-06_001_opt0",
+          "text": "We go for swimming every day.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-06_001_opt1",
+          "text": "We went for swimming yesterday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-06_001_opt2",
+          "text": "I go for swimming every day.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-06_001_opt0"
+    },
+    {
+      "id": "2026-06-06_002",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-06_002_question",
+        "text": "మీకు ఏ ఆహారం ఇష్టం?",
+        "language": "telugu",
+        "audio_path": "resources/audio/3ae2665d62f236df.mp3",
+        "transliteration": "mīku e āhāraṃ iṣṭaṃ?"
+      },
+      "options": [
+        {
+          "id": "2026-06-06_002_opt1",
+          "text": "What are you eating?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-06_002_opt0",
+          "text": "Which food do you like?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-06_002_opt3",
+          "text": "Do you know this food?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-06_002_opt2",
+          "text": "When do you eat?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-06_002_opt0"
+    },
+    {
+      "id": "2026-06-06_003",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-06-06_003_p1",
+          "prompt_sentence": {
+            "id": "2026-06-06_003_p1_prompt",
+            "text": "నన్ను",
+            "language": "telugu",
+            "audio_path": "resources/audio/45cd0f88a66bdb2a.mp3",
+            "transliteration": "nannu"
+          },
+          "answer_sentence": {
+            "id": "2026-06-06_003_opt1",
+            "text": "me",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-06_003_p2",
+          "prompt_sentence": {
+            "id": "2026-06-06_003_p2_prompt",
+            "text": "పండ్లు",
+            "language": "telugu",
+            "audio_path": "resources/audio/0cd7d225ea54a1d1.mp3",
+            "transliteration": "paṃḍlu"
+          },
+          "answer_sentence": {
+            "id": "2026-06-06_003_opt2",
+            "text": "Fruits",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-06_003_p3",
+          "prompt_sentence": {
+            "id": "2026-06-06_003_p3_prompt",
+            "text": "ఎప్పుడు",
+            "language": "telugu",
+            "audio_path": "resources/audio/4858845c01e756c4.mp3",
+            "transliteration": "èppuḍu"
+          },
+          "answer_sentence": {
+            "id": "2026-06-06_003_opt3",
+            "text": "when",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-06-06_003_opt3",
+          "text": "when",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-06_003_opt2",
+          "text": "Fruits",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-06_003_opt1",
+          "text": "me",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-06-06_004",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-06_004_question",
+        "text": "Where does he live?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-06-06_004_reference",
+        "text": "అతను ఎక్కడ ఉంటాడు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/37fd4f96a52c91f0.mp3",
+        "transliteration": "atanu èkkaḍa uṃṭāḍu?"
+      },
+      "answer_mode": "exact",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-06-06_004_ans0",
+          "text": "live?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-06_004_ans1",
+          "text": "live",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-06_004_display_answer",
+        "text": "live",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-06-06_005",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-06_005_question",
+        "text": "వాళ్ళు నిన్ను చూస్తున్నారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/bc8733c64961977a.mp3",
+        "transliteration": "vāḻḻu ninnu cūstunnāru."
+      },
+      "reference_sentence": {
+        "id": "2026-06-06_005_reference",
+        "text": "They are looking at you.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 2,
+      "accepted_answers": [
+        {
+          "id": "2026-06-06_005_ans0",
+          "text": "నిన్ను",
+          "language": "telugu",
+          "audio_path": "resources/audio/dab6aca732d4ea18.mp3",
+          "transliteration": "ninnu"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-06_005_display_answer",
+        "text": "నిన్ను",
+        "language": "telugu",
+        "audio_path": "resources/audio/dab6aca732d4ea18.mp3",
+        "transliteration": "ninnu"
+      }
+    },
+    {
+      "id": "2026-06-06_006",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-06_006_question",
+        "text": "నువ్వు ఆమెకు పుస్తకం ఇస్తున్నావా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/cc5c3b4d6815092b.mp3",
+        "transliteration": "nuvvu āmèku pustakaṃ istunnāvā?"
+      },
+      "options": [
+        {
+          "id": "2026-06-06_006_opt0",
+          "text": "Are you giving the book to her?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-06_006_opt2",
+          "text": "Is she giving the book to you?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-06_006_opt1",
+          "text": "Are you giving the book to him?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-06_006_opt3",
+          "text": "Are you calling her?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-06_006_opt0"
+    },
+    {
+      "id": "2026-06-06_007",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-06-06_007_p1",
+          "prompt_sentence": {
+            "id": "2026-06-06_007_p1_prompt",
+            "text": "ఎక్కడ",
+            "language": "telugu",
+            "audio_path": "resources/audio/f144cb827f8a42b3.mp3",
+            "transliteration": "èkkaḍa"
+          },
+          "answer_sentence": {
+            "id": "2026-06-06_007_opt1",
+            "text": "where",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-06_007_p2",
+          "prompt_sentence": {
+            "id": "2026-06-06_007_p2_prompt",
+            "text": "ఎవరు",
+            "language": "telugu",
+            "audio_path": "resources/audio/fa4b9f06f0305fc9.mp3",
+            "transliteration": "èvaru"
+          },
+          "answer_sentence": {
+            "id": "2026-06-06_007_opt2",
+            "text": "who",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-06_007_p3",
+          "prompt_sentence": {
+            "id": "2026-06-06_007_p3_prompt",
+            "text": "వాళ్ళని",
+            "language": "telugu",
+            "audio_path": "resources/audio/4dacd538a260063b.mp3",
+            "transliteration": "vāḻḻani"
+          },
+          "answer_sentence": {
+            "id": "2026-06-06_007_opt3",
+            "text": "them",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-06-06_007_opt2",
+          "text": "who",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-06_007_opt1",
+          "text": "where",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-06_007_opt3",
+          "text": "them",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-06-06_008",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-06_008_question",
+        "text": "What is your name?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-06-06_008_reference",
+        "text": "నీ పేరు ఏమిటి?",
+        "language": "telugu",
+        "audio_path": "resources/audio/ebf9506548c95d4a.mp3",
+        "transliteration": "nī peru emiṭi?"
+      },
+      "answer_mode": "exact",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-06-06_008_ans0",
+          "text": "What",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-06_008_display_answer",
+        "text": "What",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-06-06_009",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-06_009_question",
+        "text": "I love him.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-06-06_009_opt2",
+          "text": "అతను నన్ను ప్రేమిస్తున్నాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/67e715e38d58584e.mp3",
+          "transliteration": "atanu nannu premistunnāḍu."
+        },
+        {
+          "id": "2026-06-06_009_opt3",
+          "text": "నేను నిన్ను ప్రేమిస్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/ab4c2fc972af1f6a.mp3",
+          "transliteration": "nenu ninnu premistunnānu."
+        },
+        {
+          "id": "2026-06-06_009_opt1",
+          "text": "నేను ఆమెను ప్రేమిస్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/e47b13a9c5173013.mp3",
+          "transliteration": "nenu āmènu premistunnānu."
+        },
+        {
+          "id": "2026-06-06_009_opt0",
+          "text": "నేను అతడిని ప్రేమిస్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/59c24b3116d2a353.mp3",
+          "transliteration": "nenu ataḍini premistunnānu."
+        }
+      ],
+      "correct_option_id": "2026-06-06_009_opt0"
+    },
+    {
+      "id": "2026-06-06_010",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-06_010_question",
+        "text": "నువ్వు ఎప్పుడు వస్తావు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/2cdabdc592e2acd9.mp3",
+        "transliteration": "nuvvu èppuḍu vastāvu?"
+      },
+      "reference_sentence": {
+        "id": "2026-06-06_010_reference",
+        "text": "When will you come?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-06-06_010_ans0",
+          "text": "నువ్వు",
+          "language": "telugu",
+          "audio_path": "resources/audio/63e4d4a9ab86502d.mp3",
+          "transliteration": "nuvvu"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-06_010_display_answer",
+        "text": "నువ్వు",
+        "language": "telugu",
+        "audio_path": "resources/audio/63e4d4a9ab86502d.mp3",
+        "transliteration": "nuvvu"
+      }
+    },
+    {
+      "id": "2026-06-06_011",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-06_011_question",
+        "text": "She is explaining the lesson to us.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-06-06_011_reference",
+        "text": "ఆమె మాకు పాఠం వివరిస్తోంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/5febbeb6d4328aaa.mp3",
+        "transliteration": "āmè māku pāṭhaṃ vivaristoṃdi."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 7,
+      "accepted_answers": [
+        {
+          "id": "2026-06-06_011_ans0",
+          "text": "us",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-06_011_display_answer",
+        "text": "us",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-06-06_012",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-06-06_012_p1",
+          "prompt_sentence": {
+            "id": "2026-06-06_012_p1_prompt",
+            "text": "మమ్మల్ని",
+            "language": "telugu",
+            "audio_path": "resources/audio/908d55284f51c8c1.mp3",
+            "transliteration": "mammalni"
+          },
+          "answer_sentence": {
+            "id": "2026-06-06_012_opt1",
+            "text": "us",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-06_012_p2",
+          "prompt_sentence": {
+            "id": "2026-06-06_012_p2_prompt",
+            "text": "చదువుతున్నాడు",
+            "language": "telugu",
+            "audio_path": "resources/audio/47e26f3b20182357.mp3",
+            "transliteration": "caduvutunnāḍu"
+          },
+          "answer_sentence": {
+            "id": "2026-06-06_012_opt2",
+            "text": "reading",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-06_012_p3",
+          "prompt_sentence": {
+            "id": "2026-06-06_012_p3_prompt",
+            "text": "నడుస్తోంది",
+            "language": "telugu",
+            "audio_path": "resources/audio/a82c667c494733db.mp3",
+            "transliteration": "naḍustoṃdi"
+          },
+          "answer_sentence": {
+            "id": "2026-06-06_012_opt3",
+            "text": "walking",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-06-06_012_opt1",
+          "text": "us",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-06_012_opt3",
+          "text": "walking",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-06_012_opt2",
+          "text": "reading",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    }
+  ]
+}
