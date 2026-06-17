@@ -1,0 +1,604 @@
+{
+  "lesson_id": "2026-06-17",
+  "date": "2026-06-17",
+  "status": "active",
+  "difficulty": "A2",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-06-17T09:32:57.207518+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 9,
+    "fill_blank_audio": 1,
+    "match_audio_text": 2
+  },
+  "items": [
+    {
+      "id": "2026-06-17_001",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-17_001_question",
+        "text": "Greetings to you all.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-06-17_001_opt2",
+          "text": "అందరూ బాగున్నారా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/100a56d7fae7c0eb.mp3",
+          "transliteration": "aṃdarū bāgunnārā?"
+        },
+        {
+          "id": "2026-06-17_001_opt1",
+          "text": "నేను వస్తున్నాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/caf8b28cf8484862.mp3",
+          "transliteration": "nenu vastunnānu."
+        },
+        {
+          "id": "2026-06-17_001_opt3",
+          "text": "శుభ రాత్రి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/843b6cfa99226581.mp3",
+          "transliteration": "śubha rātri."
+        },
+        {
+          "id": "2026-06-17_001_opt0",
+          "text": "మీ అందరికీ నమస్కారం.",
+          "language": "telugu",
+          "audio_path": "resources/audio/aa52609e4975a0b5.mp3",
+          "transliteration": "mī aṃdarikī namaskāraṃ."
+        }
+      ],
+      "correct_option_id": "2026-06-17_001_opt0"
+    },
+    {
+      "id": "2026-06-17_002",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-17_002_question",
+        "text": "నేను నిన్ను చూస్తున్నాను.",
+        "language": "telugu",
+        "audio_path": "resources/audio/0a500fa59b38350e.mp3",
+        "transliteration": "nenu ninnu cūstunnānu."
+      },
+      "options": [
+        {
+          "id": "2026-06-17_002_opt1",
+          "text": "I am listening.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_002_opt3",
+          "text": "I am not writing.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_002_opt2",
+          "text": "He is looking.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_002_opt0",
+          "text": "I am looking at you.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-17_002_opt0"
+    },
+    {
+      "id": "2026-06-17_003",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-06-17_003_p1",
+          "prompt_sentence": {
+            "id": "2026-06-17_003_p1_prompt",
+            "text": "నీళ్లు",
+            "language": "telugu",
+            "audio_path": "resources/audio/f5bb181f5b9c0d5e.mp3",
+            "transliteration": "nīḻlu"
+          },
+          "answer_sentence": {
+            "id": "2026-06-17_003_opt1",
+            "text": "Water",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-17_003_p2",
+          "prompt_sentence": {
+            "id": "2026-06-17_003_p2_prompt",
+            "text": "నేను చేస్తాను",
+            "language": "telugu",
+            "audio_path": "resources/audio/7c6b7b7fb601c8ce.mp3",
+            "transliteration": "nenu cestānu"
+          },
+          "answer_sentence": {
+            "id": "2026-06-17_003_opt2",
+            "text": "I will do",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-17_003_p3",
+          "prompt_sentence": {
+            "id": "2026-06-17_003_p3_prompt",
+            "text": "మేము వెళ్తాము",
+            "language": "telugu",
+            "audio_path": "resources/audio/7b5cdb9f1faa7d9b.mp3",
+            "transliteration": "memu vèḻtāmu"
+          },
+          "answer_sentence": {
+            "id": "2026-06-17_003_opt3",
+            "text": "We will go",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-06-17_003_opt1",
+          "text": "Water",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_003_opt2",
+          "text": "I will do",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_003_opt3",
+          "text": "We will go",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-06-17_004",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-17_004_question",
+        "text": "This is her pen.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-06-17_004_opt2",
+          "text": "అది వారి ఇల్లు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/3e4c54e077ba5411.mp3",
+          "transliteration": "adi vāri illu."
+        },
+        {
+          "id": "2026-06-17_004_opt1",
+          "text": "ఇది నా పుస్తకం.",
+          "language": "telugu",
+          "audio_path": "resources/audio/f64688276d576e7c.mp3",
+          "transliteration": "idi nā pustakaṃ."
+        },
+        {
+          "id": "2026-06-17_004_opt0",
+          "text": "ఇది ఆమె పెన్.",
+          "language": "telugu",
+          "audio_path": "resources/audio/323988d281280e9f.mp3",
+          "transliteration": "idi āmè pèn."
+        },
+        {
+          "id": "2026-06-17_004_opt3",
+          "text": "ఇది అతని బంతి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b20f04d4f8c8e006.mp3",
+          "transliteration": "idi atani baṃti."
+        }
+      ],
+      "correct_option_id": "2026-06-17_004_opt0"
+    },
+    {
+      "id": "2026-06-17_005",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-17_005_question",
+        "text": "రేపు మేము సినిమా చూస్తాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/9565ae496060e29c.mp3",
+        "transliteration": "repu memu sinimā cūstāmu."
+      },
+      "options": [
+        {
+          "id": "2026-06-17_005_opt2",
+          "text": "We are watching a movie now.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_005_opt0",
+          "text": "We will watch a movie tomorrow.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_005_opt1",
+          "text": "We watched a movie yesterday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_005_opt3",
+          "text": "She watches movies.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-17_005_opt0"
+    },
+    {
+      "id": "2026-06-17_006",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-17_006_question",
+        "text": "నువ్వు ఎప్పుడు నిద్రపోతావు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/cff3771c4034859a.mp3",
+        "transliteration": "nuvvu èppuḍu nidrapotāvu?"
+      },
+      "options": [
+        {
+          "id": "2026-06-17_006_opt1",
+          "text": "Where will you sleep?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_006_opt0",
+          "text": "When will you sleep?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_006_opt2",
+          "text": "Why are you sleeping?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_006_opt3",
+          "text": "When will he come?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-17_006_opt0"
+    },
+    {
+      "id": "2026-06-17_007",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-17_007_question",
+        "text": "She will buy a new house next month.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-06-17_007_opt3",
+          "text": "వారు ఇల్లు కొంటున్నారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/9962c22cb9c5f31a.mp3",
+          "transliteration": "vāru illu kòṃṭunnāru."
+        },
+        {
+          "id": "2026-06-17_007_opt1",
+          "text": "ఆమె పోయిన నెల ఇల్లు కొన్నది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/89f52ffa6f9ad5e6.mp3",
+          "transliteration": "āmè poyina nèla illu kònnadi."
+        },
+        {
+          "id": "2026-06-17_007_opt0",
+          "text": "ఆమె వచ్చే నెల కొత్త ఇల్లు కొంటుంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/c0689ea74d372c83.mp3",
+          "transliteration": "āmè vacce nèla kòtta illu kòṃṭuṃdi."
+        },
+        {
+          "id": "2026-06-17_007_opt2",
+          "text": "నేను వచ్చే నెల వెళ్తాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/9c80905e61bbcec2.mp3",
+          "transliteration": "nenu vacce nèla vèḻtānu."
+        }
+      ],
+      "correct_option_id": "2026-06-17_007_opt0"
+    },
+    {
+      "id": "2026-06-17_008",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-17_008_question",
+        "text": "ఇవి వాళ్ల బట్టలు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/e4a33c1d8a3961af.mp3",
+        "transliteration": "ivi vāḻla baṭṭalu."
+      },
+      "options": [
+        {
+          "id": "2026-06-17_008_opt1",
+          "text": "These are my clothes.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_008_opt3",
+          "text": "This is her saree.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_008_opt0",
+          "text": "These are their clothes.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_008_opt2",
+          "text": "Those are your shoes.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-17_008_opt0"
+    },
+    {
+      "id": "2026-06-17_009",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-06-17_009_p1",
+          "prompt_sentence": {
+            "id": "2026-06-17_009_p1_prompt",
+            "text": "ఎక్కడికి",
+            "language": "telugu",
+            "audio_path": "resources/audio/420931a6448ecc8f.mp3",
+            "transliteration": "èkkaḍiki"
+          },
+          "answer_sentence": {
+            "id": "2026-06-17_009_opt1",
+            "text": "To where",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-17_009_p2",
+          "prompt_sentence": {
+            "id": "2026-06-17_009_p2_prompt",
+            "text": "ఎప్పటికి",
+            "language": "telugu",
+            "audio_path": "resources/audio/e5059f37bec30e92.mp3",
+            "transliteration": "èppaṭiki"
+          },
+          "answer_sentence": {
+            "id": "2026-06-17_009_opt2",
+            "text": "By when",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-17_009_p3",
+          "prompt_sentence": {
+            "id": "2026-06-17_009_p3_prompt",
+            "text": "నాది",
+            "language": "telugu",
+            "audio_path": "resources/audio/1fa71a70a84f2725.mp3",
+            "transliteration": "nādi"
+          },
+          "answer_sentence": {
+            "id": "2026-06-17_009_opt3",
+            "text": "My thing/Mine",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-06-17_009_opt2",
+          "text": "By when",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_009_opt3",
+          "text": "My thing/Mine",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_009_opt1",
+          "text": "To where",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-06-17_010",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-17_010_question",
+        "text": "అతను ఎవరిని కలుస్తాడు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/e40fd24f8eca29e1.mp3",
+        "transliteration": "atanu èvarini kalustāḍu?"
+      },
+      "options": [
+        {
+          "id": "2026-06-17_010_opt2",
+          "text": "Whom are you calling?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_010_opt1",
+          "text": "When will he call?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_010_opt3",
+          "text": "Whom will they ask?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-17_010_opt0",
+          "text": "Whom will he meet?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-17_010_opt0"
+    },
+    {
+      "id": "2026-06-17_011",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-17_011_question",
+        "text": "How did you do that work?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-06-17_011_opt0",
+          "text": "నువ్వు ఆ పని ఎలా చేసావు?",
+          "language": "telugu",
+          "audio_path": "resources/audio/e075b5b6522f1791.mp3",
+          "transliteration": "nuvvu ā pani èlā cesāvu?"
+        },
+        {
+          "id": "2026-06-17_011_opt2",
+          "text": "నేను ఆ పని చేస్తాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/3ed84e588b152e53.mp3",
+          "transliteration": "nenu ā pani cestānu."
+        },
+        {
+          "id": "2026-06-17_011_opt1",
+          "text": "మీరు ఆ పని ఎందుకు చేశారు?",
+          "language": "telugu",
+          "audio_path": "resources/audio/46a64c7394d31794.mp3",
+          "transliteration": "mīru ā pani èṃduku ceśāru?"
+        },
+        {
+          "id": "2026-06-17_011_opt3",
+          "text": "ఆమె ఎలా ఉంది?",
+          "language": "telugu",
+          "audio_path": "resources/audio/28452fd1297fb3a0.mp3",
+          "transliteration": "āmè èlā uṃdi?"
+        }
+      ],
+      "correct_option_id": "2026-06-17_011_opt0"
+    },
+    {
+      "id": "2026-06-17_012",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-17_012_question",
+        "text": "We will have holidays next week.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-06-17_012_reference",
+        "text": "వచ్చే వారం మాకు సెలవులు ఉంటాయి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/e1ba1492f341dc5c.mp3",
+        "transliteration": "vacce vāraṃ māku sèlavulu uṃṭāyi."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 6,
+      "accepted_answers": [
+        {
+          "id": "2026-06-17_012_ans0",
+          "text": "week",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-17_012_display_answer",
+        "text": "week",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    }
+  ]
+}
