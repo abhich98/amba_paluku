@@ -1,0 +1,497 @@
+{
+  "lesson_id": "2026-06-20",
+  "date": "2026-06-20",
+  "status": "active",
+  "difficulty": "A2",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-06-20T09:57:49.075312+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 5,
+    "fill_blank_audio": 7,
+    "match_audio_text": 0
+  },
+  "items": [
+    {
+      "id": "2026-06-20_001",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-20_001_question",
+        "text": "వాళ్ళు నిన్న రాత్రి ఎక్కడికి వెళ్లారు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/d9b19368b29c563c.mp3",
+        "transliteration": "vāḻḻu ninna rātri èkkaḍiki vèḻlāru?"
+      },
+      "reference_sentence": {
+        "id": "2026-06-20_001_reference",
+        "text": "Where did they go last night?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "exact",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-06-20_001_ans0",
+          "text": "రాత్రి",
+          "language": "telugu",
+          "audio_path": "resources/audio/a0f1c5c591bd59ad.mp3",
+          "transliteration": "rātri"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-20_001_display_answer",
+        "text": "రాత్రి",
+        "language": "telugu",
+        "audio_path": "resources/audio/a0f1c5c591bd59ad.mp3",
+        "transliteration": "rātri"
+      }
+    },
+    {
+      "id": "2026-06-20_002",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-20_002_question",
+        "text": "She is telling them lessons.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-06-20_002_reference",
+        "text": "ఆమె వాళ్ళకి పాఠాలు చెప్తుంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/e8d84d9571195983.mp3",
+        "transliteration": "āmè vāḻḻaki pāṭhālu cèptuṃdi."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-06-20_002_ans0",
+          "text": "She",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-20_002_display_answer",
+        "text": "She",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-06-20_003",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-20_003_question",
+        "text": "ఈ నీలి రంగు చొక్కా నాది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/e46ebf7585d8154c.mp3",
+        "transliteration": "ī nīli raṃgu còkkā nādi."
+      },
+      "options": [
+        {
+          "id": "2026-06-20_003_opt2",
+          "text": "Whose shirt is this?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-20_003_opt0",
+          "text": "This blue shirt is mine.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-20_003_opt3",
+          "text": "This shirt doesn't fit him.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-20_003_opt1",
+          "text": "That red shirt is yours.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-20_003_opt0"
+    },
+    {
+      "id": "2026-06-20_004",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-20_004_question",
+        "text": "Will you come to the office tomorrow?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-06-20_004_opt2",
+          "text": "వారు రేపు వస్తారా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/ac7da3c73d36e339.mp3",
+          "transliteration": "vāru repu vastārā?"
+        },
+        {
+          "id": "2026-06-20_004_opt0",
+          "text": "నువ్వు రేపు ఆఫీసుకి వస్తావా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/30673ee4427c5028.mp3",
+          "transliteration": "nuvvu repu āphīsuki vastāvā?"
+        },
+        {
+          "id": "2026-06-20_004_opt1",
+          "text": "మీరు నిన్న ఆఫీసుకి వచ్చారా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/4917964148a31150.mp3",
+          "transliteration": "mīru ninna āphīsuki vaccārā?"
+        },
+        {
+          "id": "2026-06-20_004_opt3",
+          "text": "నేను రేపు ఆఫీసుకి రాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/7af2620554e48645.mp3",
+          "transliteration": "nenu repu āphīsuki rānu."
+        }
+      ],
+      "correct_option_id": "2026-06-20_004_opt0"
+    },
+    {
+      "id": "2026-06-20_005",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-20_005_question",
+        "text": "ఆ పెద్ద ఇల్లు మీదా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/c44f23da0b8cab03.mp3",
+        "transliteration": "ā pèdda illu mīdā?"
+      },
+      "reference_sentence": {
+        "id": "2026-06-20_005_reference",
+        "text": "Is that big house yours?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-06-20_005_ans0",
+          "text": "మీదా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/850c7e9c5767f118.mp3",
+          "transliteration": "mīdā?"
+        },
+        {
+          "id": "2026-06-20_005_ans1",
+          "text": "మీదా",
+          "language": "telugu",
+          "audio_path": "resources/audio/c6b57782117e3070.mp3",
+          "transliteration": "mīdā"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-20_005_display_answer",
+        "text": "మీదా",
+        "language": "telugu",
+        "audio_path": "resources/audio/c6b57782117e3070.mp3",
+        "transliteration": "mīdā"
+      }
+    },
+    {
+      "id": "2026-06-20_006",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-20_006_question",
+        "text": "మేము ఆదివారం క్రికెట్ ఆడతాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/681ea5c9fe6fd66a.mp3",
+        "transliteration": "memu ādivāraṃ krikèṭ āḍatāmu."
+      },
+      "options": [
+        {
+          "id": "2026-06-20_006_opt2",
+          "text": "Will they play cricket tomorrow?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-20_006_opt3",
+          "text": "I play cricket every Sunday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-20_006_opt1",
+          "text": "We played cricket yesterday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-20_006_opt0",
+          "text": "We play cricket on Sunday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-20_006_opt0"
+    },
+    {
+      "id": "2026-06-20_007",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-20_007_question",
+        "text": "నీకు కాఫీ ఇష్టమా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/2333e2324d6b1203.mp3",
+        "transliteration": "nīku kāphī iṣṭamā?"
+      },
+      "reference_sentence": {
+        "id": "2026-06-20_007_reference",
+        "text": "Do you like coffee?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-06-20_007_ans0",
+          "text": "నీకు",
+          "language": "telugu",
+          "audio_path": "resources/audio/74be663b848b3f0d.mp3",
+          "transliteration": "nīku"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-20_007_display_answer",
+        "text": "నీకు",
+        "language": "telugu",
+        "audio_path": "resources/audio/74be663b848b3f0d.mp3",
+        "transliteration": "nīku"
+      }
+    },
+    {
+      "id": "2026-06-20_008",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-20_008_question",
+        "text": "అతను వచ్చే నెల లండన్ వెళ్తాడు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/8e608ada93f89bf0.mp3",
+        "transliteration": "atanu vacce nèla laṃḍan vèḻtāḍu."
+      },
+      "reference_sentence": {
+        "id": "2026-06-20_008_reference",
+        "text": "He will go to London next month.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-06-20_008_ans0",
+          "text": "నెల",
+          "language": "telugu",
+          "audio_path": "resources/audio/7abc3a83ee83e0e8.mp3",
+          "transliteration": "nèla"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-20_008_display_answer",
+        "text": "నెల",
+        "language": "telugu",
+        "audio_path": "resources/audio/7abc3a83ee83e0e8.mp3",
+        "transliteration": "nèla"
+      }
+    },
+    {
+      "id": "2026-06-20_009",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-20_009_question",
+        "text": "These are our children's toys.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-06-20_009_opt3",
+          "text": "ఇవి నీ బొమ్మలు కావు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/7064b0613d399cbd.mp3",
+          "transliteration": "ivi nī bòmmalu kāvu."
+        },
+        {
+          "id": "2026-06-20_009_opt1",
+          "text": "అవి ఎవరి బొమ్మలు?",
+          "language": "telugu",
+          "audio_path": "resources/audio/1ee486bfb4c2e4be.mp3",
+          "transliteration": "avi èvari bòmmalu?"
+        },
+        {
+          "id": "2026-06-20_009_opt2",
+          "text": "ఈ బొమ్మ చాలా బాగుంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/a32012a8ba1ba825.mp3",
+          "transliteration": "ī bòmma cālā bāguṃdi."
+        },
+        {
+          "id": "2026-06-20_009_opt0",
+          "text": "ఇవి మా పిల్లల బొమ్మలు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/578b1714fc4e08cc.mp3",
+          "transliteration": "ivi mā pillala bòmmalu."
+        }
+      ],
+      "correct_option_id": "2026-06-20_009_opt0"
+    },
+    {
+      "id": "2026-06-20_010",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-20_010_question",
+        "text": "నువ్వు ఈరోజు రాత్రి వంట చేస్తావా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/216f44df2676dc41.mp3",
+        "transliteration": "nuvvu īroju rātri vaṃṭa cestāvā?"
+      },
+      "reference_sentence": {
+        "id": "2026-06-20_010_reference",
+        "text": "Will you cook tonight?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "exact",
+      "omit_loc": 2,
+      "accepted_answers": [
+        {
+          "id": "2026-06-20_010_ans0",
+          "text": "ఈరోజు",
+          "language": "telugu",
+          "audio_path": "resources/audio/b4e8aec006287ee7.mp3",
+          "transliteration": "īroju"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-20_010_display_answer",
+        "text": "ఈరోజు",
+        "language": "telugu",
+        "audio_path": "resources/audio/b4e8aec006287ee7.mp3",
+        "transliteration": "īroju"
+      }
+    },
+    {
+      "id": "2026-06-20_011",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-20_011_question",
+        "text": "ఆమె తన స్నేహితులతో సినిమాకి వెళ్తుంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/0f0efd212daf978e.mp3",
+        "transliteration": "āmè tana snehitulato sinimāki vèḻtuṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-06-20_011_opt1",
+          "text": "She went to a movie with her friends.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-20_011_opt2",
+          "text": "Will he go with his friends?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-20_011_opt0",
+          "text": "She will go to a movie with her friends.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-20_011_opt3",
+          "text": "We will go to a movie tomorrow.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-20_011_opt0"
+    },
+    {
+      "id": "2026-06-20_012",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-20_012_question",
+        "text": "Have you read this book?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-06-20_012_reference",
+        "text": "మీరు ఈ పుస్తకాన్ని చదివారా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/01471d37ca862b24.mp3",
+        "transliteration": "mīru ī pustakānni cadivārā?"
+      },
+      "answer_mode": "exact",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-06-20_012_ans0",
+          "text": "this",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-20_012_display_answer",
+        "text": "this",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    }
+  ]
+}
