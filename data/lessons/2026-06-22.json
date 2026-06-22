@@ -1,0 +1,592 @@
+{
+  "lesson_id": "2026-06-22",
+  "date": "2026-06-22",
+  "status": "active",
+  "difficulty": "A2",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-06-22T10:05:23.323719+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 7,
+    "fill_blank_audio": 3,
+    "match_audio_text": 2
+  },
+  "items": [
+    {
+      "id": "2026-06-22_001",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-22_001_question",
+        "text": "నువ్వు ఆమెకు ఫోన్ ఇస్తున్నావా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/0e4ddba3bafc0053.mp3",
+        "transliteration": "nuvvu āmèku phon istunnāvā?"
+      },
+      "options": [
+        {
+          "id": "2026-06-22_001_opt0",
+          "text": "Are you giving the phone to her?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-22_001_opt3",
+          "text": "Is she giving the phone to you?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-22_001_opt1",
+          "text": "Did you give the phone to her?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-22_001_opt2",
+          "text": "Will you give the book to her?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-22_001_opt0"
+    },
+    {
+      "id": "2026-06-22_002",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-22_002_question",
+        "text": "మీరు ఎవరితో మాట్లాడుతున్నారు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/4b8000e19fcc4211.mp3",
+        "transliteration": "mīru èvarito māṭlāḍutunnāru?"
+      },
+      "reference_sentence": {
+        "id": "2026-06-22_002_reference",
+        "text": "Who are you talking to?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-06-22_002_ans0",
+          "text": "మీరు",
+          "language": "telugu",
+          "audio_path": "resources/audio/f49e82235d0c7ced.mp3",
+          "transliteration": "mīru"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-22_002_display_answer",
+        "text": "మీరు",
+        "language": "telugu",
+        "audio_path": "resources/audio/f49e82235d0c7ced.mp3",
+        "transliteration": "mīru"
+      }
+    },
+    {
+      "id": "2026-06-22_003",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-22_003_question",
+        "text": "Will she come to our house tomorrow?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-06-22_003_reference",
+        "text": "ఆమె రేపు మన ఇంటికి వస్తుందా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/6e57eebfb040df08.mp3",
+        "transliteration": "āmè repu mana iṃṭiki vastuṃdā?"
+      },
+      "answer_mode": "exact",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-06-22_003_ans0",
+          "text": "come",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-22_003_display_answer",
+        "text": "come",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-06-22_004",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-22_004_question",
+        "text": "Is this red bag yours?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-06-22_004_opt3",
+          "text": "ఈ ఎర్రటి బ్యాగు ఆమెదా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/69fbb15de54be9db.mp3",
+          "transliteration": "ī èrraṭi byāgu āmèdā?"
+        },
+        {
+          "id": "2026-06-22_004_opt0",
+          "text": "ఈ ఎర్రటి బ్యాగు నీదా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/9891996f2518068c.mp3",
+          "transliteration": "ī èrraṭi byāgu nīdā?"
+        },
+        {
+          "id": "2026-06-22_004_opt2",
+          "text": "ఆ ఎర్రటి బ్యాగు ఎవరిది?",
+          "language": "telugu",
+          "audio_path": "resources/audio/b183ed95104053ae.mp3",
+          "transliteration": "ā èrraṭi byāgu èvaridi?"
+        },
+        {
+          "id": "2026-06-22_004_opt1",
+          "text": "ఈ ఎర్రటి బ్యాగు నాదా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/5832bf82c0f95cf3.mp3",
+          "transliteration": "ī èrraṭi byāgu nādā?"
+        }
+      ],
+      "correct_option_id": "2026-06-22_004_opt0"
+    },
+    {
+      "id": "2026-06-22_005",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-06-22_005_question",
+        "text": "అతను వచ్చే నెల పరీక్ష రాస్తాడా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/143ae0979e86709e.mp3",
+        "transliteration": "atanu vacce nèla parīkṣa rāstāḍā?"
+      },
+      "reference_sentence": {
+        "id": "2026-06-22_005_reference",
+        "text": "Will he write the exam next month?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 2,
+      "accepted_answers": [
+        {
+          "id": "2026-06-22_005_ans0",
+          "text": "వచ్చే",
+          "language": "telugu",
+          "audio_path": "resources/audio/5b2691dbb561d397.mp3",
+          "transliteration": "vacce"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-06-22_005_display_answer",
+        "text": "వచ్చే",
+        "language": "telugu",
+        "audio_path": "resources/audio/5b2691dbb561d397.mp3",
+        "transliteration": "vacce"
+      }
+    },
+    {
+      "id": "2026-06-22_006",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-22_006_question",
+        "text": "This is his dog",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-06-22_006_opt3",
+          "text": "అది కుక్క",
+          "language": "telugu",
+          "audio_path": "resources/audio/9185cf4c0100956a.mp3",
+          "transliteration": "adi kukka"
+        },
+        {
+          "id": "2026-06-22_006_opt1",
+          "text": "ఇది నా కుక్కా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/008892490a38acd7.mp3",
+          "transliteration": "idi nā kukkā?"
+        },
+        {
+          "id": "2026-06-22_006_opt0",
+          "text": "ఇది అతని కుక్క",
+          "language": "telugu",
+          "audio_path": "resources/audio/ae099d35ccc3c9c9.mp3",
+          "transliteration": "idi atani kukka"
+        },
+        {
+          "id": "2026-06-22_006_opt2",
+          "text": "ఇది మీ కుక్కా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/97405a65ffe2f193.mp3",
+          "transliteration": "idi mī kukkā?"
+        }
+      ],
+      "correct_option_id": "2026-06-22_006_opt0"
+    },
+    {
+      "id": "2026-06-22_007",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-22_007_question",
+        "text": "నువ్వు మాతో ఊరికి వస్తావా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/aa2ba0aa3b7c2bc3.mp3",
+        "transliteration": "nuvvu māto ūriki vastāvā?"
+      },
+      "options": [
+        {
+          "id": "2026-06-22_007_opt3",
+          "text": "Will they come to the village with us?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-22_007_opt2",
+          "text": "Will we come to the village with you?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-22_007_opt0",
+          "text": "Will you come to the village with us?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-22_007_opt1",
+          "text": "Did you come to the village with us?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-22_007_opt0"
+    },
+    {
+      "id": "2026-06-22_008",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-22_008_question",
+        "text": "ఆ ఫొటోలు వాళ్ళవి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/cdc1116da0bb2cdb.mp3",
+        "transliteration": "ā phòṭolu vāḻḻavi."
+      },
+      "options": [
+        {
+          "id": "2026-06-22_008_opt0",
+          "text": "Those are their photos.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-22_008_opt2",
+          "text": "Whose photos are those?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-22_008_opt1",
+          "text": "Are these photos ours?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-22_008_opt3",
+          "text": "Those are your books.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-22_008_opt0"
+    },
+    {
+      "id": "2026-06-22_009",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-22_009_question",
+        "text": "నీకు సహాయం కావాలా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/00ae68c204318e23.mp3",
+        "transliteration": "nīku sahāyaṃ kāvālā?"
+      },
+      "options": [
+        {
+          "id": "2026-06-22_009_opt2",
+          "text": "Will you help me?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-22_009_opt0",
+          "text": "Do you need help?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-22_009_opt3",
+          "text": "Am I helping you?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-22_009_opt1",
+          "text": "Did I help you?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-06-22_009_opt0"
+    },
+    {
+      "id": "2026-06-22_010",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-06-22_010_p1",
+          "prompt_sentence": {
+            "id": "2026-06-22_010_p1_prompt",
+            "text": "ధన్యవాదాలు",
+            "language": "telugu",
+            "audio_path": "resources/audio/034b8545b4786a88.mp3",
+            "transliteration": "dhanyavādālu"
+          },
+          "answer_sentence": {
+            "id": "2026-06-22_010_opt1",
+            "text": "Thank you",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-22_010_p2",
+          "prompt_sentence": {
+            "id": "2026-06-22_010_p2_prompt",
+            "text": "నేను చేస్తాను",
+            "language": "telugu",
+            "audio_path": "resources/audio/7c6b7b7fb601c8ce.mp3",
+            "transliteration": "nenu cestānu"
+          },
+          "answer_sentence": {
+            "id": "2026-06-22_010_opt2",
+            "text": "I will do it",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-22_010_p3",
+          "prompt_sentence": {
+            "id": "2026-06-22_010_p3_prompt",
+            "text": "తింటావా?",
+            "language": "telugu",
+            "audio_path": "resources/audio/c008af278abf7df4.mp3",
+            "transliteration": "tiṃṭāvā?"
+          },
+          "answer_sentence": {
+            "id": "2026-06-22_010_opt3",
+            "text": "Will you eat?",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-06-22_010_opt1",
+          "text": "Thank you",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-22_010_opt2",
+          "text": "I will do it",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-22_010_opt3",
+          "text": "Will you eat?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-06-22_011",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-06-22_011_question",
+        "text": "This pencil is mine, is that pen yours?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-06-22_011_opt2",
+          "text": "ఈ పెన్సిల్ ఎవరిది, ఆ పెన్ను ఎవరిది?",
+          "language": "telugu",
+          "audio_path": "resources/audio/ace20a7269930e30.mp3",
+          "transliteration": "ī pènsil èvaridi, ā pènnu èvaridi?"
+        },
+        {
+          "id": "2026-06-22_011_opt0",
+          "text": "ఈ పెన్సిల్ నాది, ఆ పెన్ను నీదా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/d9b2b55d04508ba0.mp3",
+          "transliteration": "ī pènsil nādi, ā pènnu nīdā?"
+        },
+        {
+          "id": "2026-06-22_011_opt1",
+          "text": "ఈ పెన్సిల్ నీది, ఆ పెన్ను నాదా?",
+          "language": "telugu",
+          "audio_path": "resources/audio/143da9c8edc57e6a.mp3",
+          "transliteration": "ī pènsil nīdi, ā pènnu nādā?"
+        },
+        {
+          "id": "2026-06-22_011_opt3",
+          "text": "ఈ పెన్సిల్ నాది కాదు, ఆ పెన్ను నీది కాదు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/cd22e543e2bb4d96.mp3",
+          "transliteration": "ī pènsil nādi kādu, ā pènnu nīdi kādu."
+        }
+      ],
+      "correct_option_id": "2026-06-22_011_opt0"
+    },
+    {
+      "id": "2026-06-22_012",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-06-22_012_p1",
+          "prompt_sentence": {
+            "id": "2026-06-22_012_p1_prompt",
+            "text": "వస్తారా?",
+            "language": "telugu",
+            "audio_path": "resources/audio/daa1b4090ba058f5.mp3",
+            "transliteration": "vastārā?"
+          },
+          "answer_sentence": {
+            "id": "2026-06-22_012_opt1",
+            "text": "Will you come? [PLURAL]",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-22_012_p2",
+          "prompt_sentence": {
+            "id": "2026-06-22_012_p2_prompt",
+            "text": "చూస్తాను",
+            "language": "telugu",
+            "audio_path": "resources/audio/0aac5c31bf932028.mp3",
+            "transliteration": "cūstānu"
+          },
+          "answer_sentence": {
+            "id": "2026-06-22_012_opt2",
+            "text": "I will see",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-06-22_012_p3",
+          "prompt_sentence": {
+            "id": "2026-06-22_012_p3_prompt",
+            "text": "వెళ్తాడు",
+            "language": "telugu",
+            "audio_path": "resources/audio/4144f950ed2f4054.mp3",
+            "transliteration": "vèḻtāḍu"
+          },
+          "answer_sentence": {
+            "id": "2026-06-22_012_opt3",
+            "text": "He will go",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-06-22_012_opt1",
+          "text": "Will you come? [PLURAL]",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-22_012_opt3",
+          "text": "He will go",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-06-22_012_opt2",
+          "text": "I will see",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    }
+  ]
+}
