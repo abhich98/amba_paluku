@@ -1,0 +1,626 @@
+{
+  "lesson_id": "2026-07-07",
+  "date": "2026-07-07",
+  "status": "active",
+  "difficulty": "A2",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-07-07T10:00:54.506434+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 4,
+    "fill_blank_audio": 5,
+    "match_audio_text": 3
+  },
+  "items": [
+    {
+      "id": "2026-07-07_001",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-07-07_001_question",
+        "text": "మీరు టిఫిన్ తిన్నారా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/e149db135b19cef9.mp3",
+        "transliteration": "mīru ṭiphin tinnārā?"
+      },
+      "reference_sentence": {
+        "id": "2026-07-07_001_reference",
+        "text": "Did you eat tiffin?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-07-07_001_ans0",
+          "text": "మీరు",
+          "language": "telugu",
+          "audio_path": "resources/audio/f49e82235d0c7ced.mp3",
+          "transliteration": "mīru"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-07-07_001_display_answer",
+        "text": "మీరు",
+        "language": "telugu",
+        "audio_path": "resources/audio/f49e82235d0c7ced.mp3",
+        "transliteration": "mīru"
+      }
+    },
+    {
+      "id": "2026-07-07_002",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-07-07_002_question",
+        "text": "Where will you go in the evening?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-07-07_002_reference",
+        "text": "నువ్వు సాయంత్రం ఎక్కడికి వెళ్తావు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/c9ee43163b379952.mp3",
+        "transliteration": "nuvvu sāyaṃtraṃ èkkaḍiki vèḻtāvu?"
+      },
+      "answer_mode": "exact",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-07-07_002_ans0",
+          "text": "Where",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-07-07_002_display_answer",
+        "text": "Where",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-07-07_003",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-07-07_003_p1",
+          "prompt_sentence": {
+            "id": "2026-07-07_003_p1_prompt",
+            "text": "నాది",
+            "language": "telugu",
+            "audio_path": "resources/audio/1fa71a70a84f2725.mp3",
+            "transliteration": "nādi"
+          },
+          "answer_sentence": {
+            "id": "2026-07-07_003_opt1",
+            "text": "mine",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-07-07_003_p2",
+          "prompt_sentence": {
+            "id": "2026-07-07_003_p2_prompt",
+            "text": "చదివారు",
+            "language": "telugu",
+            "audio_path": "resources/audio/3d8506c7bd0cfd88.mp3",
+            "transliteration": "cadivāru"
+          },
+          "answer_sentence": {
+            "id": "2026-07-07_003_opt2",
+            "text": "read [PLURAL,PAST]",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-07-07_003_p3",
+          "prompt_sentence": {
+            "id": "2026-07-07_003_p3_prompt",
+            "text": "ఎండ",
+            "language": "telugu",
+            "audio_path": "resources/audio/a2c10e20ff549141.mp3",
+            "transliteration": "èṃḍa"
+          },
+          "answer_sentence": {
+            "id": "2026-07-07_003_opt3",
+            "text": "sunlight",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-07-07_003_opt1",
+          "text": "mine",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-07_003_opt3",
+          "text": "sunlight",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-07_003_opt2",
+          "text": "read [PLURAL,PAST]",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-07-07_004",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-07_004_question",
+        "text": "మా చుట్టాలు వచ్చే వారం వస్తున్నారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/45e923a45aec4dbe.mp3",
+        "transliteration": "mā cuṭṭālu vacce vāraṃ vastunnāru."
+      },
+      "options": [
+        {
+          "id": "2026-07-07_004_opt0",
+          "text": "Our relatives are coming next week.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-07_004_opt2",
+          "text": "Our relatives went home.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-07_004_opt3",
+          "text": "When will your relatives come?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-07_004_opt1",
+          "text": "Our friends came yesterday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-07-07_004_opt0"
+    },
+    {
+      "id": "2026-07-07_005",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-07-07_005_question",
+        "text": "నాకు రెండు ప్లేట్ల బిర్యానీ కావాలి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/b494f859e3c1c4fd.mp3",
+        "transliteration": "nāku rèṃḍu pleṭla biryānī kāvāli."
+      },
+      "reference_sentence": {
+        "id": "2026-07-07_005_reference",
+        "text": "I want two plates of biryani.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-07-07_005_ans0",
+          "text": "నాకు",
+          "language": "telugu",
+          "audio_path": "resources/audio/8371e992f02a754d.mp3",
+          "transliteration": "nāku"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-07-07_005_display_answer",
+        "text": "నాకు",
+        "language": "telugu",
+        "audio_path": "resources/audio/8371e992f02a754d.mp3",
+        "transliteration": "nāku"
+      }
+    },
+    {
+      "id": "2026-07-07_006",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-07-07_006_question",
+        "text": "The sun is very strong today.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-07-07_006_reference",
+        "text": "ఈరోజు ఎండ చాలా ఎక్కువగా ఉంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/f4ef6817f291e3bc.mp3",
+        "transliteration": "īroju èṃḍa cālā èkkuvagā uṃdi."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 5,
+      "accepted_answers": [
+        {
+          "id": "2026-07-07_006_ans0",
+          "text": "strong",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-07-07_006_display_answer",
+        "text": "strong",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-07-07_007",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-07_007_question",
+        "text": "మీరు భోజనంతో పాటు ఏం తాగుతారు?",
+        "language": "telugu",
+        "audio_path": "resources/audio/aae7bde5bea16e5d.mp3",
+        "transliteration": "mīru bhojanaṃto pāṭu eṃ tāgutāru?"
+      },
+      "options": [
+        {
+          "id": "2026-07-07_007_opt1",
+          "text": "What will you eat?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-07_007_opt2",
+          "text": "Where is the water?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-07_007_opt3",
+          "text": "How much was the bill?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-07_007_opt0",
+          "text": "What will you drink with the meal?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-07-07_007_opt0"
+    },
+    {
+      "id": "2026-07-07_008",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-07-07_008_question",
+        "text": "వేసవి సెలవుల్లో మేము ఇంటికి వెళ్తాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/6861bcab9abc71ee.mp3",
+        "transliteration": "vesavi sèlavullo memu iṃṭiki vèḻtāmu."
+      },
+      "reference_sentence": {
+        "id": "2026-07-07_008_reference",
+        "text": "We go home during summer holidays.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 5,
+      "accepted_answers": [
+        {
+          "id": "2026-07-07_008_ans0",
+          "text": "వెళ్తాము.",
+          "language": "telugu",
+          "audio_path": "resources/audio/ce08c20bd6ad03bc.mp3",
+          "transliteration": "vèḻtāmu."
+        },
+        {
+          "id": "2026-07-07_008_ans1",
+          "text": "వెళ్తాము",
+          "language": "telugu",
+          "audio_path": "resources/audio/1f386132416f7512.mp3",
+          "transliteration": "vèḻtāmu"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-07-07_008_display_answer",
+        "text": "వెళ్తాము",
+        "language": "telugu",
+        "audio_path": "resources/audio/1f386132416f7512.mp3",
+        "transliteration": "vèḻtāmu"
+      }
+    },
+    {
+      "id": "2026-07-07_009",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-07_009_question",
+        "text": "ఎండ వేడికి తట్టుకోలేకపోతున్నాను.",
+        "language": "telugu",
+        "audio_path": "resources/audio/5a280e091966e04c.mp3",
+        "transliteration": "èṃḍa veḍiki taṭṭukolekapotunnānu."
+      },
+      "options": [
+        {
+          "id": "2026-07-07_009_opt2",
+          "text": "There is no sun outside.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-07_009_opt1",
+          "text": "I am feeling cold.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-07_009_opt3",
+          "text": "Do not get wet in the rain.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-07_009_opt0",
+          "text": "I cannot bear the summer heat.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-07-07_009_opt0"
+    },
+    {
+      "id": "2026-07-07_010",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-07-07_010_p1",
+          "prompt_sentence": {
+            "id": "2026-07-07_010_p1_prompt",
+            "text": "చుట్టాలు",
+            "language": "telugu",
+            "audio_path": "resources/audio/22ec12d18b78befe.mp3",
+            "transliteration": "cuṭṭālu"
+          },
+          "answer_sentence": {
+            "id": "2026-07-07_010_opt1",
+            "text": "relatives",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-07-07_010_p2",
+          "prompt_sentence": {
+            "id": "2026-07-07_010_p2_prompt",
+            "text": "మామ",
+            "language": "telugu",
+            "audio_path": "resources/audio/41bad7d6d7509716.mp3",
+            "transliteration": "māma"
+          },
+          "answer_sentence": {
+            "id": "2026-07-07_010_opt2",
+            "text": "uncle",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-07-07_010_p3",
+          "prompt_sentence": {
+            "id": "2026-07-07_010_p3_prompt",
+            "text": "వడ్డించు",
+            "language": "telugu",
+            "audio_path": "resources/audio/9cd0336536b3a46e.mp3",
+            "transliteration": "vaḍḍiṃcu"
+          },
+          "answer_sentence": {
+            "id": "2026-07-07_010_opt3",
+            "text": "serve",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-07-07_010_opt1",
+          "text": "relatives",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-07_010_opt2",
+          "text": "uncle",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-07_010_opt3",
+          "text": "serve",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-07-07_011",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-07_011_question",
+        "text": "Please put less salt in the curry.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-07-07_011_opt3",
+          "text": "భోజనం సిద్ధంగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/0ffe57a2288e0272.mp3",
+          "transliteration": "bhojanaṃ siddhaṃgā uṃdi."
+        },
+        {
+          "id": "2026-07-07_011_opt0",
+          "text": "కూరలో ఉప్పు తక్కువ వేయండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/7c2a37f86eb9b7f4.mp3",
+          "transliteration": "kūralo uppu takkuva veyaṃḍi."
+        },
+        {
+          "id": "2026-07-07_011_opt1",
+          "text": "కూర చాలా కారంగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/072ef4c609f7038e.mp3",
+          "transliteration": "kūra cālā kāraṃgā uṃdi."
+        },
+        {
+          "id": "2026-07-07_011_opt2",
+          "text": "నాకు కొంచెం పంచదార కావాలి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/1bbe2a4ac5e184ac.mp3",
+          "transliteration": "nāku kòṃcèṃ paṃcadāra kāvāli."
+        }
+      ],
+      "correct_option_id": "2026-07-07_011_opt0"
+    },
+    {
+      "id": "2026-07-07_012",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-07-07_012_p1",
+          "prompt_sentence": {
+            "id": "2026-07-07_012_p1_prompt",
+            "text": "రుచి",
+            "language": "telugu",
+            "audio_path": "resources/audio/5c56d512c8d5159d.mp3",
+            "transliteration": "ruci"
+          },
+          "answer_sentence": {
+            "id": "2026-07-07_012_opt1",
+            "text": "taste",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-07-07_012_p2",
+          "prompt_sentence": {
+            "id": "2026-07-07_012_p2_prompt",
+            "text": "మెనూ",
+            "language": "telugu",
+            "audio_path": "resources/audio/d17f82e03e5a3662.mp3",
+            "transliteration": "mènū"
+          },
+          "answer_sentence": {
+            "id": "2026-07-07_012_opt2",
+            "text": "menu",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-07-07_012_p3",
+          "prompt_sentence": {
+            "id": "2026-07-07_012_p3_prompt",
+            "text": "బిల్లు",
+            "language": "telugu",
+            "audio_path": "resources/audio/eea2997ebaa1f74e.mp3",
+            "transliteration": "billu"
+          },
+          "answer_sentence": {
+            "id": "2026-07-07_012_opt3",
+            "text": "bill",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-07-07_012_opt3",
+          "text": "bill",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-07_012_opt2",
+          "text": "menu",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-07_012_opt1",
+          "text": "taste",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    }
+  ]
+}
