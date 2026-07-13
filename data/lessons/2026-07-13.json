@@ -1,0 +1,503 @@
+{
+  "lesson_id": "2026-07-13",
+  "date": "2026-07-13",
+  "status": "active",
+  "difficulty": "A2",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-07-13T10:19:16.415810+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 6,
+    "fill_blank_audio": 6,
+    "match_audio_text": 0
+  },
+  "items": [
+    {
+      "id": "2026-07-13_001",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-07-13_001_question",
+        "text": "ఆ ఇల్లు మాది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/a1c4017851a28526.mp3",
+        "transliteration": "ā illu mādi."
+      },
+      "reference_sentence": {
+        "id": "2026-07-13_001_reference",
+        "text": "That house is ours.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-07-13_001_ans0",
+          "text": "మాది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/6b290a403f8620aa.mp3",
+          "transliteration": "mādi."
+        },
+        {
+          "id": "2026-07-13_001_ans1",
+          "text": "మాది",
+          "language": "telugu",
+          "audio_path": "resources/audio/4f0696a4c2b98b57.mp3",
+          "transliteration": "mādi"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-07-13_001_display_answer",
+        "text": "మాది",
+        "language": "telugu",
+        "audio_path": "resources/audio/4f0696a4c2b98b57.mp3",
+        "transliteration": "mādi"
+      }
+    },
+    {
+      "id": "2026-07-13_002",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-13_002_question",
+        "text": "The sun was very intense yesterday.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-07-13_002_opt1",
+          "text": "ఈరోజు గాలి ఎక్కువగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/67fe0d38bd70eb60.mp3",
+          "transliteration": "īroju gāli èkkuvagā uṃdi."
+        },
+        {
+          "id": "2026-07-13_002_opt0",
+          "text": "నిన్న ఎండ చాలా తీవ్రంగా ఉండే.",
+          "language": "telugu",
+          "audio_path": "resources/audio/8c4cffc9e36bbb30.mp3",
+          "transliteration": "ninna èṃḍa cālā tīvraṃgā uṃḍe."
+        },
+        {
+          "id": "2026-07-13_002_opt2",
+          "text": "నిన్న వర్షం పడింది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/96cc057d87a65279.mp3",
+          "transliteration": "ninna varṣaṃ paḍiṃdi."
+        },
+        {
+          "id": "2026-07-13_002_opt3",
+          "text": "రేపు ఎండ తక్కువగా ఉంటుంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/09f44ac7fc6c44ba.mp3",
+          "transliteration": "repu èṃḍa takkuvagā uṃṭuṃdi."
+        }
+      ],
+      "correct_option_id": "2026-07-13_002_opt0"
+    },
+    {
+      "id": "2026-07-13_003",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-07-13_003_question",
+        "text": "My maternal uncle is coming next week.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-07-13_003_reference",
+        "text": "వచ్చే వారం మా మేనమామ వస్తున్నారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/28a6a94a323adba3.mp3",
+        "transliteration": "vacce vāraṃ mā menamāma vastunnāru."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 3,
+      "accepted_answers": [
+        {
+          "id": "2026-07-13_003_ans0",
+          "text": "uncle",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-07-13_003_display_answer",
+        "text": "uncle",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-07-13_004",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-07-13_004_question",
+        "text": "వీకెండ్‌లో మేము పార్కుకు వెళ్తాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/c91d3a48423c69af.mp3",
+        "transliteration": "vīkèṃḍ‌lo memu pārkuku vèḻtāmu."
+      },
+      "reference_sentence": {
+        "id": "2026-07-13_004_reference",
+        "text": "We go to the park on the weekend.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 2,
+      "accepted_answers": [
+        {
+          "id": "2026-07-13_004_ans0",
+          "text": "మేము",
+          "language": "telugu",
+          "audio_path": "resources/audio/35a5ae2d0f83396a.mp3",
+          "transliteration": "memu"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-07-13_004_display_answer",
+        "text": "మేము",
+        "language": "telugu",
+        "audio_path": "resources/audio/35a5ae2d0f83396a.mp3",
+        "transliteration": "memu"
+      }
+    },
+    {
+      "id": "2026-07-13_005",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-07-13_005_question",
+        "text": "It is difficult to go out in summer.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-07-13_005_reference",
+        "text": "వేసవిలో బయటకు వెళ్లడం కష్టం.",
+        "language": "telugu",
+        "audio_path": "resources/audio/569683f99fc778d5.mp3",
+        "transliteration": "vesavilo bayaṭaku vèḻlaḍaṃ kaṣṭaṃ."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 8,
+      "accepted_answers": [
+        {
+          "id": "2026-07-13_005_ans0",
+          "text": "summer",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-07-13_005_display_answer",
+        "text": "summer",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-07-13_006",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-07-13_006_question",
+        "text": "ఈ శనివారం మా ఇంట్లో విందు ఉంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/d3483b7ef90c2df0.mp3",
+        "transliteration": "ī śanivāraṃ mā iṃṭlo viṃdu uṃdi."
+      },
+      "reference_sentence": {
+        "id": "2026-07-13_006_reference",
+        "text": "There is a feast at our house this Saturday.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-07-13_006_ans1",
+          "text": "ఇంట్లో",
+          "language": "telugu",
+          "audio_path": "resources/audio/d5f5110991d70a9d.mp3",
+          "transliteration": "iṃṭlo"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-07-13_006_display_answer",
+        "text": "ఇంట్లో",
+        "language": "telugu",
+        "audio_path": "resources/audio/d5f5110991d70a9d.mp3",
+        "transliteration": "iṃṭlo"
+      }
+    },
+    {
+      "id": "2026-07-13_007",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-13_007_question",
+        "text": "మా బంధువులు ఇక్కడికి వచ్చారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/f5203b8624d5c72a.mp3",
+        "transliteration": "mā baṃdhuvulu ikkaḍiki vaccāru."
+      },
+      "options": [
+        {
+          "id": "2026-07-13_007_opt2",
+          "text": "My brother is not at home.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-13_007_opt3",
+          "text": "She went to the relatives' house.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-13_007_opt0",
+          "text": "Our relatives have come here.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-13_007_opt1",
+          "text": "Our friends went to the village.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-07-13_007_opt0"
+    },
+    {
+      "id": "2026-07-13_008",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-13_008_question",
+        "text": "Use an umbrella in the summer.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-07-13_008_opt1",
+          "text": "వానలో తడవకండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/5c13be4a0a2b5d7d.mp3",
+          "transliteration": "vānalo taḍavakaṃḍi."
+        },
+        {
+          "id": "2026-07-13_008_opt2",
+          "text": "చెప్పులు వేసుకోండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/715ada5e3c153f7b.mp3",
+          "transliteration": "cèppulu vesukoṃḍi."
+        },
+        {
+          "id": "2026-07-13_008_opt0",
+          "text": "వేసవిలో గొడుగు వాడండి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/2258765d8e1913ce.mp3",
+          "transliteration": "vesavilo gòḍugu vāḍaṃḍi."
+        },
+        {
+          "id": "2026-07-13_008_opt3",
+          "text": "టోపీ పెట్టుకోవడం మంచిది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/d5b7fd27c0b95f94.mp3",
+          "transliteration": "ṭopī pèṭṭukovaḍaṃ maṃcidi."
+        }
+      ],
+      "correct_option_id": "2026-07-13_008_opt0"
+    },
+    {
+      "id": "2026-07-13_009",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-07-13_009_question",
+        "text": "ఆదివారం ఉదయం నేను ఆలస్యంగా నిద్రలేస్తాను.",
+        "language": "telugu",
+        "audio_path": "resources/audio/e2ec1dc979b4b6da.mp3",
+        "transliteration": "ādivāraṃ udayaṃ nenu ālasyaṃgā nidralestānu."
+      },
+      "reference_sentence": {
+        "id": "2026-07-13_009_reference",
+        "text": "I wake up late on Sunday morning.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-07-13_009_ans0",
+          "text": "ఆదివారం",
+          "language": "telugu",
+          "audio_path": "resources/audio/83fab70e1859582d.mp3",
+          "transliteration": "ādivāraṃ"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-07-13_009_display_answer",
+        "text": "ఆదివారం",
+        "language": "telugu",
+        "audio_path": "resources/audio/83fab70e1859582d.mp3",
+        "transliteration": "ādivāraṃ"
+      }
+    },
+    {
+      "id": "2026-07-13_010",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-13_010_question",
+        "text": "మా తాతయ్య మాతో ఉంటున్నారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/eb0847ed943f8540.mp3",
+        "transliteration": "mā tātayya māto uṃṭunnāru."
+      },
+      "options": [
+        {
+          "id": "2026-07-13_010_opt1",
+          "text": "My grandmother tells stories.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-13_010_opt2",
+          "text": "My aunt is cooking.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-13_010_opt0",
+          "text": "My grandfather is staying with us.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-13_010_opt3",
+          "text": "He is our teacher.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-07-13_010_opt0"
+    },
+    {
+      "id": "2026-07-13_011",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-13_011_question",
+        "text": "మట్టి కుండలో నీళ్లు చల్లగా ఉంటాయి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/98a0d3f69672f500.mp3",
+        "transliteration": "maṭṭi kuṃḍalo nīḻlu callagā uṃṭāyi."
+      },
+      "options": [
+        {
+          "id": "2026-07-13_011_opt0",
+          "text": "Water in a clay pot stays cool.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-13_011_opt2",
+          "text": "Drinking hot water is good.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-13_011_opt3",
+          "text": "Pour water into the glass.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-13_011_opt1",
+          "text": "There is milk in the fridge.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-07-13_011_opt0"
+    },
+    {
+      "id": "2026-07-13_012",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-13_012_question",
+        "text": "We are going on a trip.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-07-13_012_opt1",
+          "text": "గత వారం మేము సినిమాకు వెళ్ళాము.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b7b19cdff350b7b0.mp3",
+          "transliteration": "gata vāraṃ memu sinimāku vèḻḻāmu."
+        },
+        {
+          "id": "2026-07-13_012_opt3",
+          "text": "వారు వచ్చే నెల వస్తారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/c4b236e05004abd6.mp3",
+          "transliteration": "vāru vacce nèla vastāru."
+        },
+        {
+          "id": "2026-07-13_012_opt2",
+          "text": "రేపు నాకు పని ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/ef72f60f8ec7400e.mp3",
+          "transliteration": "repu nāku pani uṃdi."
+        },
+        {
+          "id": "2026-07-13_012_opt0",
+          "text": "మేము ట్రిప్ వెళ్తున్నాము.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b4a8cb21b22ed61a.mp3",
+          "transliteration": "memu ṭrip vèḻtunnāmu."
+        }
+      ],
+      "correct_option_id": "2026-07-13_012_opt0"
+    }
+  ]
+}
