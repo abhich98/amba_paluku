@@ -1,0 +1,514 @@
+{
+  "lesson_id": "2026-07-22",
+  "date": "2026-07-22",
+  "status": "active",
+  "difficulty": "A2",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-07-22T14:58:55.644890+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 9,
+    "fill_blank_audio": 3,
+    "match_audio_text": 0
+  },
+  "items": [
+    {
+      "id": "2026-07-22_001",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-07-22_001_question",
+        "text": "Our relatives have come here.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-07-22_001_reference",
+        "text": "మా చుట్టాలు ఇక్కడికి వచ్చారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/27a9aeb72fd15b6d.mp3",
+        "transliteration": "mā cuṭṭālu ikkaḍiki vaccāru."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-07-22_001_ans0",
+          "text": "come",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-07-22_001_display_answer",
+        "text": "come",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-07-22_002",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-22_002_question",
+        "text": "There is a feast at our house this Saturday.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-07-22_002_opt2",
+          "text": "నిన్న రాత్రి మా ఇంట్లో భోజనం లేదు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/bede43c9f90fd462.mp3",
+          "transliteration": "ninna rātri mā iṃṭlo bhojanaṃ ledu."
+        },
+        {
+          "id": "2026-07-22_002_opt0",
+          "text": "ఈ శనివారం మా ఇంట్లో విందు ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/d3483b7ef90c2df0.mp3",
+          "transliteration": "ī śanivāraṃ mā iṃṭlo viṃdu uṃdi."
+        },
+        {
+          "id": "2026-07-22_002_opt3",
+          "text": "ఈ ఆదివారం మేము హోటల్‌కు వెళ్తాము.",
+          "language": "telugu",
+          "audio_path": "resources/audio/7573f82f9418eab4.mp3",
+          "transliteration": "ī ādivāraṃ memu hoṭal‌ku vèḻtāmu."
+        },
+        {
+          "id": "2026-07-22_002_opt1",
+          "text": "వచ్చే వారం మా ఇంట్లో పండుగ ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/c0870778de9ad06b.mp3",
+          "transliteration": "vacce vāraṃ mā iṃṭlo paṃḍuga uṃdi."
+        }
+      ],
+      "correct_option_id": "2026-07-22_002_opt0"
+    },
+    {
+      "id": "2026-07-22_003",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-22_003_question",
+        "text": "She draws very beautiful pictures.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-07-22_003_opt0",
+          "text": "ఆమె చాలా అందమైన చిత్రాలు గీస్తుంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/8bdec8a1e2a1de2a.mp3",
+          "transliteration": "āmè cālā aṃdamaina citrālu gīstuṃdi."
+        },
+        {
+          "id": "2026-07-22_003_opt2",
+          "text": "ఆమె పుస్తకాలు చదువుతోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/a17c662435bc7b20.mp3",
+          "transliteration": "āmè pustakālu caduvutoṃdi."
+        },
+        {
+          "id": "2026-07-22_003_opt3",
+          "text": "మేము బొమ్మలు కొన్నాము.",
+          "language": "telugu",
+          "audio_path": "resources/audio/b6d3d96bd6b621ba.mp3",
+          "transliteration": "memu bòmmalu kònnāmu."
+        },
+        {
+          "id": "2026-07-22_003_opt1",
+          "text": "అతను పాటలు బాగా పాడతాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/005549f43a6d5e58.mp3",
+          "transliteration": "atanu pāṭalu bāgā pāḍatāḍu."
+        }
+      ],
+      "correct_option_id": "2026-07-22_003_opt0"
+    },
+    {
+      "id": "2026-07-22_004",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-22_004_question",
+        "text": "We went to the museum.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-07-22_004_opt3",
+          "text": "మేము మ్యూజియంకు వెళ్ళాము.",
+          "language": "telugu",
+          "audio_path": "resources/audio/86eb3f6df94fb97f.mp3",
+          "transliteration": "memu myūjiyaṃku vèḻḻāmu."
+        },
+        {
+          "id": "2026-07-22_004_opt2",
+          "text": "రేపు మేము బడికి వెళ్తాము.",
+          "language": "telugu",
+          "audio_path": "resources/audio/7d15f209398c6f50.mp3",
+          "transliteration": "repu memu baḍiki vèḻtāmu."
+        },
+        {
+          "id": "2026-07-22_004_opt1",
+          "text": "పోయిన వారం మేము సినిమాకు వెళ్ళాము.",
+          "language": "telugu",
+          "audio_path": "resources/audio/d9d672e12dca3538.mp3",
+          "transliteration": "poyina vāraṃ memu sinimāku vèḻḻāmu."
+        },
+        {
+          "id": "2026-07-22_004_opt0",
+          "text": "వచ్చే వీకెండ్‌లో మేము మ్యూజియంకు వెళ్తున్నాము.",
+          "language": "telugu",
+          "audio_path": "resources/audio/6b3112897f4510e3.mp3",
+          "transliteration": "vacce vīkèṃḍ‌lo memu myūjiyaṃku vèḻtunnāmu."
+        }
+      ],
+      "correct_option_id": "2026-07-22_004_opt3"
+    },
+    {
+      "id": "2026-07-22_005",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-07-22_005_question",
+        "text": "I want to learn painting.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-07-22_005_reference",
+        "text": "నాకు పెయింటింగ్ నేర్చుకోవాలని ఉంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/c1ec79f530a0c3db.mp3",
+        "transliteration": "nāku pèyiṃṭiṃg nercukovālani uṃdi."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 5,
+      "accepted_answers": [
+        {
+          "id": "2026-07-22_005_ans0",
+          "text": "painting",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-07-22_005_display_answer",
+        "text": "painting",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-07-22_006",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-22_006_question",
+        "text": "Our aunt brought gifts for us.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-07-22_006_opt1",
+          "text": "మా బాబాయ్ ఊరికి వెళ్ళాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/8323f25f81c42bd4.mp3",
+          "transliteration": "mā bābāy ūriki vèḻḻāḍu."
+        },
+        {
+          "id": "2026-07-22_006_opt2",
+          "text": "అమ్మ వంట చేస్తోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/559f1ff064d0621a.mp3",
+          "transliteration": "amma vaṃṭa cestoṃdi."
+        },
+        {
+          "id": "2026-07-22_006_opt0",
+          "text": "మా పిన్ని మా కోసం బహుమతులు తెచ్చింది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/405b5ad9c6157afc.mp3",
+          "transliteration": "mā pinni mā kosaṃ bahumatulu tècciṃdi."
+        },
+        {
+          "id": "2026-07-22_006_opt3",
+          "text": "చెల్లి ఆడుకుంటోంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/4fa0a3e5f11da387.mp3",
+          "transliteration": "cèlli āḍukuṃṭoṃdi."
+        }
+      ],
+      "correct_option_id": "2026-07-22_006_opt0"
+    },
+    {
+      "id": "2026-07-22_007",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-22_007_question",
+        "text": "This sculpture is very old.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-07-22_007_opt1",
+          "text": "ఈ ఇల్లు చాలా కొత్తది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/f7650e2f0251e232.mp3",
+          "transliteration": "ī illu cālā kòttadi."
+        },
+        {
+          "id": "2026-07-22_007_opt0",
+          "text": "ఈ శిల్పం చాలా పాతది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/8aab872e4736adce.mp3",
+          "transliteration": "ī śilpaṃ cālā pātadi."
+        },
+        {
+          "id": "2026-07-22_007_opt3",
+          "text": "ఈ గుడి చాలా దూరం.",
+          "language": "telugu",
+          "audio_path": "resources/audio/af4cbc67bd5c6260.mp3",
+          "transliteration": "ī guḍi cālā dūraṃ."
+        },
+        {
+          "id": "2026-07-22_007_opt2",
+          "text": "ఆ చిత్రం చాలా పెద్దది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/5e6f8b78433d9499.mp3",
+          "transliteration": "ā citraṃ cālā pèddadi."
+        }
+      ],
+      "correct_option_id": "2026-07-22_007_opt0"
+    },
+    {
+      "id": "2026-07-22_008",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-07-22_008_question",
+        "text": "నువ్వు ఈ వీకెండ్ ఖాళీనా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/f672766d42fd5d35.mp3",
+        "transliteration": "nuvvu ī vīkèṃḍ khāḻīnā?"
+      },
+      "reference_sentence": {
+        "id": "2026-07-22_008_reference",
+        "text": "Are you free this weekend?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "fuzzy",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-07-22_008_ans0",
+          "text": "ఖాళీనా",
+          "language": "telugu",
+          "audio_path": "resources/audio/0daefbfda88622c6.mp3",
+          "transliteration": "khāḻīnā"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-07-22_008_display_answer",
+        "text": "ఖాళీనా",
+        "language": "telugu",
+        "audio_path": "resources/audio/0daefbfda88622c6.mp3",
+        "transliteration": "khāḻīnā"
+      }
+    },
+    {
+      "id": "2026-07-22_009",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-22_009_question",
+        "text": "Photography is life for my elder brother.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-07-22_009_opt0",
+          "text": "మా అన్నయ్యకు ఫోటోగ్రఫీ అంటే ప్రాణం.",
+          "language": "telugu",
+          "audio_path": "resources/audio/ece6861847313ca8.mp3",
+          "transliteration": "mā annayyaku phoṭographī aṃṭe prāṇaṃ."
+        },
+        {
+          "id": "2026-07-22_009_opt1",
+          "text": "మా తమ్ముడు కథలు రాస్తాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/646fd2c6afff5eb0.mp3",
+          "transliteration": "mā tammuḍu kathalu rāstāḍu."
+        },
+        {
+          "id": "2026-07-22_009_opt3",
+          "text": "నాకు నాట్యం అంటే భయం.",
+          "language": "telugu",
+          "audio_path": "resources/audio/39dcdeb8b2868878.mp3",
+          "transliteration": "nāku nāṭyaṃ aṃṭe bhayaṃ."
+        },
+        {
+          "id": "2026-07-22_009_opt2",
+          "text": "మా నాన్నకు తోటపని ఇష్టం.",
+          "language": "telugu",
+          "audio_path": "resources/audio/4eefeb3609560b91.mp3",
+          "transliteration": "mā nānnaku toṭapani iṣṭaṃ."
+        }
+      ],
+      "correct_option_id": "2026-07-22_009_opt0"
+    },
+    {
+      "id": "2026-07-22_010",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-22_010_question",
+        "text": "మా మేనత్త కూతురు పెళ్లి వచ్చే నెలలో ఉంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/eaf660c30d84ab39.mp3",
+        "transliteration": "mā menatta kūturu pèḻli vacce nèlalo uṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-07-22_010_opt1",
+          "text": "Today is my younger brother's birthday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-22_010_opt0",
+          "text": "My aunt's daughter's wedding is next month.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-22_010_opt3",
+          "text": "There is a puja at our house next week.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-07-22_010_opt2",
+          "text": "My elder sister got a job.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-07-22_010_opt0"
+    },
+    {
+      "id": "2026-07-22_011",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-22_011_question",
+        "text": "There are colorful paintings in this exhibition.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-07-22_011_opt2",
+          "text": "ఆ గదిలో కుర్చీలు లేవు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/0a38361bbc6f4f26.mp3",
+          "transliteration": "ā gadilo kurcīlu levu."
+        },
+        {
+          "id": "2026-07-22_011_opt0",
+          "text": "ఈ ప్రదర్శనలో రంగురంగుల చిత్రాలు ఉన్నాయి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/51dff18874a10e32.mp3",
+          "transliteration": "ī pradarśanalo raṃguraṃgula citrālu unnāyi."
+        },
+        {
+          "id": "2026-07-22_011_opt1",
+          "text": "ఈ పుస్తకంలో పాఠాలు ఉన్నాయి.",
+          "language": "telugu",
+          "audio_path": "resources/audio/41d016902cfebef9.mp3",
+          "transliteration": "ī pustakaṃlo pāṭhālu unnāyi."
+        },
+        {
+          "id": "2026-07-22_011_opt3",
+          "text": "బజారులో చాలా రద్దీగా ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/7155b62b657ff626.mp3",
+          "transliteration": "bajārulo cālā raddīgā uṃdi."
+        }
+      ],
+      "correct_option_id": "2026-07-22_011_opt0"
+    },
+    {
+      "id": "2026-07-22_012",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-07-22_012_question",
+        "text": "Let's meet in the park.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-07-22_012_opt3",
+          "text": "ఈరోజు రాత్రి భోజనం చేద్దాం.",
+          "language": "telugu",
+          "audio_path": "resources/audio/66d547093b45d120.mp3",
+          "transliteration": "īroju rātri bhojanaṃ ceddāṃ."
+        },
+        {
+          "id": "2026-07-22_012_opt2",
+          "text": "రేపు మధ్యాహ్నం సినిమాకు వెళ్దాం.",
+          "language": "telugu",
+          "audio_path": "resources/audio/3c0973be4828d319.mp3",
+          "transliteration": "repu madhyāhnaṃ sinimāku vèḻdāṃ."
+        },
+        {
+          "id": "2026-07-22_012_opt0",
+          "text": "మనం పార్కులో కలుద్దాం.",
+          "language": "telugu",
+          "audio_path": "resources/audio/2c0b2daddd375eeb.mp3",
+          "transliteration": "manaṃ pārkulo kaluddāṃ."
+        },
+        {
+          "id": "2026-07-22_012_opt1",
+          "text": "ఆదివారం ఉదయం టీ తాగుదాం.",
+          "language": "telugu",
+          "audio_path": "resources/audio/68cdc53ad07af564.mp3",
+          "transliteration": "ādivāraṃ udayaṃ ṭī tāgudāṃ."
+        }
+      ],
+      "correct_option_id": "2026-07-22_012_opt0"
+    }
+  ]
+}
