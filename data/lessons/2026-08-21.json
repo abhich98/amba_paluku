@@ -1,0 +1,637 @@
+{
+  "lesson_id": "2026-08-21",
+  "date": "2026-08-21",
+  "status": "active",
+  "difficulty": "A2",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-08-21T07:44:59.569858+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 7,
+    "fill_blank_audio": 2,
+    "match_audio_text": 3
+  },
+  "items": [
+    {
+      "id": "2026-08-21_001",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-08-21_001_p1",
+          "prompt_sentence": {
+            "id": "2026-08-21_001_p1_prompt",
+            "text": "భోజనం",
+            "language": "telugu",
+            "audio_path": "resources/audio/10dc31b828cb5af4.mp3",
+            "transliteration": "bhojanaṃ"
+          },
+          "answer_sentence": {
+            "id": "2026-08-21_001_opt1",
+            "text": "Meal",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-08-21_001_p2",
+          "prompt_sentence": {
+            "id": "2026-08-21_001_p2_prompt",
+            "text": "నిద్రపోయారు",
+            "language": "telugu",
+            "audio_path": "resources/audio/98630ad2d5abc134.mp3",
+            "transliteration": "nidrapoyāru"
+          },
+          "answer_sentence": {
+            "id": "2026-08-21_001_opt2",
+            "text": "slept [PLURAL]",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-08-21_001_p3",
+          "prompt_sentence": {
+            "id": "2026-08-21_001_p3_prompt",
+            "text": "ప్రేమ",
+            "language": "telugu",
+            "audio_path": "resources/audio/31b4b5422b1659c7.mp3",
+            "transliteration": "prema"
+          },
+          "answer_sentence": {
+            "id": "2026-08-21_001_opt3",
+            "text": "love",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-08-21_001_opt3",
+          "text": "love",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_001_opt2",
+          "text": "slept [PLURAL]",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_001_opt1",
+          "text": "Meal",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-08-21_002",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-08-21_002_question",
+        "text": "మేము మ్యూజియంకు వెళ్ళాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/86eb3f6df94fb97f.mp3",
+        "transliteration": "memu myūjiyaṃku vèḻḻāmu."
+      },
+      "options": [
+        {
+          "id": "2026-08-21_002_opt1",
+          "text": "We are going to the temple.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_002_opt0",
+          "text": "We went to the museum.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_002_opt3",
+          "text": "They will go to the museum.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_002_opt2",
+          "text": "I saw the museum.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-08-21_002_opt0"
+    },
+    {
+      "id": "2026-08-21_003",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-08-21_003_question",
+        "text": "ఈ భోజనం చాలా రుచిగా ఉంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/c0d6b4e07d5b95ed.mp3",
+        "transliteration": "ī bhojanaṃ cālā rucigā uṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-08-21_003_opt2",
+          "text": "These fruits are sweet.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_003_opt0",
+          "text": "This meal is very tasty.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_003_opt3",
+          "text": "Is the meal ready?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_003_opt1",
+          "text": "That meal is not good.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-08-21_003_opt0"
+    },
+    {
+      "id": "2026-08-21_004",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-08-21_004_question",
+        "text": "I love it very much.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-08-21_004_reference",
+        "text": "నాకు అది చాలా ఇష్టం.",
+        "language": "telugu",
+        "audio_path": "resources/audio/77c95fdc85a01346.mp3",
+        "transliteration": "nāku adi cālā iṣṭaṃ."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 4,
+      "accepted_answers": [
+        {
+          "id": "2026-08-21_004_ans0",
+          "text": "very",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-08-21_004_display_answer",
+        "text": "very",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-08-21_005",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-08-21_005_question",
+        "text": "రేపు మా ఇంట్లో పెద్ద పండుగ ఉంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/4664b78695fa013a.mp3",
+        "transliteration": "repu mā iṃṭlo pèdda paṃḍuga uṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-08-21_005_opt3",
+          "text": "I am going to the festival.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_005_opt2",
+          "text": "We don't have a holiday tomorrow.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_005_opt0",
+          "text": "There is a big festival at our house tomorrow.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_005_opt1",
+          "text": "There was a feast at our house yesterday.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-08-21_005_opt0"
+    },
+    {
+      "id": "2026-08-21_006",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-08-21_006_p1",
+          "prompt_sentence": {
+            "id": "2026-08-21_006_p1_prompt",
+            "text": "పెళ్లి",
+            "language": "telugu",
+            "audio_path": "resources/audio/af67d08f1158bb60.mp3",
+            "transliteration": "pèḻli"
+          },
+          "answer_sentence": {
+            "id": "2026-08-21_006_opt1",
+            "text": "wedding",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-08-21_006_p2",
+          "prompt_sentence": {
+            "id": "2026-08-21_006_p2_prompt",
+            "text": "పెద్దలు",
+            "language": "telugu",
+            "audio_path": "resources/audio/a1651aac988501bf.mp3",
+            "transliteration": "pèddalu"
+          },
+          "answer_sentence": {
+            "id": "2026-08-21_006_opt2",
+            "text": "elders",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-08-21_006_p3",
+          "prompt_sentence": {
+            "id": "2026-08-21_006_p3_prompt",
+            "text": "పండుగ",
+            "language": "telugu",
+            "audio_path": "resources/audio/542d4f861c08ed9c.mp3",
+            "transliteration": "paṃḍuga"
+          },
+          "answer_sentence": {
+            "id": "2026-08-21_006_opt3",
+            "text": "festival",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-08-21_006_opt3",
+          "text": "festival",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_006_opt1",
+          "text": "wedding",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_006_opt2",
+          "text": "elders",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-08-21_007",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-08-21_007_question",
+        "text": "మనం పెద్దలను గౌరవించాలి.",
+        "language": "telugu",
+        "audio_path": "resources/audio/0ec205373342d982.mp3",
+        "transliteration": "manaṃ pèddalanu gauraviṃcāli."
+      },
+      "options": [
+        {
+          "id": "2026-08-21_007_opt3",
+          "text": "We are living in a big house.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_007_opt0",
+          "text": "We must respect elders.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_007_opt2",
+          "text": "She is a big officer.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_007_opt1",
+          "text": "Elders tell us stories.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-08-21_007_opt0"
+    },
+    {
+      "id": "2026-08-21_008",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-08-21_008_question",
+        "text": "My elder brother's engagement is next week.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-08-21_008_opt2",
+          "text": "వచ్చే నెల మా పెళ్లి రోజు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/5d25dd4e5d5c5bf6.mp3",
+          "transliteration": "vacce nèla mā pèḻli roju."
+        },
+        {
+          "id": "2026-08-21_008_opt1",
+          "text": "మా అన్నయ్య ఊరికి వెళ్ళాడు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/794f120dde469e2e.mp3",
+          "transliteration": "mā annayya ūriki vèḻḻāḍu."
+        },
+        {
+          "id": "2026-08-21_008_opt3",
+          "text": "అతను పెళ్లికి రాలేదు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/21c254a973049f7c.mp3",
+          "transliteration": "atanu pèḻliki rāledu."
+        },
+        {
+          "id": "2026-08-21_008_opt0",
+          "text": "వచ్చే వారం మా అన్నయ్య నిశ్చితార్థం ఉంది.",
+          "language": "telugu",
+          "audio_path": "resources/audio/3ab8ff0d47338647.mp3",
+          "transliteration": "vacce vāraṃ mā annayya niścitārthaṃ uṃdi."
+        }
+      ],
+      "correct_option_id": "2026-08-21_008_opt0"
+    },
+    {
+      "id": "2026-08-21_009",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-08-21_009_question",
+        "text": "తాతయ్య ఆరోగ్యం బాగుంది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/90f81751e48ce3c3.mp3",
+        "transliteration": "tātayya ārogyaṃ bāguṃdi."
+      },
+      "options": [
+        {
+          "id": "2026-08-21_009_opt0",
+          "text": "Grandfather's health is good.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_009_opt2",
+          "text": "Grandfather is hungry.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_009_opt1",
+          "text": "Help grandfather.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_009_opt3",
+          "text": "Grandfather is going to the village.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-08-21_009_opt0"
+    },
+    {
+      "id": "2026-08-21_010",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-08-21_010_p1",
+          "prompt_sentence": {
+            "id": "2026-08-21_010_p1_prompt",
+            "text": "ఆశీర్వాదం",
+            "language": "telugu",
+            "audio_path": "resources/audio/7252d8107e293010.mp3",
+            "transliteration": "āśīrvādaṃ"
+          },
+          "answer_sentence": {
+            "id": "2026-08-21_010_opt1",
+            "text": "blessing",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-08-21_010_p2",
+          "prompt_sentence": {
+            "id": "2026-08-21_010_p2_prompt",
+            "text": "గౌరవం",
+            "language": "telugu",
+            "audio_path": "resources/audio/e96944ce9a9b819c.mp3",
+            "transliteration": "gauravaṃ"
+          },
+          "answer_sentence": {
+            "id": "2026-08-21_010_opt2",
+            "text": "respect",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-08-21_010_p3",
+          "prompt_sentence": {
+            "id": "2026-08-21_010_p3_prompt",
+            "text": "విందు",
+            "language": "telugu",
+            "audio_path": "resources/audio/a4ae503a73c6a1ab.mp3",
+            "transliteration": "viṃdu"
+          },
+          "answer_sentence": {
+            "id": "2026-08-21_010_opt3",
+            "text": "feast",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-08-21_010_opt3",
+          "text": "feast",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_010_opt2",
+          "text": "respect",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-08-21_010_opt1",
+          "text": "blessing",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-08-21_011",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-08-21_011_question",
+        "text": "Are you in love?",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-08-21_011_reference",
+        "text": "నువ్వు ప్రేమలో ఉన్నావా?",
+        "language": "telugu",
+        "audio_path": "resources/audio/d1e1fc37fa524100.mp3",
+        "transliteration": "nuvvu premalo unnāvā?"
+      },
+      "answer_mode": "exact",
+      "omit_loc": 1,
+      "accepted_answers": [
+        {
+          "id": "2026-08-21_011_ans0",
+          "text": "Are",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-08-21_011_display_answer",
+        "text": "Are",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-08-21_012",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-08-21_012_question",
+        "text": "All the relatives came.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "options": [
+        {
+          "id": "2026-08-21_012_opt3",
+          "text": "అక్కడ చాలా మంది ఉన్నారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/67232d54e686b5c4.mp3",
+          "transliteration": "akkaḍa cālā maṃdi unnāru."
+        },
+        {
+          "id": "2026-08-21_012_opt2",
+          "text": "మేము వేడుకకు వెళ్ళడం లేదు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/60e05994340524f6.mp3",
+          "transliteration": "memu veḍukaku vèḻḻaḍaṃ ledu."
+        },
+        {
+          "id": "2026-08-21_012_opt1",
+          "text": "బంధువులు రేపు వస్తారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/e1653736c2815a29.mp3",
+          "transliteration": "baṃdhuvulu repu vastāru."
+        },
+        {
+          "id": "2026-08-21_012_opt0",
+          "text": "బంధువులందరూ వచ్చారు.",
+          "language": "telugu",
+          "audio_path": "resources/audio/7cf00da650ef6599.mp3",
+          "transliteration": "baṃdhuvulaṃdarū vaccāru."
+        }
+      ],
+      "correct_option_id": "2026-08-21_012_opt0"
+    }
+  ]
+}
