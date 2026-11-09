@@ -1,0 +1,800 @@
+{
+  "lesson_id": "2026-11-09",
+  "date": "2026-11-09",
+  "status": "active",
+  "difficulty": "A2",
+  "reference_lang": "english",
+  "target_lang": "telugu",
+  "generated_at": "2026-11-09T21:08:05.352027+00:00",
+  "provider": "openrouter",
+  "model": "google/gemini-3-flash-preview",
+  "prompt_version": {
+    "mcq_bimodal": "sentence_pairs.v1",
+    "fill_blank_audio": "sentence_pairs.v1",
+    "match_audio_text": "match_words.v1"
+  },
+  "question_type_weights": {
+    "mcq_bimodal": 0.55,
+    "fill_blank_audio": 0.3,
+    "match_audio_text": 0.15
+  },
+  "question_type_counts": {
+    "mcq_bimodal": 3,
+    "fill_blank_audio": 2,
+    "match_audio_text": 7
+  },
+  "items": [
+    {
+      "id": "2026-11-09_001",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-11-09_001_question",
+        "text": "అతను నన్ను పిలుస్తున్నాడు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/53033c01bb2d6fd9.mp3",
+        "transliteration": "atanu nannu pilustunnāḍu."
+      },
+      "options": [
+        {
+          "id": "2026-11-09_001_opt2",
+          "text": "He is looking at me.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_001_opt3",
+          "text": "He is scolding me.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_001_opt1",
+          "text": "He is asking me.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_001_opt0",
+          "text": "He is calling me.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-11-09_001_opt0"
+    },
+    {
+      "id": "2026-11-09_002",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-11-09_002_question",
+        "text": "మేము పెద్దల ఆశీర్వాదం తీసుకున్నాము.",
+        "language": "telugu",
+        "audio_path": "resources/audio/a324d2eb0cc3d96c.mp3",
+        "transliteration": "memu pèddala āśīrvādaṃ tīsukunnāmu."
+      },
+      "options": [
+        {
+          "id": "2026-11-09_002_opt3",
+          "text": "We are calling the elders.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_002_opt0",
+          "text": "We took the blessings of the elders.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_002_opt1",
+          "text": "We are talking with the elders.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_002_opt2",
+          "text": "We help the elders.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-11-09_002_opt0"
+    },
+    {
+      "id": "2026-11-09_003",
+      "type": "mcq_bimodal",
+      "question_sentence": {
+        "id": "2026-11-09_003_question",
+        "text": "మా అక్క పెళ్లికి అందరూ వస్తున్నారు.",
+        "language": "telugu",
+        "audio_path": "resources/audio/bcd0aff6f9c0409f.mp3",
+        "transliteration": "mā akka pèḻliki aṃdarū vastunnāru."
+      },
+      "options": [
+        {
+          "id": "2026-11-09_003_opt3",
+          "text": "My sister's wedding was cancelled.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_003_opt1",
+          "text": "My sister's wedding is happening tomorrow.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_003_opt0",
+          "text": "Everyone is coming to my elder sister's wedding.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_003_opt2",
+          "text": "We bought clothes for my sister's wedding.",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "correct_option_id": "2026-11-09_003_opt0"
+    },
+    {
+      "id": "2026-11-09_004",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-11-09_004_p1",
+          "prompt_sentence": {
+            "id": "2026-11-09_004_p1_prompt",
+            "text": "ఆమెను పిలువు",
+            "language": "telugu",
+            "audio_path": "resources/audio/4141ed1d9ee93677.mp3",
+            "transliteration": "āmènu piluvu"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_004_opt1",
+            "text": "call her",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-11-09_004_p2",
+          "prompt_sentence": {
+            "id": "2026-11-09_004_p2_prompt",
+            "text": "కాదు",
+            "language": "telugu",
+            "audio_path": "resources/audio/c3e49c0d3ef106a1.mp3",
+            "transliteration": "kādu"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_004_opt2",
+            "text": "no",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-11-09_004_p3",
+          "prompt_sentence": {
+            "id": "2026-11-09_004_p3_prompt",
+            "text": "వేసవి",
+            "language": "telugu",
+            "audio_path": "resources/audio/47b9f916d9ee9391.mp3",
+            "transliteration": "vesavi"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_004_opt3",
+            "text": "summer",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-11-09_004_opt2",
+          "text": "no",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_004_opt1",
+          "text": "call her",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_004_opt3",
+          "text": "summer",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-09_005",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-11-09_005_p1",
+          "prompt_sentence": {
+            "id": "2026-11-09_005_p1_prompt",
+            "text": "వెళ్తారా?",
+            "language": "telugu",
+            "audio_path": "resources/audio/ad7edb320d97049a.mp3",
+            "transliteration": "vèḻtārā?"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_005_opt1",
+            "text": "will you go?",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-11-09_005_p2",
+          "prompt_sentence": {
+            "id": "2026-11-09_005_p2_prompt",
+            "text": "కుటుంబం",
+            "language": "telugu",
+            "audio_path": "resources/audio/027ebd17f8ed19d1.mp3",
+            "transliteration": "kuṭuṃbaṃ"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_005_opt2",
+            "text": "Family",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-11-09_005_p3",
+          "prompt_sentence": {
+            "id": "2026-11-09_005_p3_prompt",
+            "text": "తాత",
+            "language": "telugu",
+            "audio_path": "resources/audio/6bdd7530551a81b4.mp3",
+            "transliteration": "tāta"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_005_opt3",
+            "text": "Grandfather",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-11-09_005_opt2",
+          "text": "Family",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_005_opt3",
+          "text": "Grandfather",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_005_opt1",
+          "text": "will you go?",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-09_006",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-11-09_006_question",
+        "text": "Parents' love is very great.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "reference_sentence": {
+        "id": "2026-11-09_006_reference",
+        "text": "తల్లిదండ్రుల ప్రేమ చాలా గొప్పది.",
+        "language": "telugu",
+        "audio_path": "resources/audio/4081d377dd3aeecf.mp3",
+        "transliteration": "tallidaṃḍrula prema cālā gòppadi."
+      },
+      "answer_mode": "exact",
+      "omit_loc": 2,
+      "accepted_answers": [
+        {
+          "id": "2026-11-09_006_ans0",
+          "text": "love",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-11-09_006_display_answer",
+        "text": "love",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      }
+    },
+    {
+      "id": "2026-11-09_007",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-11-09_007_p1",
+          "prompt_sentence": {
+            "id": "2026-11-09_007_p1_prompt",
+            "text": "అమ్మమ్మ",
+            "language": "telugu",
+            "audio_path": "resources/audio/05bb91a4d26ce73f.mp3",
+            "transliteration": "ammamma"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_007_opt1",
+            "text": "Grandmother",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-11-09_007_p2",
+          "prompt_sentence": {
+            "id": "2026-11-09_007_p2_prompt",
+            "text": "తమ్ముడు",
+            "language": "telugu",
+            "audio_path": "resources/audio/b2d9c6df93408a80.mp3",
+            "transliteration": "tammuḍu"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_007_opt2",
+            "text": "Younger Brother",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-11-09_007_p3",
+          "prompt_sentence": {
+            "id": "2026-11-09_007_p3_prompt",
+            "text": "చెల్లెలు",
+            "language": "telugu",
+            "audio_path": "resources/audio/80fb74f5407fcb81.mp3",
+            "transliteration": "cèllèlu"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_007_opt3",
+            "text": "Younger Sister",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-11-09_007_opt1",
+          "text": "Grandmother",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_007_opt3",
+          "text": "Younger Sister",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_007_opt2",
+          "text": "Younger Brother",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-09_008",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-11-09_008_p1",
+          "prompt_sentence": {
+            "id": "2026-11-09_008_p1_prompt",
+            "text": "పెళ్లి",
+            "language": "telugu",
+            "audio_path": "resources/audio/af67d08f1158bb60.mp3",
+            "transliteration": "pèḻli"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_008_opt1",
+            "text": "Marriage",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-11-09_008_p2",
+          "prompt_sentence": {
+            "id": "2026-11-09_008_p2_prompt",
+            "text": "వేడుక",
+            "language": "telugu",
+            "audio_path": "resources/audio/14bd6ae6a739ab56.mp3",
+            "transliteration": "veḍuka"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_008_opt2",
+            "text": "Ceremony",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-11-09_008_p3",
+          "prompt_sentence": {
+            "id": "2026-11-09_008_p3_prompt",
+            "text": "ఆత్మీయత",
+            "language": "telugu",
+            "audio_path": "resources/audio/35d957c413119f0a.mp3",
+            "transliteration": "ātmīyata"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_008_opt3",
+            "text": "Affection",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-11-09_008_opt2",
+          "text": "Ceremony",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_008_opt1",
+          "text": "Marriage",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_008_opt3",
+          "text": "Affection",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-09_009",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-11-09_009_p1",
+          "prompt_sentence": {
+            "id": "2026-11-09_009_p1_prompt",
+            "text": "జాగ్రత్త",
+            "language": "telugu",
+            "audio_path": "resources/audio/6757ede616d6c7d1.mp3",
+            "transliteration": "jāgratta"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_009_opt1",
+            "text": "Careful",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-11-09_009_p2",
+          "prompt_sentence": {
+            "id": "2026-11-09_009_p2_prompt",
+            "text": "గౌరవం",
+            "language": "telugu",
+            "audio_path": "resources/audio/e96944ce9a9b819c.mp3",
+            "transliteration": "gauravaṃ"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_009_opt2",
+            "text": "Honor",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-11-09_009_p3",
+          "prompt_sentence": {
+            "id": "2026-11-09_009_p3_prompt",
+            "text": "ఆటలు",
+            "language": "telugu",
+            "audio_path": "resources/audio/1dc433fe4cb5f02b.mp3",
+            "transliteration": "āṭalu"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_009_opt3",
+            "text": "Games",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-11-09_009_opt1",
+          "text": "Careful",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_009_opt2",
+          "text": "Honor",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_009_opt3",
+          "text": "Games",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-09_010",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-11-09_010_p1",
+          "prompt_sentence": {
+            "id": "2026-11-09_010_p1_prompt",
+            "text": "మనుమడు",
+            "language": "telugu",
+            "audio_path": "resources/audio/e1ab805018d370b7.mp3",
+            "transliteration": "manumaḍu"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_010_opt1",
+            "text": "Grandson",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-11-09_010_p2",
+          "prompt_sentence": {
+            "id": "2026-11-09_010_p2_prompt",
+            "text": "మనుమరాలు",
+            "language": "telugu",
+            "audio_path": "resources/audio/509d6521f7013cec.mp3",
+            "transliteration": "manumarālu"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_010_opt2",
+            "text": "Granddaughter",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-11-09_010_p3",
+          "prompt_sentence": {
+            "id": "2026-11-09_010_p3_prompt",
+            "text": "పూర్వీకులు",
+            "language": "telugu",
+            "audio_path": "resources/audio/9d61226b0338ccd2.mp3",
+            "transliteration": "pūrvīkulu"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_010_opt3",
+            "text": "Ancestors",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-11-09_010_opt2",
+          "text": "Granddaughter",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_010_opt3",
+          "text": "Ancestors",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_010_opt1",
+          "text": "Grandson",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-09_011",
+      "type": "match_audio_text",
+      "prompts": [
+        {
+          "id": "2026-11-09_011_p1",
+          "prompt_sentence": {
+            "id": "2026-11-09_011_p1_prompt",
+            "text": "ఆహ్వానం",
+            "language": "telugu",
+            "audio_path": "resources/audio/124648ea7c5cef17.mp3",
+            "transliteration": "āhvānaṃ"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_011_opt1",
+            "text": "Invitation",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-11-09_011_p2",
+          "prompt_sentence": {
+            "id": "2026-11-09_011_p2_prompt",
+            "text": "కానుక",
+            "language": "telugu",
+            "audio_path": "resources/audio/ce2de19d176a58ea.mp3",
+            "transliteration": "kānuka"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_011_opt2",
+            "text": "Gift",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        },
+        {
+          "id": "2026-11-09_011_p3",
+          "prompt_sentence": {
+            "id": "2026-11-09_011_p3_prompt",
+            "text": "సంప్రదాయం",
+            "language": "telugu",
+            "audio_path": "resources/audio/7a2e22b9c5efcb00.mp3",
+            "transliteration": "saṃpradāyaṃ"
+          },
+          "answer_sentence": {
+            "id": "2026-11-09_011_opt3",
+            "text": "Tradition",
+            "language": "english",
+            "audio_path": null,
+            "transliteration": null
+          }
+        }
+      ],
+      "prompt_mode": "audio",
+      "options": [
+        {
+          "id": "2026-11-09_011_opt1",
+          "text": "Invitation",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_011_opt2",
+          "text": "Gift",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        },
+        {
+          "id": "2026-11-09_011_opt3",
+          "text": "Tradition",
+          "language": "english",
+          "audio_path": null,
+          "transliteration": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-09_012",
+      "type": "fill_blank_audio",
+      "question_sentence": {
+        "id": "2026-11-09_012_question",
+        "text": "నేను మా తాతయ్యకు మందులు ఇచ్చాను.",
+        "language": "telugu",
+        "audio_path": "resources/audio/a8f6bfdcab6b68a1.mp3",
+        "transliteration": "nenu mā tātayyaku maṃdulu iccānu."
+      },
+      "reference_sentence": {
+        "id": "2026-11-09_012_reference",
+        "text": "I gave medicines to my grandfather.",
+        "language": "english",
+        "audio_path": null,
+        "transliteration": null
+      },
+      "answer_mode": "exact",
+      "omit_loc": 5,
+      "accepted_answers": [
+        {
+          "id": "2026-11-09_012_ans0",
+          "text": "ఇచ్చాను.",
+          "language": "telugu",
+          "audio_path": "resources/audio/9fe5d2c979c5c62e.mp3",
+          "transliteration": "iccānu."
+        },
+        {
+          "id": "2026-11-09_012_ans1",
+          "text": "ఇచ్చాను",
+          "language": "telugu",
+          "audio_path": "resources/audio/f2511dd029b0ce00.mp3",
+          "transliteration": "iccānu"
+        }
+      ],
+      "display_correct_answer": {
+        "id": "2026-11-09_012_display_answer",
+        "text": "ఇచ్చాను",
+        "language": "telugu",
+        "audio_path": "resources/audio/f2511dd029b0ce00.mp3",
+        "transliteration": "iccānu"
+      }
+    }
+  ]
+}
